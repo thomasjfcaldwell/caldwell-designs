@@ -1,5 +1,11 @@
+import Link from 'next/link';
+
 function ContactPage() {
-	return <h1>Bumholely</h1>;
+	return (
+		<Link href='/'>
+			<a>go back</a>
+		</Link>
+	);
 }
 
 export default ContactPage;
