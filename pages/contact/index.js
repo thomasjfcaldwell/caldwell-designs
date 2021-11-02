@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import Navbar from '../../components/Navbar';
 
 function ContactPage() {
 	return (
-		<Link href='/'>
-			<a>go back</a>
-		</Link>
+		<>
+			<div>
+				<Link href='/'>
+					<a>go back</a>
+				</Link>
+			</div>
+		</>
 	);
 }
 

@@ -1,5 +1,13 @@
 import Link from 'next/link';
-import { Container, Title, TitleContainer } from './NavbarStyle';
+import {
+	Container,
+	Title,
+	TitleContainer,
+	LinkText,
+	LinkContainer,
+} from './NavbarStyle';
+
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
 	return (
@@ -7,17 +15,23 @@ export const Navbar = () => {
 			<nav className='nav'>
 				<Container>
 					<TitleContainer>
-						<Title>thomas Caldwell</Title>
+						<Link href='/'>
+							<Title>thomas caldwell</Title>
+						</Link>
 					</TitleContainer>
-					<Link href='/'>
-						<a>home</a>
-					</Link>
-					<Link href='/playing'>
-						<a>playing</a>
-					</Link>
-					<Link href='/contact'>
-						<a>contact</a>
-					</Link>
+					<LinkContainer>
+						<Link href='/contact'>
+							<LinkText>
+								contact {''}
+								<BsFillArrowRightCircleFill size={15} />
+							</LinkText>
+						</Link>
+						<Link href='/playing'>
+							<LinkText>
+								Project Request{''} <BsFillArrowRightCircleFill size={15} />
+							</LinkText>
+						</Link>
+					</LinkContainer>
 				</Container>
 			</nav>
 		</>
