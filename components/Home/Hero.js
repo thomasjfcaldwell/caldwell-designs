@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+
 import {
 	Container,
 	Title,
@@ -6,10 +9,13 @@ import {
 	Image,
 	LinksContainer,
 	LinkButton,
+	LinkButtonContainer,
+	LinkText,
 	TextContainer,
 	Text,
+	RequestContainer,
 } from './HeroStyle';
-import thomasPhoto from '../../public/Images/thomasportfolioimage.jpg';
+
 
 function Hero() {
 	return (
@@ -19,16 +25,22 @@ function Hero() {
 				<ContentContainer>
 					<ImageContainer>
 						<Image
-							src='https://i.ibb.co/Lv40RtJ/thomasportfolioimage.jpg'
+							src='https://i.ibb.co/DYQm9jW/thomasportfolioimage-1x1.jpg'
 							alt='thomasportfolioimage'
 							border='0'
-							size={300}
+							// size={500}
 						/>
 					</ImageContainer>
 					<LinksContainer>
-						<LinkButton>hello</LinkButton>
-						<LinkButton>goodbye</LinkButton>
-						<LinkButton>yo man</LinkButton>
+						<LinkButtonContainer>
+							<LinkButton>Services & Pricing</LinkButton>
+						</LinkButtonContainer>
+						<LinkButtonContainer>
+							<LinkButton>Previous Work</LinkButton>
+						</LinkButtonContainer>
+						<LinkButtonContainer>
+							<LinkButton>Work History</LinkButton>
+						</LinkButtonContainer>
 					</LinksContainer>
 				</ContentContainer>
 				<TextContainer>
@@ -43,6 +55,15 @@ function Hero() {
 						surfing.
 					</Text>
 				</TextContainer>
+				<RequestContainer>
+					<Link href='/playing' passHref>
+						<LinkText>
+							<a>
+								Project Request <BsFillArrowRightCircleFill size={15} />
+							</a>
+						</LinkText>
+					</Link>
+				</RequestContainer>
 			</Container>
 		</div>
 	);

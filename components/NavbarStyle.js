@@ -13,12 +13,24 @@ export const Container = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-	width: 25%;
+	width: 50%;
 	justify-content: center;
 	display: flex;
 
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
 		width: 100%;
+	}
+`;
+export const Title = styled.h1`
+	display: flex;
+	color: #d8c3a5;
+	padding: 0.2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+	text-shadow: 2px 2px #e98074;
+	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
+		font-size: 1.7rem;
 	}
 `;
 
@@ -40,9 +52,4 @@ export const LinkText = styled.a`
 	padding: 1em;
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
 	}
-`;
-export const Title = styled.h1`
-	display: flex;
-	color: #e98074;
-	padding: 0.2rem;
 `;

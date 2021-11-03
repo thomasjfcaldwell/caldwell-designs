@@ -12,28 +12,33 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 export const Navbar = () => {
 	return (
 		<>
-			<nav className='nav'>
+			{/* <nav className='nav'> */}
 				<Container>
 					<TitleContainer>
-						<Link href='/'>
-							<Title>thomas caldwell</Title>
+						<Link href='/' passHref>
+							<Title>
+								<a>thomas caldwell portfolio</a>
+							</Title>
 						</Link>
 					</TitleContainer>
 					<LinkContainer>
-						<Link href='/contact'>
+						<Link href='/contact' passHref>
 							<LinkText>
-								contact {''}
-								<BsFillArrowRightCircleFill size={15} />
+								<a>
+									contact <BsFillArrowRightCircleFill size={15} />
+								</a>
 							</LinkText>
 						</Link>
-						<Link href='/playing'>
+						<Link href='/playing' passHref>
 							<LinkText>
-								Project Request{''} <BsFillArrowRightCircleFill size={15} />
+								<a>
+									Project Request <BsFillArrowRightCircleFill size={15} />
+								</a>
 							</LinkText>
 						</Link>
 					</LinkContainer>
 				</Container>
-			</nav>
+			{/* </nav> */}
 		</>
 	);
 };
