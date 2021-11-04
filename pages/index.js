@@ -3,6 +3,8 @@ import { Navbar } from '../components/Navbar';
 import Hero from '../components/Home/Hero';
 import React, { Component } from 'react';
 import WebsiteWork from '../components/Home/WebsiteWork';
+import MarketingMaterials from '../components/Home/MarketingMaterials';
+import WorkWithThomas from '../components/Home/WorkWithThomas';
 
 class Home extends Component {
 	render() {
@@ -11,6 +13,8 @@ class Home extends Component {
 				<Navbar />
 				<Hero />
 				<WebsiteWork />
+				<MarketingMaterials />
+				<WorkWithThomas /> 
 			</>
 		);
 	}

@@ -10,6 +10,7 @@ import {
 	PicnicHeaderContainer,
 	PicnicHeader,
 	PicnicGalleryContainer,
+	SiteLinkContainer,
 } from '../Home/WebsiteWorkStyle.js';
 
 import {
@@ -17,12 +18,21 @@ import {
 	CommerceImagesContainer,
 } from '../Home/WebsiteWorkStyle';
 
+
+
 import { CgWebsite } from 'react-icons/cg';
 
 import React from 'react';
 
 import PicnicsMain from '../../public/Images/HomePage/popuppicnicMain.png';
 import PicnicsIphone from '../../public/Images/HomePage/popuppicnichomepage.iphone.png';
+import PicnicsIphone1 from '../../public/Images/HomePage/picnics.mockup.ipone.png';
+import PicnicsAndroid from '../../public/Images/HomePage/picnics.mockup.andriod.png';
+
+import EcommerceMain from '../../public/Images/HomePage/ecommercemockup.desktop.jpg';
+import EcommerceSide1 from '../../public/Images/HomePage/android.ecommerce.mockup.jpg';
+import EcommerceSide2 from '../../public/Images/HomePage/ipad.mockup.ecommerce.jpg';
+import EcommerceSide3 from '../../public/Images/HomePage/iphone.eccomance.mockup.jpg';
 
 function WebsiteWork() {
 	return (
@@ -37,9 +47,13 @@ function WebsiteWork() {
 					</CommerceHeaderTextContainer>
 				</CommerceHeaderContainer>
 				<CommerceImagesContainer>
-					<div>
+					<div
+						style={{
+							display: 'flex',
+							justifyContent: 'center',
+						}}>
 						<Image
-							src={PicnicsMain}
+							src={EcommerceMain}
 							alt='popuppicnic-Main'
 							border='0'
 							width={600}
@@ -50,24 +64,24 @@ function WebsiteWork() {
 						style={{
 							display: 'flex',
 							flexDirection: 'column',
-							padding: '10px',
+							justifyContent: 'center',
 						}}>
 						<Image
-							src={PicnicsIphone}
+							src={EcommerceSide1}
 							alt='popuppicnic-Main'
 							border='0'
 							width={200}
 							height={150}
 						/>
 						<Image
-							src={PicnicsIphone}
+							src={EcommerceSide2}
 							alt='popuppicnic-Main'
 							border='0'
 							width={200}
 							height={150}
 						/>
 						<Image
-							src={PicnicsIphone}
+							src={EcommerceSide3}
 							alt='popuppicnic-Main'
 							border='0'
 							width={200}
@@ -75,26 +89,30 @@ function WebsiteWork() {
 						/>
 					</div>
 				</CommerceImagesContainer>
+				<SiteLinkContainer>
+				<Link href='/playing' assHref>
+					<a>
+						see live site
+						<CgWebsite size={50} />
+					</a>
+				</Link>
+				</SiteLinkContainer>
 				<PicnicHeaderContainer>
-					<Link href='/playing' assHref>
-						<a>
-							see live site
-							<CgWebsite size={100} />
-						</a>
-					</Link>
 					<PicnicHeader>E-COMMENCE SITE</PicnicHeader>
 				</PicnicHeaderContainer>
 			</CommerceContainer>
 			<PicnicContainer>
 				<PicnicHeaderContainer>
 					<PicnicHeader>POP-UP PICNIC SITE</PicnicHeader>
+				</PicnicHeaderContainer>
+				<SiteLinkContainer>
 					<Link href='/playing' assHref>
 						<a>
 							see live site
-							<CgWebsite size={100} />
+							<CgWebsite size={50} />
 						</a>
 					</Link>
-				</PicnicHeaderContainer>
+				</SiteLinkContainer>
 				<PicnicGalleryContainer>
 					<Image
 						src={PicnicsMain}
@@ -113,7 +131,7 @@ function WebsiteWork() {
 						height={300}
 					/>
 					<Image
-						src={PicnicsIphone}
+						src={PicnicsIphone1}
 						alt='popuppicnic-Main'
 						border='0'
 						width={200}
@@ -125,14 +143,14 @@ function WebsiteWork() {
 							flexDirection: 'column',
 						}}>
 						<Image
-							src={PicnicsIphone}
+							src={PicnicsAndroid}
 							alt='popuppicnic-Main'
 							border='0'
 							width={200}
 							height={150}
 						/>
 						<Image
-							src={PicnicsIphone}
+							src={PicnicsAndroid}
 							alt='popuppicnic-Main'
 							border='0'
 							width={200}
