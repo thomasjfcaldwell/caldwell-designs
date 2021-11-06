@@ -9,7 +9,6 @@ import {
 	PicnicContainer,
 	PicnicHeaderContainer,
 	PicnicHeader,
-	PicnicGalleryContainer,
 	SiteLinkContainer,
 } from '../Home/WebsiteWorkStyle.js';
 
@@ -18,26 +17,18 @@ import {
 	CommerceImagesContainer,
 } from '../Home/WebsiteWorkStyle';
 
-
-
 import { CgWebsite } from 'react-icons/cg';
 
 import React from 'react';
 
-import PicnicsMain from '../../public/Images/HomePage/popuppicnicMain.png';
-import PicnicsIphone from '../../public/Images/HomePage/popuppicnichomepage.iphone.png';
-import PicnicsIphone1 from '../../public/Images/HomePage/picnics.mockup.ipone.png';
-import PicnicsAndroid from '../../public/Images/HomePage/picnics.mockup.andriod.png';
+import EcommerceImage from '../../public/Images/HomePage/Ecommence.mockupsAll.png';
 
-import EcommerceMain from '../../public/Images/HomePage/ecommercemockup.desktop.jpg';
-import EcommerceSide1 from '../../public/Images/HomePage/android.ecommerce.mockup.jpg';
-import EcommerceSide2 from '../../public/Images/HomePage/ipad.mockup.ecommerce.jpg';
-import EcommerceSide3 from '../../public/Images/HomePage/iphone.eccomance.mockup.jpg';
+import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 
 function WebsiteWork() {
 	return (
 		<Container>
-			<CommerceContainer>
+			<CommerceContainer sm={12} lg={6}>
 				<CommerceHeaderContainer>
 					<CommerceHeaderTextContainer>
 						<CommerceHeaderText>Previous Work</CommerceHeaderText>
@@ -47,55 +38,15 @@ function WebsiteWork() {
 					</CommerceHeaderTextContainer>
 				</CommerceHeaderContainer>
 				<CommerceImagesContainer>
-					<div
-						style={{
-							display: 'flex',
-							justifyContent: 'center',
-						}}>
-						<Image
-							src={EcommerceMain}
-							alt='popuppicnic-Main'
-							border='0'
-							width={600}
-							height={550}
-						/>
-					</div>
-					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'column',
-							justifyContent: 'center',
-						}}>
-						<Image
-							src={EcommerceSide1}
-							alt='popuppicnic-Main'
-							border='0'
-							width={200}
-							height={150}
-						/>
-						<Image
-							src={EcommerceSide2}
-							alt='popuppicnic-Main'
-							border='0'
-							width={200}
-							height={150}
-						/>
-						<Image
-							src={EcommerceSide3}
-							alt='popuppicnic-Main'
-							border='0'
-							width={200}
-							height={150}
-						/>
-					</div>
+					<Image src={EcommerceImage} alt='Mock Up Of Ecommerce site' />
 				</CommerceImagesContainer>
 				<SiteLinkContainer>
-				<Link href='/playing' assHref>
-					<a>
-						see live site
-						<CgWebsite size={50} />
-					</a>
-				</Link>
+					<Link href='/playing' assHref>
+						<a>
+							see live site
+							<CgWebsite size={50} />
+						</a>
+					</Link>
 				</SiteLinkContainer>
 				<PicnicHeaderContainer>
 					<PicnicHeader>E-COMMENCE SITE</PicnicHeader>
@@ -113,51 +64,14 @@ function WebsiteWork() {
 						</a>
 					</Link>
 				</SiteLinkContainer>
-				<PicnicGalleryContainer>
-					<Image
-						src={PicnicsMain}
-						alt='popuppicnic-Main'
-						border='0'
-						width={500}
-						height={400}
-					/>
-				</PicnicGalleryContainer>
 				<PicnicImageContainer>
-					<Image
-						src={PicnicsIphone}
-						alt='popuppicnic-Main'
-						border='4'
-						width={200}
-						height={300}
-					/>
-					<Image
-						src={PicnicsIphone1}
-						alt='popuppicnic-Main'
-						border='0'
-						width={200}
-						height={300}
-					/>
-					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'column',
-						}}>
-						<Image
-							src={PicnicsAndroid}
-							alt='popuppicnic-Main'
-							border='0'
-							width={200}
-							height={150}
-						/>
-						<Image
-							src={PicnicsAndroid}
-							alt='popuppicnic-Main'
-							border='0'
-							width={200}
-							height={150}
-						/>
-					</div>
+					<Image src={PicnicImage} alt='Mock Up Of Ecommerce site' />
 				</PicnicImageContainer>
+				<CommerceHeaderContainer>
+					<CommerceHeaderTextContainer>
+						<CommerceHeaderText>See More Websites</CommerceHeaderText>
+					</CommerceHeaderTextContainer>
+				</CommerceHeaderContainer>
 			</PicnicContainer>
 		</Container>
 	);

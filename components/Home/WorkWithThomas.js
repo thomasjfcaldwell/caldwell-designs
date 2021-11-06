@@ -1,16 +1,45 @@
-import { TitleContainer, Title } from '../Home/WorkWithThomasStyle';
-import React from 'react';
-import { projects } from '../../constants/constants.js';
+import React, { Component } from 'react';
 
-const WorkWithThomas = () => (
-	<div>
-		<h2>bummy</h2>
-		{projects.map((p, i) => {
-			<TitleContainer key={i}>
-				<h4>{p.description}</h4>
-			</TitleContainer>;
-		})}
-	</div>
-);
+import { process } from '../../constants/constants';
+import {
+	DescriptionContainer,
+	StepContainer,
+	WorkWithThomasWrapper,
+	HeadlineContainer,
+	Step,
+	Description,
+} from '../Home/WorkWithThomasStyle';
 
-export default WorkWithThomas;
+export default class WorkWithThomas extends Component {
+	render() {
+		return (
+			<div>
+				<WorkWithThomasWrapper>
+					<StepContainer>
+						{process.map(function (d, idx) {
+							return <Step key={idx}>{d.step}</Step>;
+						})}
+					</StepContainer>
+					<DescriptionContainer>
+						{process.map(function (d, idx) {
+							return (
+								<Description key={idx}>
+									{d.description}
+								</Description>
+							);
+						})}
+					</DescriptionContainer>
+					<HeadlineContainer>
+						{process.map(function (d, idx) {
+							return (
+								<p key={idx} style={{ fontSize: '12px' }}>
+									{d.headline}
+								</p>
+							);
+						})}
+					</HeadlineContainer>
+				</WorkWithThomasWrapper>
+			</div>
+		);
+	}
+}
