@@ -16,7 +16,6 @@ import {
 	RequestContainer,
 } from './HeroStyle';
 
-
 function Hero() {
 	return (
 		<div>

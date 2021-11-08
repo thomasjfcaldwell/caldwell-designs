@@ -7,15 +7,12 @@ import {
 	CommerceHeaderTextContainer,
 	CommerceHeaderText,
 	PicnicContainer,
-	PicnicHeaderContainer,
-	PicnicHeader,
+	HeaderContainer,
+	Header,
 	SiteLinkContainer,
 } from '../Home/WebsiteWorkStyle.js';
 
-import {
-	PicnicImageContainer,
-	CommerceImagesContainer,
-} from '../Home/WebsiteWorkStyle';
+import { ImageContainer } from '../Home/WebsiteWorkStyle';
 
 import { CgWebsite } from 'react-icons/cg';
 
@@ -37,36 +34,58 @@ function WebsiteWork() {
 						<CommerceHeaderText>Website</CommerceHeaderText>
 					</CommerceHeaderTextContainer>
 				</CommerceHeaderContainer>
-				<CommerceImagesContainer>
+				<ImageContainer>
 					<Image src={EcommerceImage} alt='Mock Up Of Ecommerce site' />
-				</CommerceImagesContainer>
+				</ImageContainer>
 				<SiteLinkContainer>
 					<Link href='/playing' assHref>
-						<a>
-							see live site
-							<CgWebsite size={50} />
+						<a
+							style={{
+								display: 'flex',
+								alignItems: 'center',
+								textDecoration: 'none',
+								color: '#E98074',
+							}}>
+							see live site{' '}
+							<CgWebsite
+								style={{
+									margin: '10px',
+								}}
+								size={30}
+							/>
 						</a>
 					</Link>
 				</SiteLinkContainer>
-				<PicnicHeaderContainer>
-					<PicnicHeader>E-COMMENCE SITE</PicnicHeader>
-				</PicnicHeaderContainer>
+				<HeaderContainer>
+					<Header>E-COMMENCE SITE</Header>
+				</HeaderContainer>
 			</CommerceContainer>
 			<PicnicContainer>
-				<PicnicHeaderContainer>
-					<PicnicHeader>POP-UP PICNIC SITE</PicnicHeader>
-				</PicnicHeaderContainer>
+				<HeaderContainer>
+					<Header>POP-UP PICNIC SITE</Header>
+				</HeaderContainer>
 				<SiteLinkContainer>
 					<Link href='/playing' assHref>
-						<a>
-							see live site
-							<CgWebsite size={50} />
+						<a
+							style={{
+								display: 'flex',
+								alignItems: 'center',
+								textDecoration: 'none',
+								color: '#E98074',
+							}}>
+							see live site{' '}
+							<CgWebsite
+								style={{
+									margin: '10px',
+								}}
+								size={30}
+							/>
 						</a>
 					</Link>
 				</SiteLinkContainer>
-				<PicnicImageContainer>
-					<Image src={PicnicImage} alt='Mock Up Of Ecommerce site' />
-				</PicnicImageContainer>
+				<ImageContainer>
+					<Image src={PicnicImage} alt='Mock Up Of Picnic site' />
+				</ImageContainer>
 				<CommerceHeaderContainer>
 					<CommerceHeaderTextContainer>
 						<CommerceHeaderText>See More Websites</CommerceHeaderText>

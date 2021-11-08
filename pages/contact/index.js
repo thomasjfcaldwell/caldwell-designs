@@ -1,14 +1,15 @@
 import Link from 'next/link';
-import { Navbar } from '../../components/Navbar';
+import { Layout } from '../../layout/Layout';
 
 function ContactPage() {
 	return (
 		<>
 			<div>
-				<Navbar />
-				<Link href='/'>
-					<a>go back</a>
-				</Link>
+				<Layout>
+					<Link href='/'>
+						<a>go back</a>
+					</Link>
+				</Layout>
 			</div>
 		</>
 	);

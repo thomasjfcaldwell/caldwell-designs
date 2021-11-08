@@ -15,7 +15,7 @@ export const CommerceContainer = styled.div`
 	justify-content: center;
 	width: 50%;
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		width:100%
+		width: 100%;
 	}
 `;
 
@@ -29,26 +29,24 @@ export const CommerceHeaderTextContainer = styled.div`
 	display: flex;
 `;
 
-export const CommerceHeaderText = styled.h5`
+export const CommerceHeaderText = styled.p`
 	text-align: center;
-	margin-top: -10px;
+	/* margin-top: -10px; */
 	background-color: #727272;
 	padding: 0.25em 1em;
 	border-radius: 25px;
 	color: white;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 0.09em;
+	font-weight: 200;
+	letter-spacing: 0.04em;
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		font-size:0.7em;
+		font-size: 0.7em;
 	}
 `;
 
-export const CommerceImagesContainer = styled.div`
+export const ImageContainer = styled.div`
 	display: flex;
-	width: 50%;
+	width: 70%;
 	margin: 2em 0;
-	border: solid;
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
 		width: 100%;
 	}
@@ -65,12 +63,15 @@ export const PicnicContainer = styled.div`
 	}
 `;
 
-export const PicnicHeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
 	display: flex;
-	margin: 2em 0;
+	justify-content: center;
+	align-items: center;
+	filter: drop-shadow(0 0 0.3rem #e98074);
 `;
 
-export const PicnicHeader = styled.h5`
+export const Header = styled.p`
+	font-size: 1.2em;
 	text-align: center;
 	background-color: #e85a4f;
 	color: white;
@@ -80,15 +81,8 @@ export const PicnicHeader = styled.h5`
 	border-radius: 0 25px 0 25px;
 `;
 
-export const PicnicImageContainer = styled.div`
-	display: flex;
-	width: 50%;
-	margin: 2em 0;
-	border: solid;
-	
-`;
-
 export const SiteLinkContainer = styled.div`
 	display: flex;
 	align-items: center;
+	margin: 2em 0;
 `;
