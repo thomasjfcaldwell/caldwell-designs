@@ -13,7 +13,7 @@ class Home extends Component {
 				<Layout>
 					<Hero />
 					<WebsiteWork />
-					<MarketingMaterials />
+					{/* <MarketingMaterials /> */}
 					<WorkWithThomas />
 				</Layout>
 			</>

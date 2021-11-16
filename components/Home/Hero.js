@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 import {
-	Container,
+	Wrapper,
 	Title,
 	ContentContainer,
 	ImageContainer,
@@ -14,13 +14,29 @@ import {
 	TextContainer,
 	Text,
 	RequestContainer,
+	Line,
 } from './HeroStyle';
 
 function Hero() {
 	return (
 		<div>
-			<Container>
-				<Title>Get To Know Thomas Better</Title>
+				<Title>Get To Know Thomas</Title>
+				<Line></Line>
+			<Wrapper>
+				<TextContainer>
+					<Text>
+						Thomas is a web developer and designer currently residing in
+						Huntington Beach, CA. 
+						<span>
+							He uses all of the latest technologies to design and develop.
+							Including all of Adobe’s creative cloud specializing in Photoshop,
+							Illustrator, XD and InDesign. He has developed website using React
+							Framework, Wordpress and Shopify. Originally from The United
+							Kingdom he lives with his wife and pets. When he's not designing
+							websites he like long walks on the beach and surfing.
+						</span>
+					</Text>
+				</TextContainer>
 				<ContentContainer>
 					<ImageContainer>
 						<Image
@@ -42,18 +58,6 @@ function Hero() {
 						</LinkButtonContainer>
 					</LinksContainer>
 				</ContentContainer>
-				<TextContainer>
-					<Text>
-						Thomas is a web developer and designer currently residing in
-						Huntington Beach, CA He uses all of the latest technologies to
-						design and develop. Including all of Adobe’s creative cloud
-						specializing in Photoshop, Illustrator, XD and InDesign. He has
-						developed website using React Framework, Wordpress and Shopify.
-						Originally from The United Kingdom he lives with his wife and pets.
-						When he's not designing websites he like long walks on the beach and
-						surfing.
-					</Text>
-				</TextContainer>
 				<RequestContainer>
 					<Link href='/playing' passHref>
 						<LinkText>
@@ -63,7 +67,7 @@ function Hero() {
 						</LinkText>
 					</Link>
 				</RequestContainer>
-			</Container>
+			</Wrapper>
 		</div>
 	);
 }

@@ -1,17 +1,27 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/globals.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
-	  background-color: #eae7dc;
-    text-decoration: none;
-    
-
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+	background-color:#EAE7DC;
   }
+  a {
+	text-decoration: none;
+	color:#727272;
+}
+
+p {
+
+}
+
+h1 {
+	font-weight: 900;
+}
 `;
 
 const theme = {

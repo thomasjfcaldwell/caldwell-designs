@@ -13,6 +13,8 @@ import {
 	Headline,
 	RedContainer,
 	Red,
+	BlackContainer,
+	Black,
 } from '../Home/WorkWithThomasStyle';
 
 export default class WorkWithThomas extends Component {
@@ -43,6 +45,9 @@ export default class WorkWithThomas extends Component {
 						<HeadlineContainer>
 							<Headline>Project Request</Headline>
 						</HeadlineContainer>
+						<BlackContainer>
+							<Black></Black>
+						</BlackContainer>
 					</ContentContainer>
 					<ContentContainer>
 						<StepContainer>
@@ -61,6 +66,9 @@ export default class WorkWithThomas extends Component {
 						<HeadlineContainer>
 							<Headline>First Meeting</Headline>
 						</HeadlineContainer>
+						<BlackContainer>
+							<Black></Black>
+						</BlackContainer>
 					</ContentContainer>
 					<ContentContainer>
 						<StepContainer>
@@ -80,6 +88,9 @@ export default class WorkWithThomas extends Component {
 						<HeadlineContainer>
 							<Headline>Proposal</Headline>
 						</HeadlineContainer>
+						<BlackContainer>
+							<Black></Black>
+						</BlackContainer>
 					</ContentContainer>
 					<ContentContainer>
 						<StepContainer>
@@ -98,6 +109,9 @@ export default class WorkWithThomas extends Component {
 						<HeadlineContainer>
 							<Headline>Implementation</Headline>
 						</HeadlineContainer>
+						<BlackContainer>
+							<Black></Black>
+						</BlackContainer>
 					</ContentContainer>
 					<ContentContainer>
 						<StepContainer>
@@ -116,6 +130,9 @@ export default class WorkWithThomas extends Component {
 						<HeadlineContainer>
 							<Headline>Launch/Handover</Headline>
 						</HeadlineContainer>
+						<BlackContainer>
+							<Black></Black>
+						</BlackContainer>
 					</ContentContainer>
 				</WorkWithThomasWrapper>
 			</div>

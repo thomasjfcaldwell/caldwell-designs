@@ -2,54 +2,53 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	align-items: center;
-	width: 100%;
-	padding-top: 2rem;
-	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+		justify-content: center;
+		align-items: center;
+	}
+	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		text-decoration: none;
+		height: 40vh;
 	}
 `;
 
 export const TitleContainer = styled.div`
-	width: 50%;
-	justify-content: center;
-	display: flex;
+	/* display: flex; */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+	}
 
-	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		width: 100%;
+	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
+		/* background-color:goldenrod; */
+		border: solid 2px #e85a4f;
+		border-radius: 20px;
+		padding: 0px 10px;
 	}
 `;
 export const Title = styled.h1`
-	display: flex;
-	color: #d8c3a5;
-	padding: 0.2rem;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 2rem;
-	text-shadow: 2px 2px #e98074;
-	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		font-size: 1.7rem;
+	font-weight: 200;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+	}
+	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
+		font-size: 1.4rem;
+		margin-top:5px;
 	}
 `;
 
 export const LinkContainer = styled.div`
-	width: 75%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 30em;
-	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		flex-direction: column;
-		margin-left: 0em;
+	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
+		margin: 2em 0em;
 	}
 `;
 
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #e98074;
-	padding: 1em;
-	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
+	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
+		font-size: 0.6em;
+		margin: 0 0.5em;
 	}
 `;

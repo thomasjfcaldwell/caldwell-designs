@@ -13,31 +13,33 @@ export const Navbar = () => {
 	return (
 		<>
 			{/* <nav className='nav'> */}
-				<Container>
-					<TitleContainer>
-						<Link href='/' passHref>
-							<Title>
-								<a>thomas caldwell portfolio</a>
-							</Title>
-						</Link>
-					</TitleContainer>
-					<LinkContainer>
-						<Link href='/contact' passHref>
-							<LinkText>
-								<a>
-									contact <BsFillArrowRightCircleFill size={15} />
-								</a>
-							</LinkText>
-						</Link>
-						<Link href='/playing' passHref>
-							<LinkText>
-								<a>
-									Project Request <BsFillArrowRightCircleFill size={15} />
-								</a>
-							</LinkText>
-						</Link>
-					</LinkContainer>
-				</Container>
+			<Container>
+				<TitleContainer>
+					<Link href='/' passHref>
+						<Title>thomas caldwell portfolio</Title>
+					</Link>
+				</TitleContainer>
+				<LinkContainer>
+					<Link href='/contact' passHref>
+						<LinkText>
+							Examples of Work
+							<BsFillArrowRightCircleFill
+								size={15}
+								style={{ margin: '0 5px' }}
+							/>
+						</LinkText>
+					</Link>
+					<Link href='/playing' passHref>
+						<LinkText>
+							Project Request{' '}
+							<BsFillArrowRightCircleFill
+								size={15}
+								style={{ margin: '0 5px' }}
+							/>
+						</LinkText>
+					</Link>
+				</LinkContainer>
+			</Container>
 			{/* </nav> */}
 		</>
 	);
