@@ -49,7 +49,7 @@ export const Projects = [
 	{
 		id: 2,
 		title: 'Know Your Wizard',
-		image: 'https://i.ibb.co/CnNrmf1/knowyourwizardforsite.png',
+		image: 'https://i.ibb.co/RHpvHbW/wizard-For-Work.png',
 		intro:
 			"This app was developed while I was attending a immersive software developer bootcamp by General Assembly. Initially I had planned to do an app where the user would be able to search local breweries but after getting in touch with the developer who had put together the API for the data and was informed that the API was suffering from issues - developer had reason to believe that someone had an infinite loop running. I had always been a fan of the Harry Potter world and after research I found the API was very stable I decided to develop 'Know Your Wizard' - an app for fans of Harry Potter or non fans to learn about each character of the Harry Potter World",
 		technologies:
@@ -58,7 +58,7 @@ export const Projects = [
 	{
 		id: 3,
 		title: 'Fleet App',
-		image: 'https://i.ibb.co/RY4M2mN/fleetforsite.png',
+		image: 'https://i.ibb.co/tzBcd37/fleeet-For-Work.png',
 		intro:
 			'This was a group developed app with myself and 3 other developers. The app is for business owners or members of the public with multiple vehicles, by using the app they will be able to keep track of such things as mileage, if the vehicles needs maintenance etc. The app has authentication built into it so each account has different data.',
 		technologies:
@@ -76,9 +76,9 @@ export const Projects = [
 	{
 		id: 5,
 		title: 'Pop Up Picnics Site',
-		image: 'https://i.ibb.co/k3xQ707/picnicforsite.png',
+		image: 'https://i.ibb.co/RBhJVD9/picnic-Site-For-Work.png',
 		intro:
-			'This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all contents myself, including photography..',
+			'This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all content myself, including photography..',
 		technologies: 'React and React Bootstrap.',
 	},
 	{
@@ -86,7 +86,7 @@ export const Projects = [
 		title: 'Events Company Site',
 		image: 'https://i.ibb.co/k3xQ707/picnicforsite.png',
 		intro:
-			'This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all contents myself, including photography..',
+			'This is the main site for the events company. I helped to build additional pages with new service where I learnt Wordpress. Intergrated Google forms to accept bookings ',
 		technologies: 'Wordpress, Google forms and Dubsado',
 	},
 ];

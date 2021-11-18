@@ -14,7 +14,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 export const Navbar = () => {
 	return (
 		<>
-			{/* <nav className='nav'> */}
+			
 			<Container>
 				<TitleContainer>
 					<Link href='/' passHref>
@@ -42,7 +42,6 @@ export const Navbar = () => {
 					</Link>
 				</LinkContainer>
 			</Container>
-			{/* </nav> */}
 		</>
 	);
 };
