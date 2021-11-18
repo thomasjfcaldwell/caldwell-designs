@@ -32,7 +32,7 @@ function Hero() {
 							Including all of Adobe’s creative cloud specializing in Photoshop,
 							Illustrator, XD and InDesign. He has developed website using React
 							Framework, Wordpress and Shopify. Originally from The United
-							Kingdom he lives with his wife and pets. When he's not designing
+							Kingdom he lives with his wife and pets. When he is not designing
 							websites he like long walks on the beach and surfing.
 						</span>
 					</Text>

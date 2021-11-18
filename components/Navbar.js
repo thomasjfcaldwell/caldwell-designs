@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
 	Container,
 	Title,
@@ -6,6 +7,7 @@ import {
 	LinkText,
 	LinkContainer,
 } from './NavbarStyle';
+import portfolio from '.././public/Images/HomePage/portfolio.svg';
 
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
@@ -16,11 +18,11 @@ export const Navbar = () => {
 			<Container>
 				<TitleContainer>
 					<Link href='/' passHref>
-						<Title>thomas caldwell portfolio</Title>
+						<Image src={portfolio} alt='thomascaldwellportfolio' />
 					</Link>
 				</TitleContainer>
 				<LinkContainer>
-					<Link href='/contact' passHref>
+					<Link href='/examplesofwork' passHref>
 						<LinkText>
 							Examples of Work
 							<BsFillArrowRightCircleFill

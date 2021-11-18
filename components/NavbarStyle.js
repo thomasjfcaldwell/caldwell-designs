@@ -21,10 +21,9 @@ export const TitleContainer = styled.div`
 	}
 
 	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
-		/* background-color:goldenrod; */
-		border: solid 2px #e85a4f;
-		border-radius: 20px;
-		padding: 0px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 `;
 export const Title = styled.h1`
@@ -33,7 +32,7 @@ export const Title = styled.h1`
 	}
 	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
 		font-size: 1.4rem;
-		margin-top:5px;
+		margin-top: 5px;
 	}
 `;
 
