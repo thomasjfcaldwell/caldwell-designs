@@ -21,20 +21,22 @@ export const HeaderTextContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
-		margin: 2em 0;
 	}
 `;
 
 export const HeaderText = styled.p`
 	text-align: center;
-	background-color: #727272;
-	color: white;
-	font-weight: 200;
+	color: #1c1b1b;
+	font-weight: 300;
+
 	@media only screen and (min-device-width: 300px) and (max-device-width: 812px) {
 		font-size: 0.8em;
-		padding: 0.25em 1em;
-		border-radius: 25px;
-		letter-spacing: 0.04em;
+		letter-spacing: 0.05em;
+		background-color: #e85a4f;
+		padding: 4px 10px;
+		text-transform: uppercase;
+		border-radius: 8px;
+		margin-bottom: 5em;
 	}
 `;
 

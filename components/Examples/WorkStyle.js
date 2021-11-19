@@ -18,7 +18,6 @@ export const ContentContainer = styled.div`
 		border-radius: 20px;
 		border: solid 1px #e98074;
 		background-color: transparent;
-		
 	}
 `;
 export const Title = styled.h2`
@@ -71,4 +70,10 @@ export const TechnologiesContainer = styled.div`
 	@media only screen and (min-device-width: 300px) and (max-device-width: 600px) {
 		width: 50%;
 	}
+`;
+
+export const LinksContainer = styled.div`
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 1.5em;
 `;

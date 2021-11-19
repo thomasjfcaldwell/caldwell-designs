@@ -13,6 +13,8 @@ export const Headline = styled.h1`
 	font-size: 1.68em;
 `;
 
+export const ContactDetailsContainer = styled.div``;
+
 export const FooterWrapper = styled.div`
 	@media only screen and (min-device-width: 300px) and (max-device-width: 767px) {
 		display: flex;

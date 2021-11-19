@@ -7,6 +7,7 @@ import {
 	Headline,
 	LinkContainer,
 	LinkText,
+	ContactDetailsContainer,
 } from './FooterStyles';
 
 import {
@@ -16,6 +17,8 @@ import {
 } from 'react-icons/ti';
 
 import ContactForm from './ContactForm';
+import ContactDetails from './Footer/ContactDetails';
+
 
 function Footer() {
 	return (
@@ -23,6 +26,9 @@ function Footer() {
 			<HeadlineContainer>
 				<Headline>Connect With Thomas</Headline>
 			</HeadlineContainer>
+			<ContactDetailsContainer>
+				<ContactDetails />
+			</ContactDetailsContainer>
 			<FooterWrapper>
 				<SocialMediaContainer>
 					<LinkContainer>

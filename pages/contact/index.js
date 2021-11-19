@@ -6,9 +6,9 @@ function ContactPage() {
 		<>
 			<div>
 				<Layout>
-					<Link href='/'>
+					{/* <Link href='/'>
 						<a>go back</a>
-					</Link>
+					</Link> */}
 				</Layout>
 			</div>
 		</>
@@ -16,5 +16,3 @@ function ContactPage() {
 }
 
 export default ContactPage;
-
-

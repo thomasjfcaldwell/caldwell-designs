@@ -9,7 +9,12 @@ import {
 	IntroContainer,
 	Technologies,
 	TechnologiesContainer,
+	LinksContainer,
 } from './WorkStyle';
+
+import Link from 'next/link';
+
+import { AiOutlineDeploymentUnit, AiFillGithub } from 'react-icons/ai';
 
 function Work() {
 	return (
@@ -27,6 +32,24 @@ function Work() {
 						<TechnologiesContainer>
 							<Technologies>{user.technologies}</Technologies>
 						</TechnologiesContainer>
+						<LinksContainer>
+							<Link href={user.deployed} passHref>
+								<AiOutlineDeploymentUnit
+									size={20}
+									style={{
+										margin: '0 0.7em',
+									}}
+								/>
+							</Link>
+							<Link href={user.github} passHref>
+								<AiFillGithub
+									size={20}
+									style={{
+										margin: '0 0.7em',
+									}}
+								/>
+							</Link>
+						</LinksContainer>
 					</ContentContainer>
 				</Wrapper>
 			))}

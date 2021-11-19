@@ -11,7 +11,7 @@ export default class Counter extends React.Component {
 		return (
 			<>
 				<Layout>
-					<div
+					{/* <div
 						style={{
 							width: '100%',
 							display: 'flex',
@@ -22,7 +22,7 @@ export default class Counter extends React.Component {
 						<p>{this.state.count}</p>
 						<button onClick={this.increment}>+</button>
 						<button onClick={this.decrement}>-</button>
-					</div>
+					</div> */}
 				</Layout>
 			</>
 		);
