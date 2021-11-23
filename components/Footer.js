@@ -8,6 +8,7 @@ import {
 	LinkContainer,
 	LinkText,
 	ContactDetailsContainer,
+	Line,
 } from './FooterStyles';
 
 import {
@@ -25,6 +26,7 @@ function Footer() {
 		<>
 			<HeadlineContainer>
 				<Headline>Connect With Thomas</Headline>
+				<Line></Line>
 			</HeadlineContainer>
 			<ContactDetailsContainer>
 				<ContactDetails />

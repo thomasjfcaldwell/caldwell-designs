@@ -15,6 +15,7 @@ import {
 	Red,
 	BlackContainer,
 	Black,
+	Line,
 } from '../Home/WorkWithThomasStyle';
 
 import { process } from '../../constants/constants';
@@ -23,10 +24,9 @@ export default class WorkWithThomas extends Component {
 	render() {
 		return (
 			<div>
-				<TitleContainer>
-					<Title>Work With Thomas…</Title>
-					<UnderTitle>Process</UnderTitle>
-				</TitleContainer>
+				<Title>Work With Thomas</Title>
+				<Line></Line>
+
 				<div>
 					{process.map((step, id) => (
 						<WorkWithThomasWrapper key={id}>

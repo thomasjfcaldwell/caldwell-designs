@@ -45,7 +45,7 @@ export const Projects = [
 			'This was my first ever frontend app - Its a quiz game based on the capital cities of the world. I brought in all the data from a third party API. The app features every capital city in the world and the player has a choice of 4 answers with one being correct for each question. Each correct answer receives10 points and the user must get to 100 points before getting 5 questions wrong. ',
 		technologies:
 			'I used vanilla JavaScript, HTML and CSS to develop this App.',
-		deployed: 'www.bbc.com',
+		deployed: 'https://project1-capitalsoftheworld-trivia-game.vercel.app/',
 		github:
 			'https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game',
 	},

@@ -10,6 +10,7 @@ import {
 	SiteLinkContainer,
 	TextContainer,
 	Text,
+	LinkText,
 } from '../Home/WebsiteWorkStyle.js';
 
 import { ImageContainer } from '../Home/WebsiteWorkStyle';
@@ -25,10 +26,10 @@ import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 function WebsiteWork() {
 	return (
 		<Wrapper>
-			<HeaderTextContainer>
-				<HeaderText>Previous Work Websites</HeaderText>
-			</HeaderTextContainer>
 			<Container>
+				<HeaderTextContainer>
+					<HeaderText>Previous Work Websites</HeaderText>
+				</HeaderTextContainer>
 				<SiteHeaderContainer>
 					<SiteHeader>E-Commerce Site</SiteHeader>
 				</SiteHeaderContainer>
@@ -43,14 +44,7 @@ function WebsiteWork() {
 				</TextContainer>
 				<SiteLinkContainer>
 					<Link href='/playing' assHref>
-						<a
-							style={{
-								display: 'flex',
-								alignItems: 'center',
-								textDecoration: 'none',
-								color: '#E98074',
-								fontSize: '0.5em',
-							}}>
+						<LinkText>
 							See Live Site
 							<CgWebsite
 								size={20}
@@ -58,7 +52,7 @@ function WebsiteWork() {
 									margin: '0 0.3em',
 								}}
 							/>
-						</a>
+						</LinkText>
 					</Link>
 				</SiteLinkContainer>
 			</Container>
@@ -78,14 +72,7 @@ function WebsiteWork() {
 				</TextContainer>
 				<SiteLinkContainer>
 					<Link href='/playing' assHref>
-						<a
-							style={{
-								display: 'flex',
-								alignItems: 'center',
-								textDecoration: 'none',
-								color: '#E98074',
-								fontSize: '0.5em',
-							}}>
+						<LinkText>
 							See Live Site
 							<CgWebsite
 								size={20}
@@ -93,13 +80,13 @@ function WebsiteWork() {
 									margin: '0 0.3em',
 								}}
 							/>
-						</a>
+						</LinkText>
 					</Link>
 				</SiteLinkContainer>
+				<HeaderTextContainer>
+					<HeaderText>More Websites</HeaderText>
+				</HeaderTextContainer>
 			</Container>
-			<HeaderTextContainer>
-				<HeaderText>More Websites</HeaderText>
-			</HeaderTextContainer>
 		</Wrapper>
 	);
 }
