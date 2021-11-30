@@ -3,15 +3,16 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 	flex-direction: row;
 	display: flex;
+	text-decoration: none;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		align-items: flex-start;
-		/* background-color: lightseagreen; */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -34,6 +35,7 @@ export const Container = styled.div`
 		padding: 4em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		padding: 50px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -50,6 +52,7 @@ export const HeaderTextContainer = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -57,14 +60,15 @@ export const HeaderTextContainer = styled.div`
 	}
 `;
 
-export const HeaderText = styled.p`
+export const HeaderText = styled.a`
 	text-align: center;
 	color: #1c1b1b;
 	font-weight: 300;
 	background-color: #e85a4f;
 	text-transform: uppercase;
 	font-size: 0.7em;
-	line-height:25px;
+	line-height: 25px;
+	text-decoration: none;
 	:hover {
 		background-color: white;
 		border: 1px solid #e85a4f;
@@ -79,6 +83,7 @@ export const HeaderText = styled.p`
 		padding: 8px 20px;
 		border-radius: 10px;
 		font-size: 0.7em;
+		text-decoration:none;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -116,6 +121,7 @@ export const SiteHeader = styled.p`
 		font-size: 0.6em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.7em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -165,6 +171,8 @@ export const Text = styled.p`
 		margin: 10px 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.6em;
+		margin: 30px 0px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -175,11 +183,11 @@ export const Text = styled.p`
 export const SiteLinkContainer = styled.div`
 	display: flex;
 	align-items: center;
+	margin: 2em 0;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		margin: 1em 0;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -200,6 +208,7 @@ export const LinkText = styled.a`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.6em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

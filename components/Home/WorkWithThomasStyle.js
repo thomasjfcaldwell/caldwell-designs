@@ -21,6 +21,10 @@ export const Title = styled.h1`
 		line-height: 0.9em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		padding-left: 10px;
+		font-size: 2.3em;
+		width: 30%;
+		line-height: 0.9em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -42,6 +46,10 @@ export const Line = styled.div`
 		margin-left: 12px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 200px;
+		height: 2px;
+		margin-top: -10px;
+		margin-left: 10px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -53,17 +61,18 @@ export const Line = styled.div`
 	}
 `;
 export const WorkWithThomasWrapper = styled.div`
-	display: flex;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		display: flex;
 		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		flex-direction: row;
 		width: 100%;
 		flex-wrap: nowrap;
-		/* background-color: forestgreen; */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		display: flex;
+		flex-direction: row;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -87,6 +96,11 @@ export const ContentContainer = styled.div`
 		/* background-color: blue; */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		flex-direction: column;
+		align-items: center;
+		margin: 4em auto;
+		/* background-color: lightsteelblue; */
+		
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -149,10 +163,10 @@ export const Red = styled.div`
 `;
 
 export const BlackContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		display: flex;
@@ -179,6 +193,9 @@ export const Black = styled.div`
 		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 350px;
+		height: 2px;
+		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -198,6 +215,8 @@ export const DescriptionContainer = styled.div`
 		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 50%;
+		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -215,6 +234,8 @@ export const Description = styled.p`
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.8em;
+		text-align: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -254,6 +275,8 @@ export const Headline = styled.p`
 		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.9em;
+		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

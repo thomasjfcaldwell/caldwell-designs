@@ -19,7 +19,7 @@ import {
 } from './HeroStyle';
 
 function Hero() {
-	let iconStyles = {};
+	let iconStyles = {margin:'0 2px',};
 	return (
 		<div>
 			<Title>Get To Know Thomas</Title>

@@ -9,6 +9,8 @@ export const Container = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		justify-content: space-evenly;
+		margin: 5em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -36,6 +38,7 @@ export const LinkText = styled.a`
 	font-size: 8px;
 	text-decoration: none;
 	color: #1c1b1b;
+	margin: 5px 0;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {

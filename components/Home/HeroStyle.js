@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		background-color: red;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		background-color: yellow;
@@ -25,16 +25,15 @@ export const Wrapper = styled.div`
 `;
 export const Title = styled.h1`
 	font-weight: 600;
-
+	line-height: 0.9em;
+	margin-top: 1em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 424px) {
 		font-size: 2.1em;
 		/* background-color: yellow; */
 		padding-left: 20px;
-		line-height: 0.9em;
 	}
 	@media only screen and (min-device-width: 425px) and (max-device-width: 480px) {
 		font-size: 2.5em;
-		line-height: 0.9em;
 		padding-left: 20px;
 	}
 
@@ -43,11 +42,13 @@ export const Title = styled.h1`
 		display: block;
 		font-size: 2.5em;
 		width: 50%;
-		margin-top: 1em;
-		line-height: 0.9em;
 		padding-left: 30px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 2.9em;
+		width: 40%;
+		line-height: 0.9em;
+		padding: 30px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -57,19 +58,24 @@ export const Title = styled.h1`
 
 export const Line = styled.div`
 	background-color: #e98074;
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 200px;
 		height: 2px;
-		margin-top: -5px;
 		margin-left: 25px;
+		margin-top: -5px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 270px;
 		height: 2px;
-		margin-top: -5px;
 		margin-left: 35px;
+		margin-top: -5px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 290px;
+		height: 2px;
+		margin-top: -35px;
+		margin-left: 35px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -89,6 +95,14 @@ export const TextContainer = styled.div`
 		width: 90%;
 		margin: 1.5em auto;
 	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 2em auto;
+		width: 90%;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	}
 `;
 
 export const Text = styled.p`
@@ -101,6 +115,9 @@ export const Text = styled.p`
 		font-size: 0.7em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.6em;
+		line-height: 1.5em;
+		text-align: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -119,6 +136,7 @@ export const ContentContainer = styled.div`
 		justify-content: space-around;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -138,6 +156,8 @@ export const ImageContainer = styled.div`
 		margin: 0.5em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 50%;
+		justify-content: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -154,6 +174,7 @@ export const Image = styled.img`
 		width: 70%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 50%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -180,6 +201,12 @@ export const LinksContainer = styled.div`
 		padding: 2em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		flex-direction: column;
+		/* align-items: center; */
+		/* justify-content: center; */
+		margin: 0 auto;
+		padding: 1em;
+		/* background-color: purple; */
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -188,15 +215,17 @@ export const LinksContainer = styled.div`
 `;
 
 export const LinkButtonContainer = styled.div`
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		margin: 0.2em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 0.2em;
+		/* background-color: lightgoldenrodyellow; */
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -237,6 +266,11 @@ export const LinkButton = styled.button`
 		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		border-radius: 20px;
+		font-size: 0.6em;
+		letter-spacing: 0.04em;
+		line-height: 12px;
+		padding: 8px 15px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

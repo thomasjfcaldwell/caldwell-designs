@@ -18,6 +18,8 @@ import {
 	Line,
 } from '../Home/WorkWithThomasStyle';
 
+
+
 import { process } from '../../constants/constants';
 
 export default class WorkWithThomas extends Component {
@@ -27,10 +29,10 @@ export default class WorkWithThomas extends Component {
 				<Title>Work With Thomas</Title>
 				<Line></Line>
 
-				<div>
-					{process.map((step, id) => (
-						<WorkWithThomasWrapper key={id}>
-							<ContentContainer>
+				<WorkWithThomasWrapper>
+					<div>
+						{process.map((step, id) => (
+							<ContentContainer key={id}>
 								<StepContainer>
 									<Step>{step.step}</Step>
 								</StepContainer>
@@ -47,9 +49,9 @@ export default class WorkWithThomas extends Component {
 									<Black></Black>
 								</BlackContainer>
 							</ContentContainer>
-						</WorkWithThomasWrapper>
-					))}
-				</div>
+						))}
+					</div>
+				</WorkWithThomasWrapper>
 			</div>
 		);
 	}

@@ -33,6 +33,10 @@ export const Form = styled.form`
 		padding: 60px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 50%;
+		margin: 10px 0;
+		border-radius: 10px;
+		padding: 20px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -42,12 +46,12 @@ export const Form = styled.form`
 `;
 
 export const FormInputContainer = styled.div`
+	/* background-color: yellowgreen; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		margin: 10px auto;
 		display: flex;
 		font-size: 0.5em;
 		width: 100%;
-		/* background-color: yellowgreen; */
 		justify-content: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -55,6 +59,8 @@ export const FormInputContainer = styled.div`
 		width: 100%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 5px auto;
+		width: 100%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -87,6 +93,8 @@ export const Input = styled.input`
 		border-radius: 5px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 100%;
+		border-radius: 5px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -108,6 +116,10 @@ export const InputMessage = styled.input`
 		/* background-color: lightsalmon;   */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 100%;
+		height: 100px;
+		border-radius: 5px;
+		border: 10px solid white;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -136,8 +148,7 @@ export const MessageTitle = styled.p`
 export const InputSubmitContainer = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		display: flex;
-		justify-content: center;
-		margin: 20px;
+		/* margin: 20px; */
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
@@ -163,6 +174,9 @@ export const InputSubmit = styled.input`
 		margin: 2em 0em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		border-radius: 15px;
+		border: 5px solid white;
+		margin: 1em 0em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

@@ -13,10 +13,12 @@ export const Container = styled.div`
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		background-color: crimson;
+		/* background-color: crimson; */
 		width: 100%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		align-items: center;
+		justify-content: space-between;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -34,6 +36,7 @@ export const TitleContainer = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 0 30px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -75,7 +78,7 @@ export const LinkText = styled.a`
 	text-decoration: none;
 	color: #e98074;
 	&:hover {
-		color: greenyellow;
+		color: #727272;
 		opacity: 10;
 		cursor: progress;
 	}
@@ -84,8 +87,11 @@ export const LinkText = styled.a`
 		margin: 0 0.5em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		font-size:0.5em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 0.6em;
+		margin-right:50px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

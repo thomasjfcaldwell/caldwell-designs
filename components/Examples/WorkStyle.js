@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 4em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -31,6 +32,7 @@ export const ContentContainer = styled.div`
 		width: 50%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 75%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -54,6 +56,10 @@ export const Title = styled.h2`
 		filter: drop-shadow(0px 0px 12px #8e8d8a);
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 25px;
+		padding: 12px 24px;
+		border-radius: 20px 0;
+		filter: drop-shadow(0px 0px 6px #8e8d8a);
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -70,6 +76,8 @@ export const ImageContainer = styled.div`
 		width: 100%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 50%;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -84,6 +92,7 @@ export const Image = styled.img`
 		width: 90%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 80%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -99,6 +108,8 @@ export const Intro = styled.p`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 12px;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -113,6 +124,7 @@ export const IntroContainer = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 90%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -129,6 +141,9 @@ export const Technologies = styled.p`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		font-size: 10px;
+		text-align: center;
+		color: #727272;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

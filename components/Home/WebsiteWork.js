@@ -95,7 +95,9 @@ function WebsiteWork() {
 				<HeaderTextContainer>
 					<HeaderText>
 						<CgChevronDoubleLeftO style={iconStyles} />
-						More Websites
+						<Link href='/examplesofwork' assHref>
+							More Websites 
+						</Link>
 						<CgChevronDoubleRightO style={iconStyles} />
 					</HeaderText>
 				</HeaderTextContainer>

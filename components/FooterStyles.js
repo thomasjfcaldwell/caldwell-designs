@@ -40,6 +40,9 @@ export const Headline = styled.h1`
 		padding-left: 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 40%;
+		font-size: 2.6em;
+		padding-left: 10px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
@@ -61,6 +64,9 @@ export const Line = styled.div`
 		margin-left: 12px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 290px;
+		height: 2px;
+		margin-left: 12px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
