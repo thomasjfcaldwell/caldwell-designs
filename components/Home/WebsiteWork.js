@@ -15,7 +15,11 @@ import {
 
 import { ImageContainer } from '../Home/WebsiteWorkStyle';
 
-import { CgWebsite } from 'react-icons/cg';
+import {
+	CgWebsite,
+	CgChevronDoubleRightO,
+	CgChevronDoubleLeftO,
+} from 'react-icons/cg';
 
 import React from 'react';
 
@@ -24,11 +28,16 @@ import EcommerceImage from '../../public/Images/HomePage/Ecommence.mockupsAll.pn
 import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 
 function WebsiteWork() {
+	let iconStyles = { margin: '10px 10px' };
 	return (
 		<Wrapper>
 			<Container>
 				<HeaderTextContainer>
-					<HeaderText>Previous Work Websites</HeaderText>
+					<HeaderText>
+						<CgChevronDoubleLeftO style={iconStyles} />
+						Previous Work Websites
+						<CgChevronDoubleRightO style={iconStyles} />
+					</HeaderText>
 				</HeaderTextContainer>
 				<SiteHeaderContainer>
 					<SiteHeader>E-Commerce Site</SiteHeader>
@@ -84,7 +93,11 @@ function WebsiteWork() {
 					</Link>
 				</SiteLinkContainer>
 				<HeaderTextContainer>
-					<HeaderText>More Websites</HeaderText>
+					<HeaderText>
+						<CgChevronDoubleLeftO style={iconStyles} />
+						More Websites
+						<CgChevronDoubleRightO style={iconStyles} />
+					</HeaderText>
 				</HeaderTextContainer>
 			</Container>
 		</Wrapper>

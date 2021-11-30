@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { GrFormNextLink } from 'react-icons/gr';
 
 import {
 	Wrapper,
@@ -18,15 +19,16 @@ import {
 } from './HeroStyle';
 
 function Hero() {
+	let iconStyles = {};
 	return (
 		<div>
-				<Title>Get To Know Thomas</Title>
-				<Line></Line>
+			<Title>Get To Know Thomas</Title>
+			<Line></Line>
 			<Wrapper>
 				<TextContainer>
 					<Text>
 						Thomas is a web developer and designer currently residing in
-						Huntington Beach, CA. 
+						Huntington Beach, CA.
 						<span>
 							He uses all of the latest technologies to design and develop.
 							Including all of Adobe’s creative cloud specializing in Photoshop,
@@ -48,13 +50,22 @@ function Hero() {
 					</ImageContainer>
 					<LinksContainer>
 						<LinkButtonContainer>
-							<LinkButton>Services & Pricing</LinkButton>
+							<LinkButton>
+								Services & Pricing
+								<GrFormNextLink size={11} style={iconStyles} />
+							</LinkButton>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
-							<LinkButton>Previous Work</LinkButton>
+							<LinkButton>
+								Previous Work
+								<GrFormNextLink size={11} style={iconStyles} />
+							</LinkButton>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
-							<LinkButton>Work History</LinkButton>
+							<LinkButton>
+								Work History
+								<GrFormNextLink size={11} style={iconStyles} />
+							</LinkButton>
 						</LinkButtonContainer>
 					</LinksContainer>
 				</ContentContainer>

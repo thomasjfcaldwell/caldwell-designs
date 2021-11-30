@@ -74,6 +74,11 @@ export const LinkContainer = styled.div`
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #e98074;
+	&:hover {
+		color: greenyellow;
+		opacity: 10;
+		cursor: progress;
+	}
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		font-size: 0.6em;
 		margin: 0 0.5em;

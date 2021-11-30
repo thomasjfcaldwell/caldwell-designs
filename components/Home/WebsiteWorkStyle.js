@@ -63,8 +63,13 @@ export const HeaderText = styled.p`
 	font-weight: 300;
 	background-color: #e85a4f;
 	text-transform: uppercase;
+	font-size: 0.7em;
+	line-height:25px;
+	:hover {
+		background-color: white;
+		border: 1px solid #e85a4f;
+	}
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		font-size: 0.8em;
 		letter-spacing: 0.05em;
 		padding: 4px 10px;
 		border-radius: 8px;

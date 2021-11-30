@@ -166,16 +166,18 @@ export const LinksContainer = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		text-decoration: none;
 		width: 100%;
 		margin: 0 auto;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		flex-direction: column;
-		/* background-color: pink; */
+		background-color: pink;
+		justify-content: flex-start;
 		align-items: center;
-		margin: 0 auto;
+		margin: 0px auto;
+		padding: 2em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -187,9 +189,9 @@ export const LinksContainer = styled.div`
 
 export const LinkButtonContainer = styled.div`
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		margin: 0.2em;
@@ -206,20 +208,33 @@ export const LinkButton = styled.button`
 	background-color: #e85a4f;
 	border: solid 3px #e85a4f;
 	color: white;
-	font-weight: 200;
-
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	display: flex;
+	:hover {
+		background-color: white;
+		color: #727272;
+		border: none;
+		letter-spacing: 0.2em;
+	}
+	@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
 		border-radius: 15px;
-		margin: 0.2em 0;
 		font-size: 0.5em;
-		letter-spacing: 0.05em;
+		padding: 5px 0px;
+	}
+
+	@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
 		border-radius: 15px;
+		font-size: 0.5em;
+		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		border-radius: 20px;
 		font-size: 0.7em;
-		margin: 0.5em 0;
 		letter-spacing: 0.04em;
+		line-height: 12px;
+		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
