@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -38,6 +39,7 @@ export const Container = styled.div`
 		padding: 50px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		/* background-color: hotpink; */
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -55,6 +57,7 @@ export const HeaderTextContainer = styled.div`
 		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -66,7 +69,7 @@ export const HeaderText = styled.a`
 	font-weight: 300;
 	background-color: #e85a4f;
 	text-transform: uppercase;
-	font-size: 0.7em;
+	font-size: 0.5em;
 	line-height: 25px;
 	text-decoration: none;
 	:hover {
@@ -87,8 +90,18 @@ export const HeaderText = styled.a`
 		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		padding: 5px 10px;
+		border-radius: 10px;
+		font-size: 0.4em;
+		text-decoration: none;
+		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		padding: 5px 10px;
+		border-radius: 10px;
+		font-size: 0.4em;
+		text-decoration: none;
+		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -125,6 +138,8 @@ export const SiteHeader = styled.p`
 		font-size: 0.7em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		font-size: 0.7em;
+		margin-top: 1.5em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -156,6 +171,8 @@ export const TextContainer = styled.div`
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		width: 80%;
+		margin: 10px auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -176,6 +193,7 @@ export const Text = styled.p`
 		margin: 30px 0px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		font-size: 0.8em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}

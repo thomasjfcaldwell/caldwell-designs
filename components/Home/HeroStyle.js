@@ -205,7 +205,7 @@ export const LinkButton = styled.button`
 
 	@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
 		border-radius: 15px;
-		font-size: 0.5em;
+		font-size: 0.4em;
 		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
