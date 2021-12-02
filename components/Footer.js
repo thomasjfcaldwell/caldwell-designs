@@ -3,12 +3,9 @@ import {
 	FooterWrapper,
 	ContactContainer,
 	SocialMediaContainer,
-	HeadlineContainer,
-	Headline,
 	LinkContainer,
 	LinkText,
 	ContactDetailsContainer,
-	Line,
 } from './FooterStyles';
 
 import {
@@ -19,15 +16,15 @@ import {
 
 import ContactForm from './ContactForm';
 import ContactDetails from './Footer/ContactDetails';
-
+import { Title, Line, TitleContainer } from './Home/HomeStyle';
 
 function Footer() {
 	return (
 		<>
-			<HeadlineContainer>
-				<Headline>Connect With Thomas</Headline>
+			<TitleContainer>
+				<Title>Connect With Thomas</Title>
 				<Line></Line>
-			</HeadlineContainer>
+			</TitleContainer>
 			<ContactDetailsContainer>
 				<ContactDetails />
 			</ContactDetailsContainer>

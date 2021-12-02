@@ -28,7 +28,7 @@ function ContactForm() {
 			phone,
 			message,
 		};
-		fetch('https://caldwell-designs.vercel.app/api/contact', {
+		fetch('http://localhost:3000/api/contact', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json, text/plain, */*',

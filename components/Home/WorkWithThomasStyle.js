@@ -1,65 +1,6 @@
 import styled from 'styled-components';
 
-export const Title = styled.h1`
-	font-weight: 600;
-	/* background-color: yellow; */
-	@media only screen and (min-device-width: 320px) and (max-device-width: 424px) {
-		font-size: 2.4em;
-		padding-left: 10px;
-		line-height: 0.9em;
-	}
-	@media only screen and (min-device-width: 425px) and (max-device-width: 480px) {
-		font-size: 2.8em;
-		line-height: 0.9em;
-		padding-left: 17px;
-	}
 
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		padding-left: 10px;
-		font-size: 2.3em;
-		width: 40%;
-		line-height: 0.9em;
-	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		padding-left: 10px;
-		font-size: 2.3em;
-		width: 30%;
-		line-height: 0.9em;
-	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-	}
-`;
-export const Line = styled.div`
-	background-color: #e98074;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		width: 200px;
-		height: 2px;
-		margin-top: -5px;
-		margin-left: 15px;
-	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		width: 210px;
-		height: 2px;
-		margin-top: -5px;
-		margin-left: 12px;
-	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		width: 200px;
-		height: 2px;
-		margin-top: -10px;
-		margin-left: 10px;
-	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		width: 430px;
-		height: 3px;
-		background-color: #e98074;
-		margin: 0px 0 0 90px;
-	}
-`;
 export const WorkWithThomasWrapper = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		display: flex;

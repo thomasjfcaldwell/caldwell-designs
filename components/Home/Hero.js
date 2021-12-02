@@ -4,7 +4,6 @@ import { GrFormNextLink } from 'react-icons/gr';
 
 import {
 	Wrapper,
-	Title,
 	ContentContainer,
 	ImageContainer,
 	Image,
@@ -15,15 +14,18 @@ import {
 	TextContainer,
 	Text,
 	RequestContainer,
-	Line,
 } from './HeroStyle';
 
+import { Title, Line, TitleContainer } from './HomeStyle';
+
 function Hero() {
-	let iconStyles = {margin:'0 2px',};
+	let iconStyles = { margin: '0 2px' };
 	return (
 		<div>
-			<Title>Get To Know Thomas</Title>
-			<Line></Line>
+			<TitleContainer>
+				<Title>Get To Know Thomas</Title>
+				<Line></Line>
+			</TitleContainer>
 			<Wrapper>
 				<TextContainer>
 					<Text>

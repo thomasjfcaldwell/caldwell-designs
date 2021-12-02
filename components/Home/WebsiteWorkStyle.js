@@ -80,10 +80,11 @@ export const HeaderText = styled.a`
 		margin-bottom: 5em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		padding: 8px 20px;
+		padding: 5px 10px;
 		border-radius: 10px;
-		font-size: 0.7em;
-		text-decoration:none;
+		font-size: 0.4em;
+		text-decoration: none;
+		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}

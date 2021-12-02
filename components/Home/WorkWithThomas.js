@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {
-	TitleContainer,
-	Title,
 	UnderTitle,
 	DescriptionContainer,
 	StepContainer,
@@ -15,10 +13,9 @@ import {
 	Red,
 	BlackContainer,
 	Black,
-	Line,
 } from '../Home/WorkWithThomasStyle';
 
-
+import { Title, Line, TitleContainer } from './HomeStyle';
 
 import { process } from '../../constants/constants';
 
@@ -26,8 +23,10 @@ export default class WorkWithThomas extends Component {
 	render() {
 		return (
 			<div>
+				<TitleContainer>
 				<Title>Work With Thomas</Title>
 				<Line></Line>
+				</TitleContainer>
 
 				<WorkWithThomasWrapper>
 					<div>
