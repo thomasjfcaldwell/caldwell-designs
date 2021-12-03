@@ -38,7 +38,7 @@ export const TextContainer = styled.div`
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		margin: 2em auto;
-		width: 90%;
+		width: 75%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 80%;
@@ -50,6 +50,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.p`
+	font-size: 0.5em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		font-size: 0.5em;
 		line-height: 1.8em;
@@ -64,7 +65,7 @@ export const Text = styled.p`
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		font-size: 0.9em;
+		font-size: 0.7em;
 		line-height: 1.5em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
@@ -85,6 +86,10 @@ export const ContentContainer = styled.div`
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		align-items: center;
+		justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+		padding: 30px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		align-items: center;
@@ -111,6 +116,7 @@ export const ImageContainer = styled.div`
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		width: 50%;
 		justify-content: center;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 40%;
@@ -133,13 +139,13 @@ export const Image = styled.img`
 		width: 70%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		width: 50%;
+		width: 70%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 100%;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		width:90%;
+		width: 90%;
 	}
 `;
 
@@ -161,11 +167,8 @@ export const LinksContainer = styled.div`
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		flex-direction: column;
-		/* align-items: center; */
-		/* justify-content: center; */
-		margin: 0 auto;
-		padding: 1em;
-		/* background-color: purple; */
+		align-items: center;
+		margin: 0px auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		flex-direction: column;
@@ -198,7 +201,7 @@ export const LinkButtonContainer = styled.div`
 
 export const LinkButton = styled.button`
 	background-color: #e85a4f;
-	border: solid 3px #e85a4f;
+	border: solid 1px #e85a4f;
 	color: white;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -211,21 +214,24 @@ export const LinkButton = styled.button`
 		letter-spacing: 0.2em;
 	}
 	@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
-		border-radius: 15px;
-		font-size: 0.5em;
-		padding: 5px 0px;
+		border-radius: 10px;
+		font-size: 0.4em;
+		padding: 5px 8px;
+		line-height: 12px;
+		text-align: center;
 	}
 
 	@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
 		border-radius: 15px;
 		font-size: 0.4em;
 		padding: 5px 10px;
+		line-height: 12px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		border-radius: 20px;
-		font-size: 0.7em;
+		font-size: 0.5em;
 		letter-spacing: 0.04em;
-		line-height: 12px;
+		line-height: 14px;
 		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {

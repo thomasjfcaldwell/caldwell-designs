@@ -1,21 +1,23 @@
 import styled from 'styled-components';
 
 export const WorkWithThomasWrapper = styled.div`
+	display: flex;
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		display: flex;
 		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		flex-direction: row;
-		width: 100%;
-		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		display: flex;
 		flex-direction: row;
+		flex-wrap: nowrap;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
@@ -39,13 +41,13 @@ export const ContentContainer = styled.div`
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		flex-direction: column;
 		align-items: center;
-		margin: 4em auto;
-		/* background-color: lightsteelblue; */
+		width: 20%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		flex-direction: column;
 		align-items: center;
 		margin: 2.5em auto;
+		width: 20%;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		flex-direction: column;
@@ -62,9 +64,10 @@ export const StepContainer = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin-top: 1em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin: 2em auto;
+		margin: 1em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		margin: 0.5em auto;
@@ -143,12 +146,12 @@ export const Black = styled.div`
 		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		width: 350px;
+		width: 35px;
 		height: 2px;
 		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		width: 350px;
+		width: 35px;
 		height: 2px;
 		background-color: #8e8d8a;
 	}
@@ -171,12 +174,14 @@ export const DescriptionContainer = styled.div`
 		margin: 2em 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		width: 50%;
+		width: 85%;
 		margin: 2em 0;
+		height: 80px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		width: 60%;
+		width: 90%;
 		margin: 1em 0;
+		height: 100px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		width: 75%;
@@ -194,11 +199,11 @@ export const Description = styled.p`
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		font-size: 0.8em;
+		font-size: 0.5em;
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		font-size: 0.9em;
+		font-size: 0.6em;
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
@@ -239,11 +244,11 @@ export const Headline = styled.p`
 		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		font-size: 0.9em;
+		font-size: 0.6em;
 		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		font-size: 0.6em;
+		font-size: 0.5em;
 		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
