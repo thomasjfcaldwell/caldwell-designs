@@ -79,5 +79,5 @@ export const Line = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-	width: 50%;
+	width: 10%;
 `;

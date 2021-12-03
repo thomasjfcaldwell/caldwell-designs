@@ -49,10 +49,11 @@ export const ContentContainer = styled.div`
 		margin: 2.5em auto;
 		width: 20%;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 4080px) {
 		flex-direction: column;
 		align-items: center;
 		margin: 5em auto;
+		width: 20%;
 	}
 `;
 
@@ -69,7 +70,7 @@ export const StepContainer = styled.div`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		margin: 1em auto;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 4080px) {
 		margin: 0.5em auto;
 	}
 `;
@@ -93,7 +94,7 @@ export const RedContainer = styled.div`
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 4080px) {
 		margin: 1em auto;
 	}
 `;
@@ -113,7 +114,7 @@ export const Red = styled.div`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 30px;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 4080px) {
 		width: 50px;
 	}
 `;
@@ -156,7 +157,7 @@ export const Black = styled.div`
 		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		width: 500px;
+		width: 50px;
 		height: 2px;
 		background-color: #8e8d8a;
 	}
@@ -183,9 +184,10 @@ export const DescriptionContainer = styled.div`
 		margin: 1em 0;
 		height: 100px;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 3080px) {
 		width: 75%;
 		margin: 1em 0;
+		height: 180px;
 	}
 `;
 
@@ -206,7 +208,7 @@ export const Description = styled.p`
 		font-size: 0.6em;
 		text-align: center;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 3080px) {
 		font-size: 0.9em;
 		text-align: center;
 	}
@@ -251,7 +253,7 @@ export const Headline = styled.p`
 		font-size: 0.5em;
 		border-radius: 30px 30px 0 0;
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 3080px) {
 		font-size: 0.9em;
 		border-radius: 30px 30px 0 0;
 	}
