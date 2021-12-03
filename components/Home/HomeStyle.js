@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.h1`
 	font-weight: 600;
 	line-height: 0.9em;
-	margin-top: 1em;
+	margin-top: 2em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 424px) {
 		font-size: 2.1em;
 		/* background-color: yellow; */
@@ -34,6 +34,10 @@ export const Title = styled.h1`
 		padding: 30px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		font-size: 3.9em;
+		width: 80%;
+		line-height: 0.9em;
+		padding: 30px;
 	}
 `;
 
@@ -69,10 +73,11 @@ export const Line = styled.div`
 		width: 430px;
 		height: 3px;
 		background-color: #e98074;
-		margin: 0px 0 0 90px;
+		margin-top: -40px;
+		margin-left: 35px;
 	}
 `;
 
 export const TitleContainer = styled.div`
-	width: 30%;
+	width: 50%;
 `;

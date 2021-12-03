@@ -1,9 +1,97 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-	flex-direction: row;
+export const SectionHeaderContainer = styled.div`
 	display: flex;
-	text-decoration: none;
+	flex-direction: column;
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		justify-content: center;
+		margin: 3em auto;
+		align-items: center;
+	}
+	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		margin: 2em;
+	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	}
+`;
+
+export const SectionHeader = styled.h2`
+	text-transform: uppercase;
+	font-size: 1.3em;
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		margin-top: -10px;
+		padding: 5px;
+		letter-spacing: 0.1em;
+	}
+	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		margin-top: -10px;
+		padding: 5px;
+		letter-spacing: 0.1em;
+		line-height: 10px;
+	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin-left: 14px;
+		letter-spacing: 0.1em;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		margin-left: 14px;
+		letter-spacing: 0.1em;
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin-left: 20px;
+		letter-spacing: 0.1em;
+	}
+`;
+
+export const Line = styled.div`
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		height: 1px;
+		width: 10em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		height: 1px;
+		width: 17em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 5px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		height: 1px;
+		width: 16em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 15px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		height: 1px;
+		width: 15.5em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 15px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		height: 1px;
+		width: 15.5em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 20px;
+		padding: 1px;
+	}
+`;
+
+export const Wrapper = styled.div`
+	display: flex;
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -18,6 +106,7 @@ export const Wrapper = styled.div`
 		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin: 4em auto;
 	}
 `;
 
@@ -42,68 +131,7 @@ export const Container = styled.div`
 		/* background-color: hotpink; */
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-	}
-`;
-
-export const HeaderTextContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		margin: 3em auto;
-	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin: 2em auto;
-	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-	}
-`;
-
-export const HeaderText = styled.a`
-	text-align: center;
-	color: #1c1b1b;
-	font-weight: 300;
-	background-color: #e85a4f;
-	text-transform: uppercase;
-	font-size: 0.5em;
-	line-height: 25px;
-	text-decoration: none;
-	:hover {
-		background-color: white;
-		border: 1px solid #e85a4f;
-	}
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		letter-spacing: 0.05em;
-		padding: 4px 10px;
-		border-radius: 8px;
-		margin-bottom: 5em;
-	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		padding: 5px 10px;
-		border-radius: 10px;
-		font-size: 0.4em;
-		text-decoration: none;
-		margin: 2em 0;
-	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		padding: 5px 10px;
-		border-radius: 10px;
-		font-size: 0.4em;
-		text-decoration: none;
-		margin: 2em 0;
-	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		padding: 5px 10px;
-		border-radius: 10px;
-		font-size: 0.4em;
-		text-decoration: none;
-		margin: 2em 0;
-	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		padding: 0 5em;
 	}
 `;
 

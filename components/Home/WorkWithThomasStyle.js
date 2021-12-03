@@ -48,6 +48,9 @@ export const ContentContainer = styled.div`
 		margin: 2.5em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		flex-direction: column;
+		align-items: center;
+		margin: 5em auto;
 	}
 `;
 
@@ -64,6 +67,7 @@ export const StepContainer = styled.div`
 		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin: 0.5em auto;
 	}
 `;
 
@@ -87,22 +91,27 @@ export const RedContainer = styled.div`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin: 1em auto;
 	}
 `;
 
 export const Red = styled.div`
-	width: 30px;
 	height: 2px;
 	background-color: #e98074;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		width: 30px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		width: 30px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		width: 30px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		width: 30px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		width: 50px;
 	}
 `;
 
@@ -113,9 +122,6 @@ export const BlackContainer = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -147,6 +153,9 @@ export const Black = styled.div`
 		background-color: #8e8d8a;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		width: 500px;
+		height: 2px;
+		background-color: #8e8d8a;
 	}
 `;
 
@@ -170,6 +179,8 @@ export const DescriptionContainer = styled.div`
 		margin: 1em 0;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		width: 75%;
+		margin: 1em 0;
 	}
 `;
 
@@ -191,6 +202,8 @@ export const Description = styled.p`
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		font-size: 0.9em;
+		text-align: center;
 	}
 `;
 
@@ -234,5 +247,7 @@ export const Headline = styled.p`
 		border-radius: 30px 30px 0 0;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		font-size: 0.9em;
+		border-radius: 30px 30px 0 0;
 	}
 `;

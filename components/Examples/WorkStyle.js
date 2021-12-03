@@ -101,11 +101,14 @@ export const Image = styled.img`
 `;
 
 export const Intro = styled.p`
+	line-height: 1.7em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		font-size: 10px;
 		text-align: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		font-size: 13px;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		font-size: 12px;
@@ -139,6 +142,9 @@ export const Technologies = styled.p`
 		color: #727272;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		font-size: 10px;
+		text-align: center;
+		color: #727272;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		font-size: 10px;
@@ -146,14 +152,17 @@ export const Technologies = styled.p`
 		color: #727272;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		font-size: 10px;
+		text-align: center;
+		color: #727272;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
 `;
 
 export const TechnologiesContainer = styled.div`
+	width: 75%;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		width: 50%;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}

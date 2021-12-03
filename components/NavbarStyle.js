@@ -16,7 +16,8 @@ export const Container = styled.div`
 		align-items: center;
 		/* background-color: crimson; */
 		width: 100%;
-		margin: 0 20px;
+		margin: 0 10px;
+		padding: 50px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		align-items: center;
@@ -27,6 +28,8 @@ export const Container = styled.div`
 		justify-content: space-around;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		align-items: center;
+		justify-content: space-evenly;
 	}
 `;
 
@@ -36,7 +39,7 @@ export const TitleContainer = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 12px 0;
+		margin-top: 20px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
@@ -46,6 +49,7 @@ export const TitleContainer = styled.div`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin-left: -200px;
 	}
 `;
 export const Title = styled.h1`
@@ -61,6 +65,7 @@ export const Title = styled.h1`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		
 	}
 `;
 
@@ -88,11 +93,12 @@ export const LinkText = styled.a`
 		cursor: progress;
 	}
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		font-size: 0.6em;
+		font-size: 0.7em;
 		margin: 0 0.5em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		font-size: 0.5em;
+		margin: 0 0.9em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		font-size: 0.6em;
@@ -103,5 +109,7 @@ export const LinkText = styled.a`
 		padding: 2em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		font-size: 0.9em;
+		padding: 1em;
 	}
 `;

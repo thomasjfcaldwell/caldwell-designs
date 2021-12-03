@@ -53,7 +53,7 @@ function ContactForm() {
 			<p>Send a Project Request</p>
 			<Form>
 				<FormInputContainer>
-					<label htmlFor='name'>Name</label>
+					<Label htmlFor='name'>Name</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -64,7 +64,7 @@ function ContactForm() {
 					/>
 				</FormInputContainer>
 				<FormInputContainer>
-					<label htmlFor='email'>Email</label>
+					<Label htmlFor='email'>Email</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -75,7 +75,7 @@ function ContactForm() {
 					/>
 				</FormInputContainer>
 				<FormInputContainer>
-					<label htmlFor='phone'>Phone</label>
+					<Label htmlFor='phone'>Phone</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -87,7 +87,7 @@ function ContactForm() {
 				</FormInputContainer>
 				<MessageTitle>Send A Message</MessageTitle>
 				<FormInputContainer>
-					<label htmlFor='message'>Message</label>
+					<Label htmlFor='message'>Message</Label>
 					<InputMessage
 						type='text'
 						onChange={(e) => {
