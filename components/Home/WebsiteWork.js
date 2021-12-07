@@ -13,16 +13,17 @@ import {
 	SectionHeaderContainer,
 	SectionHeader,
 } from '../Home/WebsiteWorkStyle.js';
-
 import { ImageContainer } from '../Home/WebsiteWorkStyle';
-
 import {
 	CgWebsite,
 	CgChevronDoubleRightO,
 	CgChevronDoubleLeftO,
 } from 'react-icons/cg';
+import React, { useEffect } from 'react';
 
-import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 import EcommerceImage from '../../public/Images/HomePage/Ecommence.mockupsAll.png';
 
@@ -30,8 +31,11 @@ import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 
 function WebsiteWork() {
 	let iconStyles = { margin: '10px 10px' };
+	useEffect(() => {
+		Aos.init({ duration: 3000 });
+	}, []);
 	return (
-		<div>
+		<div data-aos='fade-right'>
 			<SectionHeaderContainer>
 				<SectionHeader>Developed Websites</SectionHeader>
 				<Line></Line>

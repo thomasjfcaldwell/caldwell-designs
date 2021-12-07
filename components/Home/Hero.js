@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { GrFormNextLink } from 'react-icons/gr';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import {
 	Wrapper,
@@ -20,8 +24,11 @@ import { Title, Line, TitleContainer } from './HomeStyle';
 
 function Hero() {
 	let iconStyles = { margin: '0 2px' };
+	useEffect(() => {
+		Aos.init({duration: 2000});
+	}, []);
 	return (
-		<div>
+		<div data-aos='fade-up'>
 			<TitleContainer>
 				<Title>Get To Know Thomas</Title>
 				<Line></Line>
