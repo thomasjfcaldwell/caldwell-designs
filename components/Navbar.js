@@ -8,7 +8,7 @@ import {
 	LinkContainer,
 } from './NavbarStyle';
 import portfolio from '.././public/Images/HomePage/portfolio.svg';
-
+import logo from '.././public/Images/HomePage/Asset 3.svg'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
@@ -18,7 +18,7 @@ export const Navbar = () => {
 			<Container>
 				<TitleContainer>
 					<Link href='/' passHref>
-						<Image src={portfolio} alt='thomascaldwellportfolio' />
+						<Image src={logo} alt='thomascaldwellportfolio' />
 					</Link>
 				</TitleContainer>
 				<LinkContainer>

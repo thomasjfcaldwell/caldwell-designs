@@ -12,10 +12,13 @@ export const Container = styled.div`
 		justify-content: space-evenly;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		flex-direction: column;
 	}
 `;
 
@@ -28,10 +31,13 @@ export const ContentContainer = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		margin: 2em auto;
 	}
 `;
 

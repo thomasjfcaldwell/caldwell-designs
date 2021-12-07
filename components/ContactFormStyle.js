@@ -13,6 +13,7 @@ export const ContactFormWrapper = styled.div`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		width: 100%;
 	}
 `;
 
@@ -33,20 +34,20 @@ export const Form = styled.form`
 		padding: 60px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		width: 50%;
+		width: 100%;
 		margin: 10px 0;
 		border-radius: 10px;
 		padding: 20px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		padding: 30px;
-		width: 50%;
+		width: 100%;
 		margin: 20px auto;
 		border-radius: 15px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		padding: 30px;
-		width: 50%;
+		min-width: 600px;
 		margin: 20px auto;
 		border-radius: 15px;
 	}
@@ -132,32 +133,32 @@ export const InputMessage = styled.input`
 		width: 90%;
 		height: 90px;
 		border-radius: 5px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 100%;
 		height: 150px;
 		border-radius: 5px;
-		border: 10px solid white;
+		border: 10px solid transparent;
 		/* background-color: lightsalmon;   */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		width: 100%;
 		height: 100px;
 		border-radius: 5px;
-		border: 10px solid white;
+		border: 10px solid transparent;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 100%;
 		height: 100px;
 		border-radius: 5px;
-		border: 10px solid white;
+		border: 10px solid transparent;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		width: 100%;
 		height: 100px;
 		border-radius: 5px;
-		border: 10px solid white;
+		border: 10px solid transparent;
 	}
 `;
 
@@ -200,28 +201,28 @@ export const InputSubmit = styled.input`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 100%;
 		border-radius: 10px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 		font-size: 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		/* background-color: plum;  */
 		border-radius: 15px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 		margin: 2em 0em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		border-radius: 15px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 		margin: 1em 0em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		border-radius: 15px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 		margin: 1em 0em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		border-radius: 15px;
-		border: 5px solid white;
+		border: 5px solid transparent;
 		margin: 1em 0em;
 	}
 `;

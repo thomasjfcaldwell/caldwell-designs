@@ -16,10 +16,10 @@ function Footer() {
 				<Title>Connect With Thomas</Title>
 				<Line></Line>
 			</TitleContainer>
+			<FooterWrapper>
 			<ContactDetailsContainer>
 				<ContactDetails />
 			</ContactDetailsContainer>
-			<FooterWrapper>
 				<ContactContainer>
 					<ContactForm />
 				</ContactContainer>

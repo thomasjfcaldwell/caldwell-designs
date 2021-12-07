@@ -92,17 +92,22 @@ export const ContactDetailsContainer = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
+	display: flex;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		display: flex;
 		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		justify-content: space-around;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		justify-content: space-around;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		justify-content: space-around;
 	}
 `;
 
@@ -118,4 +123,3 @@ export const ContactContainer = styled.div`
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
 `;
-
