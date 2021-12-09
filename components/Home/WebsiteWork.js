@@ -6,6 +6,7 @@ import {
 	SiteHeaderContainer,
 	SiteHeader,
 	Line,
+	Line1,
 	SiteLinkContainer,
 	TextContainer,
 	Text,
@@ -32,14 +33,14 @@ import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 function WebsiteWork() {
 	let iconStyles = { margin: '10px 10px' };
 	useEffect(() => {
-		Aos.init({ duration: 3000 });
+		Aos.init({ duration: 1000 });
 	}, []);
 	return (
 		<div data-aos='fade-right'>
 			<SectionHeaderContainer>
 				<SectionHeader>Developed Websites</SectionHeader>
 				<Line></Line>
-				<Line></Line>
+				<Line1></Line1>
 			</SectionHeaderContainer>
 			<Wrapper>
 				<Container>

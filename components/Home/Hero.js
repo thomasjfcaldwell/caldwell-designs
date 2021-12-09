@@ -20,18 +20,23 @@ import {
 	RequestContainer,
 } from './HeroStyle';
 
-import { Title, Line, TitleContainer } from './HomeStyle';
+import { Title, Line, Line1, TitleContainer } from './HomeStyle';
 
 function Hero() {
-	let iconStyles = { margin: '0 2px' };
+	let golfBall = ['one', 'two', 'three'];
+
+	console.log(golfBall);
+
+	let iconStyles = { margin: '0 2px', paddingBottom:'2px', };
 	useEffect(() => {
-		Aos.init({duration: 2000});
+		Aos.init({ duration: 3000 });
 	}, []);
 	return (
-		<div data-aos='fade-up'>
-			<TitleContainer>
+		<div>
+			<TitleContainer data-aos='fade-up'>
 				<Title>Get To Know Thomas</Title>
 				<Line></Line>
+				<Line1></Line1>
 			</TitleContainer>
 			<Wrapper>
 				<TextContainer>

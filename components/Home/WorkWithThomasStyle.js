@@ -4,6 +4,7 @@ export const WorkWithThomasWrapper = styled.div`
 	display: flex;
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		display: flex;
 		flex-direction: column;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {

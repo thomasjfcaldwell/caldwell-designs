@@ -23,7 +23,7 @@ function Footer() {
 				<ContactContainer>
 					<ContactForm />
 				</ContactContainer>
-			</FooterWrapper>
+			</FooterWrapper> 
 		</>
 	);
 }

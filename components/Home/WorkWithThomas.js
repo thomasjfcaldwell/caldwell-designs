@@ -19,7 +19,9 @@ import { Title, Line, TitleContainer } from './HomeStyle';
 
 import { process } from '../../constants/constants';
 
+
 export default class WorkWithThomas extends Component {
+
 	render() {
 		return (
 			<div>

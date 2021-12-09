@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		align-items: center;
 		text-decoration: none;
-		padding: 1em;
+		/* padding: 1em; */
 		/* background-color: blue; */
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -44,7 +44,7 @@ export const TextContainer = styled.div`
 		width: 80%;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		width: 90%;
+		width: 60%;
 		margin: 3em auto;
 	}
 `;
@@ -206,12 +206,13 @@ export const LinkButton = styled.button`
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	display: flex;
+	display: inline-block;
 	:hover {
 		background-color: white;
 		color: #727272;
 		border: none;
-		letter-spacing: 0.2em;
+		letter-spacing: 0.1em;
+		font-weight: 800;
 	}
 	@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
 		border-radius: 10px;
@@ -225,7 +226,8 @@ export const LinkButton = styled.button`
 		border-radius: 15px;
 		font-size: 0.4em;
 		padding: 5px 10px;
-		line-height: 12px;
+		line-height: 10px;
+		margin-top: 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		border-radius: 20px;
@@ -257,16 +259,14 @@ export const LinkButton = styled.button`
 	}
 `;
 
-export const LinkText = styled.p`
-	text-decoration: none;
-	color: #e98074;
-	padding: 3em;
+export const RequestContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		font-size: 0.5em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		padding: 3em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -275,11 +275,16 @@ export const LinkText = styled.p`
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
 `;
+export const LinkText = styled.p`
+	text-decoration: none;
+	color: #e98074;
+	display: inline-block;
+	font-size: 0.7em;
+	margin-top: 4em;
+	padding: 0.5em 1em;
+	background-color: #727272;
+	border-radius: 5px;
 
-export const RequestContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {

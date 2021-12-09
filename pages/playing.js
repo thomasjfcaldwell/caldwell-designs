@@ -2,27 +2,32 @@ import React from 'react';
 import { Layout } from '../layout/Layout';
 
 export default class Counter extends React.Component {
-	state = { count: 0 };
+	state = { count: 0,
+	 };
 
 	increment = () => this.setState({ count: this.state.count + 10 });
 	decrement = () => this.setState({ count: this.state.count - 1 });
+	moreIncrement = () => this.setState({ count: this.state.count + 109 });
+	reset = () => this.setState({ count: 0 });
 
 	render() {
 		return (
 			<>
 				<Layout>
-					{/* <div
+					<div
 						style={{
 							width: '100%',
 							display: 'flex',
-							flexDirection: 'column',
+
 							alignItems: 'center',
 							justifyContent: 'center',
 						}}>
 						<p>{this.state.count}</p>
 						<button onClick={this.increment}>+</button>
 						<button onClick={this.decrement}>-</button>
-					</div> */}
+						<button onClick={this.moreIncrement}>++</button>
+						<button onClick={this.reset}>reset</button>
+					</div>
 				</Layout>
 			</>
 		);

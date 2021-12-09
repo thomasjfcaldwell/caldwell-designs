@@ -87,7 +87,7 @@ function ContactForm() {
 				</FormInputContainer>
 				<MessageTitle>Send A Message</MessageTitle>
 				<FormInputContainer>
-					<Label htmlFor='message'>Message</Label>
+					{/* <Label htmlFor='message'>Message</Label> */}
 					<InputMessage
 						type='text'
 						onChange={(e) => {

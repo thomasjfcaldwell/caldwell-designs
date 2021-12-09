@@ -105,9 +105,11 @@ export const FooterWrapper = styled.div`
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		justify-content: space-around;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		justify-content: space-around;
+		align-items: center;
 	}
 `;
 

@@ -3,89 +3,132 @@ import styled from 'styled-components';
 export const SectionHeaderContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		justify-content: center;
 		margin: 3em auto;
-		align-items: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		margin: 2em;
+		justify-content: center;
+		align-items: center;
+		margin: 3em auto;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		justify-content: center;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		justify-content: center;
+		align-items: center;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		/* background-color: slateblue; */
 	}
 `;
 
 export const SectionHeader = styled.h2`
 	text-transform: uppercase;
-	font-size: 1.3em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		margin-top: -10px;
-		padding: 5px;
+		padding: 2px;
 		letter-spacing: 0.1em;
+		font-size: 1.3em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		margin-top: -10px;
-		padding: 5px;
 		letter-spacing: 0.1em;
-		line-height: 10px;
+		font-size: 1.9em;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		margin-left: 14px;
 		letter-spacing: 0.1em;
+		font-size: 2.3em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin-left: 14px;
+		font-size: 2.3em;
 		letter-spacing: 0.1em;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		margin-left: 20px;
 		letter-spacing: 0.1em;
+		font-size: 2.3em;
 	}
 `;
 
 export const Line = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		height: 1px;
-		width: 10em;
+		width: 15.5em;
 		background-color: #e85a4f;
-		margin-top: -5px;
+		margin-top: -10px;
 		padding: 1px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		height: 1px;
-		width: 17em;
+		width: 22.8em;
 		background-color: #e85a4f;
-		margin-top: -5px;
-		margin-left: 5px;
+		margin-top: -12px;
+		margin-left: 2px;
 		padding: 1px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		height: 1px;
-		width: 16em;
+		width: 27.2em;
 		background-color: #e85a4f;
-		margin-top: -5px;
-		margin-left: 15px;
+		margin-top: -12px;
+		margin-left: 9px;
 		padding: 1px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		height: 1px;
+		width: 27.4em;
+		background-color: #e85a4f;
+		margin-top: -12px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		height: 2px;
+		width: 440px;
+		background-color: #e85a4f;
+		margin-top: -7px;
+		padding: 2px; 
+	}
+`;
+export const Line1 = styled.div`
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		height: 2px;
 		width: 15.5em;
 		background-color: #e85a4f;
 		margin-top: -5px;
-		margin-left: 15px;
+	}
+	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		height: 1px;
+		width: 22.8em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 2px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		height: 1px;
+		width: 27.2em;
+		background-color: #e85a4f;
+		margin-top: -5px;
+		margin-left: 9px;
+		padding: 1px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		height: 1px;
+		width: 27.4em;
+		background-color: #e85a4f;
+		margin-top: -5px;
 		padding: 1px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		height: 1px;
-		width: 15.5em;
+		padding:2px;
+		width: 440px;
 		background-color: #e85a4f;
-		margin-top: -5px;
-		margin-left: 20px;
-		padding: 1px;
+		margin-top: -10px;
 	}
 `;
 
@@ -95,6 +138,7 @@ export const Wrapper = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		flex-direction: column;
 		flex-wrap: wrap;
+		margin: 1em auto;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		align-items: flex-start;

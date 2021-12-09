@@ -7,7 +7,7 @@ export const Container = styled.div`
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		/* height: 40vh;  */
+		height: 60vh;
 		margin: 1em 0;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -39,7 +39,6 @@ export const TitleContainer = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
@@ -65,7 +64,6 @@ export const Title = styled.h1`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		
 	}
 `;
 

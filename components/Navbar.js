@@ -8,17 +8,18 @@ import {
 	LinkContainer,
 } from './NavbarStyle';
 import portfolio from '.././public/Images/HomePage/portfolio.svg';
-import logo from '.././public/Images/HomePage/Asset 3.svg'
+import logo from '.././public/Images/HomePage/Asset 3.svg';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
 	return (
 		<>
-			
 			<Container>
 				<TitleContainer>
 					<Link href='/' passHref>
-						<Image src={logo} alt='thomascaldwellportfolio' />
+						<div>
+							<Image src={logo} alt='thomascaldwellportfolio' />
+						</div>
 					</Link>
 				</TitleContainer>
 				<LinkContainer>

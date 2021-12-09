@@ -5,6 +5,7 @@ export const ContactFormWrapper = styled.div`
 	align-items: center;
 	flex-direction: column;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		/* background-color:orange; */
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
@@ -25,7 +26,7 @@ export const Form = styled.form`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 90%;
 		border-radius: 10px;
-		padding: 10px;
+		padding: 30px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 70%;
@@ -57,11 +58,12 @@ export const Form = styled.form`
 export const FormInputContainer = styled.div`
 	/* background-color: yellowgreen; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		margin: 10px auto;
+		/* margin: 5px auto; */
 		display: flex;
 		font-size: 0.5em;
 		width: 100%;
 		justify-content: center;
+		padding: 5px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		margin: 5px auto;
@@ -85,12 +87,13 @@ export const FormInputContainer = styled.div`
 `;
 
 export const Label = styled.label`
+	font-weight: 600;
+	display: block;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		margin-top: 1px;
-		padding: 10px;
+		/* margin-top: 1px; */
+		padding: 9px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		/* background-color: rosybrown; */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}
@@ -106,7 +109,7 @@ export const Label = styled.label`
 export const Input = styled.input`
 	border: 5px solid white;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		width: 90%;
+		width: 100%;
 		height: 30px;
 		border-radius: 5px;
 	}
@@ -129,11 +132,13 @@ export const Input = styled.input`
 	}
 `;
 export const InputMessage = styled.input`
+	/* background: grey; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		width: 90%;
+		width: 100%;
 		height: 90px;
 		border-radius: 5px;
 		border: 5px solid transparent;
+		margin-top: -19px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 100%;
@@ -163,10 +168,10 @@ export const InputMessage = styled.input`
 `;
 
 export const MessageTitle = styled.p`
-	font-size: 12px;
+	font-size: 1.2em;
 	text-align: center;
 	font-weight: 600;
-	padding-top: 5px;
+	line-height: 80px;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -185,7 +190,7 @@ export const MessageTitle = styled.p`
 export const InputSubmitContainer = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		display: flex;
-		/* margin: 20px; */
+		margin: 20px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}

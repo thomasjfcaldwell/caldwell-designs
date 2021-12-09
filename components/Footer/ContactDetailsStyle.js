@@ -41,6 +41,31 @@ export const ContentContainer = styled.div`
 	}
 `;
 
+export const Text = styled.p`
+	background-color: #e85a4f;
+	font-size: 0.5em;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 7px;
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	}
+	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		border-radius: 7px;
+	}
+	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		border-radius: 7px;
+		font-size: 0.9em;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		border-radius: 7px;
+		font-size: 0.9em;
+	}
+	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		border-radius: 7px;
+		font-size: 0.9em;
+	}
+`;
+
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #1c1b1b;
