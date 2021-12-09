@@ -5,16 +5,18 @@ export const ContactFormWrapper = styled.div`
 	align-items: center;
 	flex-direction: column;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		/* background-color:orange; */
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		min-width:300px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+		background-color: orange;
+		width: 450px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		width: 100%;
+		
 	}
 `;
 
@@ -32,18 +34,17 @@ export const Form = styled.form`
 		width: 70%;
 		margin: 10px 0;
 		border-radius: 10px;
-		padding: 60px;
+		padding: 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		width: 100%;
-		margin: 10px 0;
+		/* margin: 10px 0; */
 		border-radius: 10px;
-		padding: 20px;
+		padding: 10px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		padding: 30px;
+		padding: 15px;
 		width: 100%;
-		margin: 20px auto;
 		border-radius: 15px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
@@ -66,18 +67,17 @@ export const FormInputContainer = styled.div`
 		padding: 5px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		margin: 5px auto;
-		width: 100%;
+		/* margin: 5px auto; */
+		width: 80%;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		margin: 5px auto;
+		/* margin: 5px auto; */
 		width: 100%;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin: 5px auto;
-		width: 100%;
-		display: flex;
-		justify-content: center;
+		width: 90%;
+		/* display: flex;
+		justify-content: center; */
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		margin: 5px auto;
@@ -88,18 +88,20 @@ export const FormInputContainer = styled.div`
 
 export const Label = styled.label`
 	font-weight: 600;
-	display: block;
+	font-size: 0.8em;
+	/* display: block; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		/* margin-top: 1px; */
 		padding: 9px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		margin: 0.4em auto;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+		margin: 0.2em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin-top: 5px;
-		padding: 5px;
+		margin: 10px auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		margin-top: 5px;
@@ -135,10 +137,10 @@ export const InputMessage = styled.input`
 	/* background: grey; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 100%;
-		height: 90px;
+		height: 120px;
 		border-radius: 5px;
 		border: 5px solid transparent;
-		margin-top: -19px;
+		/* margin-top: -19px; */
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 100%;
@@ -168,10 +170,15 @@ export const InputMessage = styled.input`
 `;
 
 export const MessageTitle = styled.p`
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
-	font-weight: 600;
-	line-height: 80px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	/* line-height: 80px; */
+
+	margin: 1em auto;
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
