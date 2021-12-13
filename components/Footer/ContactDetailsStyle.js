@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
 	margin: 1em auto;
 	display: flex;
 	justify-content: space-around;
@@ -22,10 +22,11 @@ export const Container = styled.div`
 	}
 `;
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.article`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		margin: 2em auto;
 	}
@@ -68,10 +69,10 @@ export const Text = styled.p`
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #1c1b1b;
-	/* font-size: 0.9em; */
 	margin-top: -20px;
+	font-size: 0.8em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		font-size: 8px;
+		font-size: 0.5em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}

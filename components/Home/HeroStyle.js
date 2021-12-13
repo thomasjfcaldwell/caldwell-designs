@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
 	display: flex;
 	flex-direction: column;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 	}
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.article`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 90%;
 		margin: 4em 0;

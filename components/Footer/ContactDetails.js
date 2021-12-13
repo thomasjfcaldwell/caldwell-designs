@@ -14,8 +14,7 @@ import {
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 
 function ContactDetails() {
-
-	let iconStyles = {  color: '#727272', margin: '10px 5px'}
+	let iconStyles = { color: '#727272', margin: '10px 5px' };
 
 	return (
 		<div>
@@ -38,13 +37,13 @@ function ContactDetails() {
 				</ContentContainer>
 				<ContentContainer>
 					<Text>
-						Linkedin{''}
+						Linkedin
 						<TiSocialLinkedinCircular style={iconStyles} size={16} />
 					</Text>
 					<Link
 						href='https://www.linkedin.com/in/thomas-caldwell-huntingtonbeach/'
 						passHref>
-						<LinkText>linkedin</LinkText>
+						<LinkText>Linkedin</LinkText>
 					</Link>
 				</ContentContainer>
 			</Container>
