@@ -195,73 +195,56 @@ export const LinkButtonContainer = styled.div`
 		margin: 0.2em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		background-color: green;
-		margin: 0.2em;
-		width: 300px;
+		
+		margin: 0.3em;
+		width: 500px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		margin: 0.2em;
+		margin: 0.5em;
 		width: 400px;
 	}
 `;
 
 export const LinkButton = styled.button`
-	background-color: #e85a4f;
-	border: solid 1px #e85a4f;
-	color: white;
+	color: #e85a4f;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	/* display: inline-block; */
+	border: none;
 	:hover {
 		background-color: white;
 		color: #727272;
-		border: none;
 		letter-spacing: 0.1em;
 		font-weight: 600;
+		font-size: 0.7em;
 	}
 	@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
-		border-radius: 10px;
-		font-size: 0.4em;
-		padding: 5px 8px;
-		line-height: 12px;
+		font-size: 0.5em;
 		text-align: center;
 	}
 
 	@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
-		border-radius: 15px;
-		font-size: 0.4em;
-		padding: 5px 10px;
+		font-size: 0.6em;
 		line-height: 10px;
-		margin-top: 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		border-radius: 20px;
-		font-size: 0.5em;
-		letter-spacing: 0.04em;
+		font-size: 0.8em;
 		line-height: 14px;
-		padding: 5px 10px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		border-radius: 20px;
-		font-size: 0.6em;
+		font-size: 0.9em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
-		padding: 8px 15px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		border-radius: 20px;
-		font-size: 0.6em;
+		font-size: 1.1em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
-		padding: 8px 15px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		border-radius: 20px;
-		font-size: 0.8em;
+		font-size: 1.2em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
-		padding: 8px 15px;
 	}
 `;
 
@@ -286,10 +269,10 @@ export const LinkText = styled.p`
 	color: #e98074;
 	display: inline-block;
 	font-size: 0.7em;
-	margin-top: 4em;
+	margin-top: 3em;
 	padding: 0.5em 1em;
-	background-color: #727272;
-	border-radius: 5px;
+	border-radius: 30px;
+	border: solid #e98074 1px;
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}

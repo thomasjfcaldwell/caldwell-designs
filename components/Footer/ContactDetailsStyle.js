@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	margin: 3em auto;
+	margin: 1em auto;
 	display: flex;
 	justify-content: space-around;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -27,51 +27,49 @@ export const ContentContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		margin: 2em auto;
+		margin: 0.6em auto;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		margin: 2em auto;
+		margin: 0.6em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		margin: 2em auto;
+		margin: 0.6em auto;
 	}
 `;
 
 export const Text = styled.p`
-	border: solid 2px #e85a4f;
-	font-size: 0.5em;
+	font-size: 0.9em;
 	color: #e85a4f;
-	padding: 5px 9px;
-	border-radius: 7px;
 	line-height: 15px;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		border-radius: 7px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 		border-radius: 7px;
-		font-size: 0.9em;
+		/* font-size: 0.9em; */
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		border-radius: 7px;
-		font-size: 0.9em;
+		/* font-size: 0.9em; */
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		border-radius: 7px;
-		font-size: 0.9em;
+		/* font-size: 0.9em; */
 	}
 `;
 
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #1c1b1b;
-	margin: 2px 0;
-	font-size: 0.5em;
+	/* font-size: 0.9em; */
+	margin-top: -20px;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		font-size: 8px;
 	}

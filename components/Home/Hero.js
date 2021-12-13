@@ -87,7 +87,7 @@ function Hero() {
 					<Link href='/playing' passHref>
 						<LinkText>
 							<a>
-								Project Request <BsFillArrowRightCircleFill size={15} />
+								Project Request <BsFillArrowRightCircleFill size={10} />
 							</a>
 						</LinkText>
 					</Link>

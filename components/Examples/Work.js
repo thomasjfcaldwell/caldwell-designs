@@ -10,6 +10,7 @@ import {
 	Technologies,
 	TechnologiesContainer,
 	LinksContainer,
+	Text,
 } from './WorkStyle';
 
 import Link from 'next/link';
@@ -34,20 +35,26 @@ function Work() {
 						</TechnologiesContainer>
 						<LinksContainer>
 							<Link href={user.deployed} passHref>
-								<AiOutlineDeploymentUnit
-									size={20}
-									style={{
-										margin: '0 0.7em',
-									}}
-								/>
+								<Text>
+									Deployed Site{' '}
+									<AiOutlineDeploymentUnit
+										size={20}
+										style={{
+											margin: '0 0.7em',
+										}}
+									/>
+								</Text>
 							</Link>
 							<Link href={user.github} passHref>
-								<AiFillGithub
-									size={20}
-									style={{
-										margin: '0 0.7em',
-									}}
-								/>
+								<Text>
+									Github Repo
+									<AiFillGithub
+										size={20}
+										style={{
+											margin: '0 0.7em',
+										}}
+									/>
+								</Text>
 							</Link>
 						</LinksContainer>
 					</ContentContainer>

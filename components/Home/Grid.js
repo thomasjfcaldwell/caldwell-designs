@@ -7,7 +7,7 @@ function Grid() {
 		<div>
 			<Container>
 				<ContentOne>
-					<Headline>One</Headline>
+					<Headline>Posters/Flyers</Headline>
 				</ContentOne>
 				<ContentTwo>
 					<Headline>Two</Headline>

@@ -224,3 +224,11 @@ export const LinksContainer = styled.div`
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 	}
 `;
+
+export const Text = styled.p`
+	font-size: 0.4em;
+	color: #e98074;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		font-size: 0.9em;
+	}
+`;

@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	display: flex;
 	@media only screen and (min-device-width: 80px) and (max-device-width: 480px) {
+		height: 60vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		height: 60vh;
 		margin: 1em 0;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {

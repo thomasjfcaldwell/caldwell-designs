@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: grid;
-	grid-template-columns: 25% 75%;
-    grid-auto-rows: minmax(200px, auto);
+	grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(400px, auto);
 	padding: 20px;
 `;
 
@@ -12,6 +12,12 @@ export const ContentOne = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	:hover {
+		background-color: green;
+		color: #727272;
+		border: none;
+		font-weight: 600;
+	}
 `;
 export const ContentTwo = styled.div`
 	background-color: lightseagreen;
