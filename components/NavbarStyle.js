@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	display: flex;
 	@media only screen and (min-device-width: 80px) and (max-device-width: 480px) {
-		height: 60vh;
+		height: 50vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

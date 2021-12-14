@@ -195,7 +195,6 @@ export const LinkButtonContainer = styled.div`
 		margin: 0.2em;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		
 		margin: 0.3em;
 		width: 500px;
 	}
@@ -205,7 +204,7 @@ export const LinkButtonContainer = styled.div`
 	}
 `;
 
-export const LinkButton = styled.button`
+export const LinkButton = styled.a`
 	color: #e85a4f;
 	font-weight: 500;
 	text-transform: uppercase;
