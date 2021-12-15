@@ -18,7 +18,7 @@ export const Container = styled.section`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		flex-direction: column;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		flex-direction: column;
 	}
 `;
@@ -40,7 +40,7 @@ export const ContentContainer = styled.article`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		margin: 0.6em auto;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		margin: 0.6em auto;
 	}
 `;
@@ -61,7 +61,7 @@ export const Text = styled.p`
 		border-radius: 7px;
 		/* font-size: 0.9em; */
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		border-radius: 7px;
 		/* font-size: 0.9em; */
 	}
@@ -81,6 +81,6 @@ export const LinkText = styled.a`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;

@@ -18,7 +18,6 @@ function ContactDetails() {
 
 	return (
 		<div>
-			<p>Contact Details</p>
 			<Container>
 				<ContentContainer>
 					<Text>

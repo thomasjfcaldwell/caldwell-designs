@@ -24,7 +24,7 @@ export const WorkWithThomasWrapper = styled.div`
 		margin: 2em auto; */
 		background-color: green;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 		/* background-color: pink; */
 		background-color: blue;
 	}
@@ -101,7 +101,7 @@ export const RedContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 4080px) {
+	@media only screen and (min-width: 1281px) {
 		margin: 1em auto;
 	}
 `;
@@ -121,7 +121,7 @@ export const Red = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 30px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 4080px) {
+	@media only screen and (min-width: 1281px) {
 		width: 50px;
 	}
 `;
@@ -138,7 +138,7 @@ export const BlackContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -163,7 +163,7 @@ export const Black = styled.div`
 		height: 2px;
 		background-color: #8e8d8a;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 		width: 50px;
 		height: 2px;
 		background-color: #8e8d8a;
@@ -191,7 +191,7 @@ export const DescriptionContainer = styled.div`
 		margin: 1em 0;
 		height: 100px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 3080px) {
+	@media only screen and (min-width: 1281px) {
 		width: 75%;
 		margin: 1em 0;
 		height: 180px;
@@ -233,7 +233,7 @@ export const HeadlineContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -260,7 +260,7 @@ export const Headline = styled.p`
 		font-size: 0.5em;
 		border-radius: 30px 30px 0 0;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 3080px) {
+	@media only screen and (min-width: 1281px) {
 		font-size: 0.9em;
 		border-radius: 30px 30px 0 0;
 	}

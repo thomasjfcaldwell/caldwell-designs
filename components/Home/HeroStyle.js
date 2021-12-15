@@ -20,7 +20,8 @@ export const Wrapper = styled.section`
 		text-decoration: none;
 		/* padding: 1em; */
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
+		background-color: pink;
 		align-items: center;
 		text-decoration: none;
 		padding: 4em;
@@ -44,7 +45,7 @@ export const TextContainer = styled.article`
 		width: 80%;
 		margin: 2em auto;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 60%;
 		margin: 3em auto;
 	}
@@ -72,7 +73,7 @@ export const Text = styled.p`
 		line-height: 1.5em;
 		text-align: center;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		font-size: 0.7em;
 		line-height: 1.7em;
 		text-align: center;
@@ -100,7 +101,7 @@ export const ContentContainer = styled.div`
 		align-items: center;
 		justify-content: space-around;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		align-items: center;
 		justify-content: space-around;
 		margin: 2em auto;
@@ -128,7 +129,7 @@ export const ImageContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 40%;
 		justify-content: center;
 		align-items: center;
@@ -149,7 +150,7 @@ export const Image = styled.img`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 70%;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 90%;
 	}
 `;
@@ -178,7 +179,7 @@ export const LinksContainer = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		flex-direction: column;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		flex-direction: column;
 	}
 `;
@@ -199,7 +200,7 @@ export const LinkButtonContainer = styled.div`
 		margin: 0.3em;
 		width: 500px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		margin: 0.5em;
 		width: 400px;
 	}
@@ -243,7 +244,7 @@ export const LinkButton = styled.a`
 		letter-spacing: 0.04em;
 		line-height: 12px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		font-size: 1.2em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
@@ -263,7 +264,7 @@ export const RequestContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 export const LinkText = styled.p`
@@ -284,6 +285,6 @@ export const LinkText = styled.p`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;

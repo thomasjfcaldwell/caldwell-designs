@@ -17,7 +17,7 @@ export const MarketingMaterialsContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -36,7 +36,7 @@ export const FlyerContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -55,7 +55,7 @@ export const EmailContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -74,7 +74,7 @@ export const BannerContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -92,7 +92,7 @@ export const HeaderContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -114,6 +114,6 @@ export const Header = styled.h3`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;

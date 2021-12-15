@@ -20,7 +20,7 @@ export const Title = styled.h1`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		padding-left: 120px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		padding-left: 120px;
 	}
 `;
@@ -58,7 +58,7 @@ export const Line = styled.div`
 		margin-top: -10px;
 		margin-left: 126px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 256px;
 		height: 3px;
 		background-color: #e98074;
@@ -99,7 +99,7 @@ export const Line1 = styled.div`
 		margin-top: 1px;
 		margin-left: 126px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 256px;
 		height: 3px;
 		background-color: #e98074;

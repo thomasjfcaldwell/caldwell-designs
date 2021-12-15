@@ -17,8 +17,8 @@ export const Container = styled.div`
 		align-items: center;
 		background-color: crimson;
 		width: 100%;
-		margin: 0 10px;
-		padding: 50px;
+		/* margin: 0 10px; */
+		/* padding: 50px; */
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		align-items: center;
@@ -27,31 +27,33 @@ export const Container = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		align-items: center;
 		justify-content: space-around;
+		background-color: purple;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		background-color: orange;
-		height: 50vh;
+		height: 20vh;
 	}
 `;
 
-export const TitleContainer = styled.article`
+export const TitleContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: pink;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		margin: 20px 70px;
+		width: 50%;
+		background-color: pink;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 export const Title = styled.h1`
@@ -66,7 +68,7 @@ export const Title = styled.h1`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -84,7 +86,7 @@ export const LinkContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -112,7 +114,7 @@ export const LinkText = styled.a`
 		font-size: 0.6em;
 		padding: 2em;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px) {
 		font-size: 0.9em;
 		padding: 1em;
 	}

@@ -21,8 +21,8 @@ export const SectionHeaderContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
-		/* background-color: slateblue; */
+	@media only screen and (min-width: 1281px)  {
+		 background-color: slateblue; 
 	}
 `;
 
@@ -48,7 +48,7 @@ export const SectionHeader = styled.h2`
 		font-size: 2.3em;
 		letter-spacing: 0.1em;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		letter-spacing: 0.1em;
 		font-size: 2.3em;
 	}
@@ -80,7 +80,7 @@ export const Line = styled.div`
 		background-color: #e85a4f;
 		margin-top: -12px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		height: 2px;
 		width: 25.4em;
 		background-color: #e85a4f;
@@ -105,7 +105,7 @@ export const Wrapper = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		margin: 3em auto;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		margin: 4em auto;
 	}
 `;
@@ -130,7 +130,7 @@ export const Container = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		/* background-color: hotpink; */
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		padding: 0 5em;
 	}
 `;
@@ -145,7 +145,7 @@ export const SiteHeaderContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -169,7 +169,7 @@ export const SiteHeader = styled.p`
 		font-size: 0.7em;
 		margin-top: 1.5em;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -184,7 +184,7 @@ export const ImageContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -202,7 +202,7 @@ export const TextContainer = styled.div`
 		width: 80%;
 		margin: 10px auto;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -223,7 +223,7 @@ export const Text = styled.p`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		font-size: 0.8em;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -240,7 +240,7 @@ export const SiteLinkContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -259,6 +259,6 @@ export const LinkText = styled.a`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;

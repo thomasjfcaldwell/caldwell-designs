@@ -14,7 +14,7 @@ export const HeadlineContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -46,7 +46,7 @@ export const Headline = styled.h1`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -70,7 +70,7 @@ export const Line = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 430px;
 		height: 3px;
 		background-color: #e98074;
@@ -87,7 +87,7 @@ export const ContactDetailsContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -107,7 +107,7 @@ export const FooterWrapper = styled.div`
 		justify-content: space-around;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		justify-content: space-around;
 		align-items: center;
 	}
@@ -122,6 +122,6 @@ export const ContactContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;

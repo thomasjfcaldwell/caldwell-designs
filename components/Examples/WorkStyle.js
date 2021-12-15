@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -44,7 +44,7 @@ export const ContentContainer = styled.div`
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 60%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
@@ -78,7 +78,7 @@ export const Title = styled.h2`
 		border-radius: 20px 0;
 		filter: drop-shadow(0px 0px 6px #8e8d8a);
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		font-size: 17px;
 		padding: 12px 24px;
 		border-radius: 20px 0;
@@ -102,7 +102,7 @@ export const ImageContainer = styled.div`
 		width: 50%;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 50%;
 	}
 `;
@@ -119,7 +119,7 @@ export const Image = styled.img`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 70%;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 90%;
 	}
 `;
@@ -144,7 +144,7 @@ export const Intro = styled.p`
 		margin: 1em auto;
 		padding: 15px;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		font-size: 14px;
 		margin: 1em auto;
 		padding: 20px;
@@ -162,7 +162,7 @@ export const IntroContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		width: 100%;
 	}
 `;
@@ -188,7 +188,7 @@ export const Technologies = styled.p`
 		text-align: center;
 		color: #727272;
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 		font-size: 12px;
 		text-align: center;
 		color: #727272;
@@ -205,7 +205,7 @@ export const TechnologiesContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
@@ -221,7 +221,7 @@ export const LinksContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
+	@media only screen and (min-width: 1281px)  {
 	}
 `;
 
