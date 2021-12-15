@@ -6,18 +6,18 @@ export const MarketingMaterialsContainer = styled.div`
 	align-items: flex-start;
 	background-color: purple;
 	flex-wrap: wrap;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
 
@@ -27,16 +27,16 @@ export const FlyerContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 100%;
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
 
@@ -46,16 +46,16 @@ export const EmailContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 100%;
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
 
@@ -65,16 +65,16 @@ export const BannerContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 100%;
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
 
@@ -84,15 +84,15 @@ export const HeaderContainer = styled.div`
 	width: 80%;
 	display: flex;
 	justify-content: center;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
 
@@ -105,15 +105,15 @@ export const Header = styled.h3`
 	text-transform: uppercase;
 	padding: 0.25em 1em;
 	border-radius: 0 25px 0 25px;
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		font-size: 1.2em;
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+	@media only screen and (min-width: 1281px) and (max-width: 1980px) {
 	}
 `;
