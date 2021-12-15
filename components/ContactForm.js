@@ -1,4 +1,6 @@
 import {
+	Header,
+	HeaderContainer,
 	ContactFormWrapper,
 	Form,
 	FormInputContainer,
@@ -50,10 +52,15 @@ function ContactForm() {
 
 	return (
 		<ContactFormWrapper>
-			<p>Send a Project Request</p>
+			<HeaderContainer>
+				<Header>Send a Project Request</Header>
+			</HeaderContainer>
+
 			<Form>
 				<FormInputContainer>
-					<Label htmlFor='name'>Name</Label>
+					<Label id='name' htmlFor='name'>
+						Name
+					</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -64,7 +71,9 @@ function ContactForm() {
 					/>
 				</FormInputContainer>
 				<FormInputContainer>
-					<Label htmlFor='email'>Email</Label>
+					<Label id='email' htmlFor='email'>
+						Email
+					</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -75,7 +84,9 @@ function ContactForm() {
 					/>
 				</FormInputContainer>
 				<FormInputContainer>
-					<Label htmlFor='phone'>Phone</Label>
+					<Label id='phone' htmlFor='phone'>
+						Phone
+					</Label>
 					<Input
 						type='text'
 						onChange={(e) => {
@@ -87,7 +98,9 @@ function ContactForm() {
 				</FormInputContainer>
 				<MessageTitle>Send A Message</MessageTitle>
 				<FormInputContainer>
-					{/* <Label htmlFor='message'>Message</Label> */}
+					<Label id='message' htmlFor='message'>
+						Message
+					</Label>
 					<InputMessage
 						type='text'
 						onChange={(e) => {

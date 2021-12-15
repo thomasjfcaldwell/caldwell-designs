@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 
-export const ContactFormWrapper = styled.div`
+export const Header = styled.h1`
+	font-size: 0.9em;
+	border-radius: 10px;
+	border: 2px solid #e98074;
+	padding: 0.2em 0.5em;
+	font-weight: 550;
+`;
+export const HeaderContainer = styled.article`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: pink; */
+	width: 100%;
+	height: 100px;
+`;
+
+export const ContactFormWrapper = styled.section`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -9,14 +25,12 @@ export const ContactFormWrapper = styled.div`
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		min-width:300px;
+		min-width: 400px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		background-color: orange;
-		width: 450px;
+		width: 350px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		
 	}
 `;
 
@@ -28,7 +42,7 @@ export const Form = styled.form`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 90%;
 		border-radius: 10px;
-		padding: 30px;
+		padding: 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		width: 70%;
@@ -133,7 +147,7 @@ export const Input = styled.input`
 		border-radius: 5px;
 	}
 `;
-export const InputMessage = styled.input`
+export const InputMessage = styled.textarea`
 	/* background: grey; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 100%;
@@ -210,11 +224,12 @@ export const InputSubmitContainer = styled.div`
 `;
 
 export const InputSubmit = styled.input`
+	background-color: white;
+	font-size: 1em;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		width: 100%;
 		border-radius: 10px;
 		border: 5px solid transparent;
-		font-size: 10px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		/* background-color: plum;  */

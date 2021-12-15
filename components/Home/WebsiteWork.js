@@ -6,7 +6,6 @@ import {
 	SiteHeaderContainer,
 	SiteHeader,
 	Line,
-	Line1,
 	SiteLinkContainer,
 	TextContainer,
 	Text,
@@ -25,7 +24,6 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-
 import EcommerceImage from '../../public/Images/HomePage/Ecommence.mockupsAll.png';
 
 import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
@@ -40,7 +38,6 @@ function WebsiteWork() {
 			<SectionHeaderContainer>
 				<SectionHeader>Developed Websites</SectionHeader>
 				<Line></Line>
-				<Line1></Line1>
 			</SectionHeaderContainer>
 			<Wrapper>
 				<Container>

@@ -33,17 +33,18 @@ export const Container = styled.div`
 	}
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled.article`
 	/* display: flex; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: pink; */
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		margin: 0 30px;
+		margin: 20px 70px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}

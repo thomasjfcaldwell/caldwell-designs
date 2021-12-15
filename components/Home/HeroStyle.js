@@ -42,6 +42,7 @@ export const TextContainer = styled.article`
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 		width: 80%;
+		margin: 2em auto;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		width: 60%;
@@ -211,11 +212,13 @@ export const LinkButton = styled.a`
 	letter-spacing: 0.05em;
 	border: none;
 	:hover {
-		background-color: white;
-		color: #727272;
+		background-color: #e85a4f;
+		color: white;
 		letter-spacing: 0.1em;
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 0.7em;
+		border-radius: 20px;
+		padding: 0.2em 0.4em;
 	}
 	@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
 		font-size: 0.5em;
@@ -236,7 +239,7 @@ export const LinkButton = styled.a`
 		line-height: 12px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		font-size: 1.1em;
+		font-size: 0.8em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
 	}

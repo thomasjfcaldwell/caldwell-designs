@@ -56,79 +56,35 @@ export const SectionHeader = styled.h2`
 
 export const Line = styled.div`
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		height: 1px;
-		width: 15.5em;
+		height: 2px;
+		width: 14em;
 		background-color: #e85a4f;
-		margin-top: -10px;
-		padding: 1px;
+		margin-top: -12px;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		height: 1px;
-		width: 22.8em;
+		width: 20em;
 		background-color: #e85a4f;
 		margin-top: -12px;
-		margin-left: 2px;
 		padding: 1px;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		height: 1px;
-		width: 27.2em;
+		height: 2px;
+		width: 23.2em;
 		background-color: #e85a4f;
 		margin-top: -12px;
-		margin-left: 9px;
-		padding: 1px;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		height: 1px;
-		width: 27.4em;
+		height: 2px;
+		width: 25.4em;
 		background-color: #e85a4f;
 		margin-top: -12px;
-		padding: 1px;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		height: 2px;
-		width: 440px;
+		width: 25.4em;
 		background-color: #e85a4f;
 		margin-top: -7px;
-		padding: 2px; 
-	}
-`;
-export const Line1 = styled.div`
-	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		height: 2px;
-		width: 15.5em;
-		background-color: #e85a4f;
-		margin-top: -5px;
-	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		height: 1px;
-		width: 22.8em;
-		background-color: #e85a4f;
-		margin-top: -5px;
-		margin-left: 2px;
-		padding: 1px;
-	}
-	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		height: 1px;
-		width: 27.2em;
-		background-color: #e85a4f;
-		margin-top: -5px;
-		margin-left: 9px;
-		padding: 1px;
-	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		height: 1px;
-		width: 27.4em;
-		background-color: #e85a4f;
-		margin-top: -5px;
-		padding: 1px;
-	}
-	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		height: 1px;
-		padding:2px;
-		width: 440px;
-		background-color: #e85a4f;
-		margin-top: -10px;
 	}
 `;
 

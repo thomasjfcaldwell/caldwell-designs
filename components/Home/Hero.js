@@ -27,7 +27,7 @@ function Hero() {
 
 	console.log(golfBall);
 
-	let iconStyles = { margin: '0 2px', paddingBottom:'2px', };
+	let iconStyles = { margin: '0 2px', paddingBottom: '2px' };
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
 	}, []);
@@ -76,10 +76,12 @@ function Hero() {
 							</LinkButton>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
-							<LinkButton>
-								Work History
-								<GrFormNextLink size={11} style={iconStyles} />
-							</LinkButton>
+							<Link href='/playing' passHref>
+								<LinkButton>
+									Work History
+									<GrFormNextLink size={11} style={iconStyles} />
+								</LinkButton>
+							</Link>
 						</LinkButtonContainer>
 					</LinksContainer>
 				</ContentContainer>
