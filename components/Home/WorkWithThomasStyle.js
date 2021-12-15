@@ -2,25 +2,31 @@ import styled from 'styled-components';
 
 export const WorkWithThomasWrapper = styled.div`
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		display: flex;
 		flex-direction: column;
+		background-color: pink;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-		flex-direction: column;
+		/* flex-direction: column; */
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-		flex-direction: row;
+		/* flex-direction: row;
 		flex-wrap: nowrap;
-		margin: 2em auto;
+		margin: 2em auto; */
+		background-color: pink;
 	}
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
-		flex-direction: row;
+		/* flex-direction: row;
 		flex-wrap: nowrap;
-		margin: 2em auto;
+		margin: 2em auto; */
+		background-color: green;
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
+		/* background-color: pink; */
+		background-color: blue;
 	}
 `;
 

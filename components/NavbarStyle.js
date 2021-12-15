@@ -1,21 +1,28 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	display: flex;
-	@media only screen and (min-device-width: 80px) and (max-device-width: 480px) {
-		height: 50vh;
+	/* display: flex; */
+	display: grid;
+	grid-template-columns: 50% 50%;
+	min-width:320px;
+	max-width:1200px;
+	margin: 0 auto;
+	align-items:center;
+	/* @media only screen and (min-device-width: 80px) and (max-device-width: 480px) {
+		/* height: 50vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		margin: 1em 0;
+		margin: 1em 0; */
+		
 	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	/* @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		/* background-color: crimson; */
-		width: 100%;
+		/* width: 100%;
 		margin: 0 10px;
 		padding: 50px;
 	}
@@ -29,8 +36,9 @@ export const Container = styled.div`
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
 		align-items: center;
-		justify-content: space-evenly;
-	}
+		justify-content: space-between;
+		background-color: orange;
+	} */ */ */
 `;
 
 export const TitleContainer = styled.article`
@@ -38,7 +46,7 @@ export const TitleContainer = styled.article`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: pink; */
+	background-color: pink;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -49,7 +57,7 @@ export const TitleContainer = styled.article`
 	@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
 	}
 	@media only screen and (min-device-width: 1281px) and (max-device-width: 1980px) {
-		margin-left: -200px;
+		/* margin-left: -200px; */
 	}
 `;
 export const Title = styled.h1`
@@ -70,10 +78,13 @@ export const Title = styled.h1`
 
 export const LinkContainer = styled.div`
 	display: flex;
+	justify-content: center;
+	background-color: purple;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		margin: 2em 0em;
+		margin: 1em 0em;
 	}
 	@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+		justify-content: space-around;
 	}
 	@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
 	}

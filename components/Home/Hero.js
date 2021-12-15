@@ -22,6 +22,11 @@ import {
 
 import { Title, Line, Line1, TitleContainer } from './HomeStyle';
 
+const linkContainerStyles = {
+	backgroundColor: 'Green',
+	minWidth: '200px',
+};
+
 function Hero() {
 	let golfBall = ['one', 'two', 'three'];
 
@@ -62,7 +67,7 @@ function Hero() {
 							// size={500}
 						/>
 					</ImageContainer>
-					<LinksContainer>
+					<LinksContainer style={ linkContainerStyles }>
 						<LinkButtonContainer>
 							<LinkButton>
 								Services & Pricing

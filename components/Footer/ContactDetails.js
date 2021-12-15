@@ -18,6 +18,7 @@ function ContactDetails() {
 
 	return (
 		<div>
+			<p>Contact Details</p>
 			<Container>
 				<ContentContainer>
 					<Text>
@@ -46,6 +47,7 @@ function ContactDetails() {
 						<LinkText>Linkedin</LinkText>
 					</Link>
 				</ContentContainer>
+			
 			</Container>
 		</div>
 	);

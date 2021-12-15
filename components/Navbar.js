@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 import {
 	Container,
 	Title,
@@ -12,10 +13,15 @@ import logo from '.././public/Images/HomePage/Asset 3.svg';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
+let titleStyle = { }
+
 	return (
 		<>
+			<Head>
+				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+			</Head>
 			<Container>
-				<TitleContainer>
+				<TitleContainer style={titleStyle}>
 					<Link href='/' passHref>
 						<div>
 							<Image src={logo} alt='thomascaldwellportfolio' />

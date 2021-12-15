@@ -4,6 +4,7 @@ export const Container = styled.section`
 	margin: 1em auto;
 	display: flex;
 	justify-content: space-around;
+	width: 100%;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 		padding: 0px 5px;
 	}

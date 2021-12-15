@@ -40,7 +40,6 @@ export const Form = styled.form`
 	flex-direction: column;
 	align-items: center;
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-		width: 90%;
 		border-radius: 10px;
 		padding: 10px;
 	}
