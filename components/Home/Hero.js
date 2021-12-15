@@ -20,18 +20,11 @@ import {
 	RequestContainer,
 } from './HeroStyle';
 
-import { Title, Line, Line1, TitleContainer } from './HomeStyle';
+import { Title, Line, TitleContainer } from './HomeStyle';
 
-const linkContainerStyles = {
-	backgroundColor: 'Green',
-	minWidth: '200px',
-};
+
 
 function Hero() {
-	let golfBall = ['one', 'two', 'three'];
-
-	console.log(golfBall);
-
 	let iconStyles = { margin: '0 2px', paddingBottom: '2px' };
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
@@ -41,7 +34,6 @@ function Hero() {
 			<TitleContainer data-aos='fade-up'>
 				<Title>Get To Know Thomas</Title>
 				<Line></Line>
-				<Line1></Line1>
 			</TitleContainer>
 			<Wrapper>
 				<TextContainer>
@@ -67,7 +59,7 @@ function Hero() {
 							// size={500}
 						/>
 					</ImageContainer>
-					<LinksContainer style={ linkContainerStyles }>
+					<LinksContainer>
 						<LinkButtonContainer>
 							<LinkButton>
 								Services & Pricing

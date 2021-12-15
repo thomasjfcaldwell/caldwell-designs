@@ -20,7 +20,7 @@ export const Title = styled.h1`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		padding-left: 120px;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		padding-left: 120px;
 	}
 `;
@@ -58,7 +58,7 @@ export const Line = styled.div`
 		margin-top: -10px;
 		margin-left: 126px;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		width: 256px;
 		height: 3px;
 		background-color: #e98074;
@@ -73,7 +73,7 @@ export const Line1 = styled.div`
 		width: 250px;
 		height: 2px;
 		margin-left: 47px;
-		margin-top:1px;	
+		margin-top: 1px;
 	}
 	@media only screen and (min-width: 425px) and (max-width: 480px) {
 		width: 256px;
@@ -99,17 +99,18 @@ export const Line1 = styled.div`
 		margin-top: 1px;
 		margin-left: 126px;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		width: 256px;
 		height: 3px;
 		background-color: #e98074;
 		margin-top: 1px;
-		margin-left: 120px; 
+		margin-left: 120px;
 	}
 `;
 
 export const TitleContainer = styled.div`
 	width: 35%;
+	margin: 2em 0;
 `;
 
 export const Container = styled.div`

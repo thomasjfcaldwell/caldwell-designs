@@ -22,7 +22,6 @@ export const SectionHeaderContainer = styled.div`
 		align-items: center;
 	}
 	@media only screen and (min-width: 1281px)  {
-		 background-color: slateblue; 
 	}
 `;
 

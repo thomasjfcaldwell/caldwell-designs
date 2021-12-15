@@ -7,7 +7,6 @@ export const WorkWithThomasWrapper = styled.div`
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		flex-direction: column;
-		background-color: pink;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		/* flex-direction: column; */
@@ -16,17 +15,14 @@ export const WorkWithThomasWrapper = styled.div`
 		/* flex-direction: row;
 		flex-wrap: nowrap;
 		margin: 2em auto; */
-		background-color: pink;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		/* flex-direction: row;
 		flex-wrap: nowrap;
 		margin: 2em auto; */
-		background-color: green;
 	}
 	@media only screen and (min-width: 1281px) {
-		/* background-color: pink; */
-		background-color: blue;
+		
 	}
 `;
 

@@ -21,7 +21,6 @@ export const Wrapper = styled.section`
 		/* padding: 1em; */
 	}
 	@media only screen and (min-width: 1281px) {
-		background-color: pink;
 		align-items: center;
 		text-decoration: none;
 		padding: 4em;
