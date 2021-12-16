@@ -22,8 +22,6 @@ import {
 
 import { Title, Line, TitleContainer } from './HomeStyle';
 
-
-
 function Hero() {
 	let iconStyles = { margin: '0 2px', paddingBottom: '2px' };
 	useEffect(() => {
@@ -73,7 +71,7 @@ function Hero() {
 							</LinkButton>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
-							<Link href='/playing' passHref>
+							<Link href='/workhistory' passHref>
 								<LinkButton>
 									Work History
 									<GrFormNextLink size={11} style={iconStyles} />

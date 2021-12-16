@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Title = styled.h1`
 	font-weight: 600;
 	line-height: 0.8em;
-	font-size: 3.9em;
+	font-size: 3.5em;
 	@media only screen and (min-width: 80px) and (max-width: 424px) {
-		padding-left: 40px;
+		padding-left: 20px;
 	}
 	@media only screen and (min-width: 425px) and (max-width: 480px) {
 		padding-left: 50px;
@@ -31,7 +31,7 @@ export const Line = styled.div`
 	@media only screen and (min-width: 80px) and (max-width: 424px) {
 		width: 250px;
 		height: 2px;
-		margin-left: 47px;
+		margin-left: 20px;
 		margin-top: -10px;
 	}
 	@media only screen and (min-width: 425px) and (max-width: 480px) {

@@ -26,10 +26,8 @@ export const Container = styled.div`
 		justify-content: space-around;
 	}
 	@media only screen and (min-width: 1281px) {
-		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		height: 40vh;
 	}
 `;
 

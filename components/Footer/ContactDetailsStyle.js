@@ -82,5 +82,6 @@ export const LinkText = styled.a`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
 	@media only screen and (min-width: 1281px)  {
+		font-size:1.5em;
 	}
 `;

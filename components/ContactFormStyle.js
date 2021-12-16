@@ -42,10 +42,10 @@ export const Form = styled.form`
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		border-radius: 10px;
 		width: 90%;
-		padding: 10px; 
+		padding: 10px;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		/* width: 70%; */
+		width: 55%;
 		margin: 10px 0;
 		border-radius: 10px;
 		padding: 10px;

@@ -73,7 +73,7 @@ export const Text = styled.p`
 		text-align: center;
 	}
 	@media only screen and (min-width: 1281px)  {
-		font-size: 0.7em;
+		font-size: 0.9em;
 		line-height: 1.7em;
 		text-align: center;
 	}
@@ -216,9 +216,9 @@ export const LinkButton = styled.a`
 		color: white;
 		letter-spacing: 0.1em;
 		font-weight: 400;
-		font-size: 0.7em;
+		/* font-size: 0.7em; */
 		border-radius: 20px;
-		padding: 0.2em 0.4em;
+		padding: 0.5em 1em;
 	}
 	@media only screen and (min-width: 0px) and (max-width: 320px) {
 		font-size: 0.5em;

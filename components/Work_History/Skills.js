@@ -1,0 +1,47 @@
+import React from 'react';
+import { Title, Line, TitleContainer } from '../Home/HomeStyle';
+import {
+	SkillsWrapper,
+	SkillsContainer,
+	SkillsHeader,
+	SkillsList,
+	SkillsListItem,
+} from './SkillsStyles';
+
+export default function Skills() {
+	return (
+		<div>
+			<TitleContainer>
+				<Title>Tech Skills</Title>
+				<Line></Line>
+			</TitleContainer>
+			<SkillsWrapper>
+				<SkillsContainer>
+					<SkillsHeader>Languages & Frameworks</SkillsHeader>
+					<SkillsList>
+						<SkillsListItem>HTML</SkillsListItem>
+						<SkillsListItem>CSS</SkillsListItem>
+						<SkillsListItem>JavaScript</SkillsListItem>
+						<SkillsListItem>React</SkillsListItem>
+						<SkillsListItem>Next JS</SkillsListItem>
+					</SkillsList>
+				</SkillsContainer>
+				<SkillsContainer>
+					<SkillsHeader>Software</SkillsHeader>
+					<SkillsList>
+						<SkillsListItem>Photoshop</SkillsListItem>
+						<SkillsListItem>Illustrator</SkillsListItem>
+						<SkillsListItem>InDesign</SkillsListItem>
+						<SkillsListItem>InDesign</SkillsListItem>
+					</SkillsList>
+				</SkillsContainer>
+				<SkillsContainer>
+					<SkillsHeader>Other Skills</SkillsHeader>
+					<SkillsList>
+						<SkillsListItem>HTML</SkillsListItem>
+					</SkillsList>
+				</SkillsContainer>
+			</SkillsWrapper>
+		</div>
+	);
+}
