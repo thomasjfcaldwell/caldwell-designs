@@ -117,3 +117,20 @@ export const TitleContainer = styled.div`
 export const Container = styled.div`
 	margin: 2em auto;
 `;
+
+export const HomeButtonContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const HomeButtonText = styled.div`
+	text-decoration: none;
+	color: #8e8d8a;
+	display: inline-block;
+	font-size: 0.7em;
+	margin-top: 3em;
+	padding: 0.5em 1em;
+	border-radius: 30px;
+	border: solid #8e8d8a 1px;
+`;

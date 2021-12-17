@@ -6,7 +6,9 @@ import MarketingMaterials from '../components/Home/MarketingMaterials';
 import WorkWithThomas from '../components/Home/WorkWithThomas';
 import { Layout } from '../layout/Layout';
 import Grid from '../components/Home/Grid';
-import {Container} from '../components/Home/HomeStyle'
+import { Container } from '../components/Home/HomeStyle';
+import Jobs from '../components/Work_History/Jobs';
+import Skills from '../components/Work_History/Skills';
 
 class Home extends Component {
 	render() {
@@ -20,7 +22,10 @@ class Home extends Component {
 						<WebsiteWork />
 					</Container>
 					<Container>
-						<Grid />
+						<Jobs />
+					</Container>
+					<Container>
+						<Skills />
 					</Container>
 					{/* <MarketingMaterials /> */}
 					<Container>

@@ -83,10 +83,11 @@ export const WorkExperienceTechnologies = styled.ul`
 `;
 export const WorkExperienceTechnologiesList = styled.li`
 	font-size: 0.8em;
-	font-weight: 700;
-	margin: 0 10px;
+	font-weight: 450;
+	margin: 0 2px;
+	color: #e98074;
 	@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-		margin: 0;
+		font-size: 0.6em;
 	}
 `;
 

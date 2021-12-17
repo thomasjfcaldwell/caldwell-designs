@@ -59,16 +59,20 @@ function Hero() {
 					</ImageContainer>
 					<LinksContainer>
 						<LinkButtonContainer>
-							<LinkButton>
-								Services & Pricing
-								<GrFormNextLink size={11} style={iconStyles} />
-							</LinkButton>
+							<Link href='/contact' passHref>
+								<LinkButton>
+									Contact
+									<GrFormNextLink size={11} style={iconStyles} />
+								</LinkButton>
+							</Link>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
-							<LinkButton>
-								Previous Work
-								<GrFormNextLink size={11} style={iconStyles} />
-							</LinkButton>
+							<Link href='/examplesofwork' passHref>
+								<LinkButton>
+									Previous Work
+									<GrFormNextLink size={11} style={iconStyles} />
+								</LinkButton>
+							</Link>
 						</LinkButtonContainer>
 						<LinkButtonContainer>
 							<Link href='/workhistory' passHref>
@@ -81,10 +85,10 @@ function Hero() {
 					</LinksContainer>
 				</ContentContainer>
 				<RequestContainer>
-					<Link href='/playing' passHref>
+					<Link href='/' passHref>
 						<LinkText>
 							<a>
-								Project Request <BsFillArrowRightCircleFill size={10} />
+								Go To Home Page <BsFillArrowRightCircleFill size={10} />
 							</a>
 						</LinkText>
 					</Link>

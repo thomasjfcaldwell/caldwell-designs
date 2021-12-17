@@ -89,7 +89,7 @@ export const LinkText = styled.a`
 	margin: 0 20px;
 	&:hover {
 		color: #727272;
-		opacity: 10;
+		border: solid #727272 1.5px;
 	}
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		font-size: 0.6em;

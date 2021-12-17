@@ -45,7 +45,7 @@ export const Form = styled.form`
 		padding: 10px;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		width: 55%;
+		width: 80%;
 		margin: 10px 0;
 		border-radius: 10px;
 		padding: 10px;
@@ -226,6 +226,7 @@ export const InputSubmitContainer = styled.div`
 export const InputSubmit = styled.input`
 	background-color: white;
 	font-size: 1em;
+	color: #7277272;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 100%;
 		border-radius: 10px;

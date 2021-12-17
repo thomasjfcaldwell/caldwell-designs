@@ -8,6 +8,7 @@ import {
 import ContactForm from './ContactForm';
 import ContactDetails from './Footer/ContactDetails';
 import { Title, Line, TitleContainer } from './Home/HomeStyle';
+import HomeButton from './HomeButton';
 
 function Footer() {
 	return (
@@ -17,13 +18,16 @@ function Footer() {
 				<Line></Line>
 			</TitleContainer>
 			<FooterWrapper>
-			<ContactDetailsContainer>
-				<ContactDetails />
-			</ContactDetailsContainer>
+				<ContactDetailsContainer>
+					<ContactDetails />
+				</ContactDetailsContainer>
 				<ContactContainer>
 					<ContactForm />
 				</ContactContainer>
-			</FooterWrapper> 
+			</FooterWrapper>
+			<div style={{ margin: '1em auto' }}>
+				<HomeButton />
+			</div>
 		</>
 	);
 }

@@ -1,6 +1,7 @@
 import { Layout } from '../layout/Layout';
 
 import Work from '../components/Examples/Work';
+import HomeButton from '../components/HomeButton';
 
 function Examples() {
 	return (
@@ -8,6 +9,7 @@ function Examples() {
 			<div>
 				<Layout>
 					<Work />
+					<HomeButton />
 				</Layout>
 			</div>
 		</>

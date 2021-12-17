@@ -38,9 +38,9 @@ let titleStyle = { }
 							/>
 						</LinkText>
 					</Link>
-					<Link href='/playing' passHref>
+					<Link href='/contact' passHref>
 						<LinkText>
-							Project Request{' '}
+							Contact
 							<BsFillArrowRightCircleFill
 								size={10}
 								style={{ margin: '0 2px' }}
