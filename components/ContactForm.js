@@ -30,7 +30,7 @@ function ContactForm() {
 			phone,
 			message,
 		};
-		fetch('http://caldwell-designs.vercel.app/api/contact', {
+		fetch('https://caldwell-designs.vercel.app/api/contact', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json, text/plain, */*',
@@ -56,7 +56,7 @@ function ContactForm() {
 				<Header>Send a Project Request</Header>
 			</HeaderContainer> */}
 
-			<Form>
+			<Form action='get'>
 				<FormInputContainer>
 					<Label id='name' htmlFor='name'>
 						Name
