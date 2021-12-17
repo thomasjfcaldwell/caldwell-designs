@@ -206,19 +206,16 @@ export const LinkButtonContainer = styled.div`
 `;
 
 export const LinkButton = styled.a`
+	text-decoration: none;
 	color: #e85a4f;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	border: none;
+	display: inline-block;
+	font-size: 0.5em;
+	padding: 0.5em 1em;
+	border-radius: 30px;
+	border: solid #e98074 1px;
 	:hover {
 		background-color: #e85a4f;
 		color: white;
-		letter-spacing: 0.1em;
-		font-weight: 400;
-		/* font-size: 0.7em; */
-		border-radius: 20px;
-		padding: 0.5em 1em;
 	}
 	@media only screen and (min-width: 0px) and (max-width: 320px) {
 		font-size: 0.5em;
@@ -243,8 +240,8 @@ export const LinkButton = styled.a`
 		letter-spacing: 0.04em;
 		line-height: 12px;
 	}
-	@media only screen and (min-width: 1281px)  {
-		font-size: 1.2em;
+	@media only screen and (min-width: 1281px) {
+		font-size: 0.9em;
 		letter-spacing: 0.04em;
 		line-height: 12px;
 	}
@@ -268,13 +265,13 @@ export const RequestContainer = styled.div`
 `;
 export const LinkText = styled.p`
 	text-decoration: none;
-	color: #e98074;
+	color: #8e8d8a;
 	display: inline-block;
 	font-size: 0.7em;
 	margin-top: 3em;
 	padding: 0.5em 1em;
 	border-radius: 30px;
-	border: solid #e98074 1px;
+	border: solid #8e8d8a 1px;
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
@@ -284,6 +281,6 @@ export const LinkText = styled.p`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;

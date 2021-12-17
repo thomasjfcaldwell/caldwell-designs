@@ -5,7 +5,8 @@ export const Title = styled.h1`
 	line-height: 0.8em;
 	font-size: 3.5em;
 	@media only screen and (min-width: 80px) and (max-width: 424px) {
-		padding-left: 20px;
+		padding-left: 10px;
+		font-size: 3.2em;
 	}
 	@media only screen and (min-width: 425px) and (max-width: 480px) {
 		padding-left: 50px;

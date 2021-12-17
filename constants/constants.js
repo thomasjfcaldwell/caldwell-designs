@@ -12,6 +12,7 @@ export const process = [
 		description:
 			'In are first meeting we will talk about your exit goods and requirements, I’ll answer any questions you have define goals and next steps',
 		headline: 'First Meeting',
+		
 	},
 	{
 		id: 2,

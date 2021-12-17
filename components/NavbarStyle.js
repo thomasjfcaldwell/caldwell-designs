@@ -81,30 +81,33 @@ export const LinkContainer = styled.div`
 
 export const LinkText = styled.a`
 	text-decoration: none;
-	color: #e98074;
+	color: #e85a4f;
+	display: inline-block;
+	padding: 0.3em 0.7em;
+	border-radius: 30px;
+	border: solid #e85a4f 1.5px;
+	margin: 0 20px;
 	&:hover {
 		color: #727272;
 		opacity: 10;
-		cursor: progress;
 	}
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		font-size: 0.7em;
+		font-size: 0.6em;
 		margin: 0 0.5em;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		font-size: 0.8em;
+		font-size: 0.6em;
 		margin: 0 0.9em;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		font-size: 0.8em;
-		padding: 3em;
+		font-size: 0.6em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		font-size: 0.6em;
 		padding: 2em;
 	}
 	@media only screen and (min-width: 1281px) {
-		font-size: 0.9em;
-		padding: 4em;
+		font-size: 0.8em;
+		/* padding: 4em; */
 	}
 `;
