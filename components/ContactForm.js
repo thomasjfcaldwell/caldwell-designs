@@ -30,7 +30,7 @@ function ContactForm() {
 			phone,
 			message,
 		};
-		fetch('https://caldwell-designs.vercel.app/api/contact', {
+		fetch('http://caldwell-designs.vercel.app/api/contact', {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json, text/plain, */*',
