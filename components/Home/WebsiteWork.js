@@ -69,7 +69,7 @@ function WebsiteWork() {
 				</Container>
 				<Container>
 					<SiteHeaderContainer>
-						<SiteHeader>POP-UP PICNIC SITE</SiteHeader>
+						<SiteHeader>Pop-Up Picnic Site</SiteHeader>
 					</SiteHeaderContainer>
 					<ImageContainer>
 						<Image src={PicnicImage} alt='Mock Up Of Picnic site' />
