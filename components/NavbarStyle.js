@@ -4,7 +4,7 @@ export const Container = styled.div`
 	display: flex;
 
 	@media only screen and (min-width: 80px) and (max-width: 480px) {
-		height: 80vh;
+		height: 50vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

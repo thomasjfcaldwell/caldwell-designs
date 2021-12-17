@@ -21,7 +21,7 @@ export const SectionHeaderContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -47,7 +47,7 @@ export const SectionHeader = styled.h2`
 		font-size: 2.3em;
 		letter-spacing: 0.1em;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		letter-spacing: 0.1em;
 		font-size: 2.3em;
 	}
@@ -79,7 +79,7 @@ export const Line = styled.div`
 		background-color: #e85a4f;
 		margin-top: -12px;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		height: 2px;
 		width: 25.4em;
 		background-color: #e85a4f;
@@ -104,7 +104,7 @@ export const Wrapper = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		margin: 3em auto;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		margin: 4em auto;
 	}
 `;
@@ -120,8 +120,7 @@ export const Container = styled.div`
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		width: 50%;
-		background-color: honeydew;
-		padding: 4em;
+		padding: 1.5em;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		padding: 50px;
@@ -129,7 +128,7 @@ export const Container = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		/* background-color: hotpink; */
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		padding: 0 5em;
 	}
 `;
@@ -144,7 +143,7 @@ export const SiteHeaderContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -168,7 +167,7 @@ export const SiteHeader = styled.p`
 		font-size: 0.7em;
 		margin-top: 1.5em;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -183,11 +182,12 @@ export const ImageContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
 export const TextContainer = styled.div`
+	height: 2em;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 90%;
 		margin-top: 3em;
@@ -196,12 +196,13 @@ export const TextContainer = styled.div`
 		width: 100%;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		height: 3em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 80%;
 		margin: 10px auto;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -212,7 +213,6 @@ export const Text = styled.p`
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		font-size: 0.6em;
-		text-align: center;
 		margin: 10px 0;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -222,7 +222,7 @@ export const Text = styled.p`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		font-size: 0.8em;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -239,7 +239,7 @@ export const SiteLinkContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 
@@ -248,16 +248,15 @@ export const LinkText = styled.a`
 	align-items: center;
 	text-decoration: none;
 	color: #e98074;
+	font-size: 0.6em;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		font-size: 0.5em;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		font-size: 0.6em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;

@@ -18,6 +18,9 @@ import {
 import { Title, Line, TitleContainer } from '../Home/HomeStyle';
 
 export default function Jobs() {
+	const iconStyles = {
+		margin:'5px 10px',
+	};
 	return (
 		<div>
 			<TitleContainer>
@@ -33,13 +36,16 @@ export default function Jobs() {
 						<DetailsHeader>Technologies & Responsibilities</DetailsHeader>
 						<WorkExperienceTechnologies>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} /> {job.technologies[0]}
+								<AiFillRightCircle size={14} style={iconStyles} />{' '}
+								{job.technologies[0]}
 							</WorkExperienceTechnologiesList>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} /> {job.technologies[1]}
+								<AiFillRightCircle size={14} style={iconStyles} />{' '}
+								{job.technologies[1]}
 							</WorkExperienceTechnologiesList>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} /> {job.technologies[2]}
+								<AiFillRightCircle size={14} style={iconStyles} />
+								{job.technologies[2]}
 							</WorkExperienceTechnologiesList>
 						</WorkExperienceTechnologies>
 						<WorkExperienceResponsibilities>

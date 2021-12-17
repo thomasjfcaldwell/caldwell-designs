@@ -27,8 +27,10 @@ export const Header = styled.h1`
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: 600;
-	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	height: 1em;
+	@media only screen and (min-width: 320px) and (max-width: 1024px) {
 		font-size: 0.9em;
+		height: 2em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		font-size: 0.9em;
@@ -39,29 +41,25 @@ export const Header = styled.h1`
 	}
 `;
 
-
 export const WorkExperienceDate = styled.p`
 	font-size: 0.7em;
 	text-align: center;
+	height: 2em;
 `;
 
 export const DetailsHeader = styled.h2`
 	font-size: 0.7em;
-	margin: 5px auto;
 	text-align: center;
 	font-weight: 600;
-	border-radius: 10px;
-	border: solid 2px black;
-	padding: 5px 3px;
 	display: inline;
+	height: 2em;
 `;
 
 export const WorkExperiencePosition = styled.p`
 	text-align: center;
-	font-size: 1.3em;
 	font-weight: 200;
 	color: red;
-	margin-top: -10px;
+	height: 2em;
 	@media only screen and (min-width: 769px) and (max-width: 1023px) {
 		font-size: 0.75em;
 	}
@@ -76,17 +74,18 @@ export const WorkExperiencePosition = styled.p`
 
 export const WorkExperienceTechnologies = styled.ul`
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: flex-start;
 	list-style-type: none; /* Remove bullets */
 	padding: 0; /* Remove padding */
-	margin: 15px 0 0 0; /* Remove margins */
+	margin: 0 auto; /* Remove margins */
 `;
 export const WorkExperienceTechnologiesList = styled.li`
-	font-size: 0.4em;
+	font-size: 0.8em;
 	font-weight: 700;
 	margin: 0 10px;
 	@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-		font-size: 0.3em;
 		margin: 0;
 	}
 `;
@@ -100,6 +99,6 @@ export const WorkExperienceResponsibilities = styled.p`
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		font-size: 0.8em;
 		line-height: 1.3em;
-		margin: 1em 4em;
+		margin: 0.4em 8em;
 	}
 `;

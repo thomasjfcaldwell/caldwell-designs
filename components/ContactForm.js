@@ -52,9 +52,9 @@ function ContactForm() {
 
 	return (
 		<ContactFormWrapper>
-			<HeaderContainer>
+			{/* <HeaderContainer>
 				<Header>Send a Project Request</Header>
-			</HeaderContainer>
+			</HeaderContainer> */}
 
 			<Form>
 				<FormInputContainer>
