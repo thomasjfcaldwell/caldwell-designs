@@ -32,13 +32,14 @@ export default function Skills() {
 						<SkillsListItem>Photoshop</SkillsListItem>
 						<SkillsListItem>Illustrator</SkillsListItem>
 						<SkillsListItem>InDesign</SkillsListItem>
-						<SkillsListItem>InDesign</SkillsListItem>
+						<SkillsListItem>Adobe XD</SkillsListItem>
 					</SkillsList>
 				</SkillsContainer>
 				<SkillsContainer>
 					<SkillsHeader>Other Skills</SkillsHeader>
 					<SkillsList>
-						<SkillsListItem>HTML</SkillsListItem>
+						<SkillsListItem>Constant Contact</SkillsListItem>
+						<SkillsListItem>Quickbooks</SkillsListItem>
 					</SkillsList>
 				</SkillsContainer>
 			</SkillsWrapper>

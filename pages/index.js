@@ -24,9 +24,9 @@ class Home extends Component {
 					<Container>
 						<Jobs />
 					</Container>
-					<Container>
+					{/* <Container>
 						<Skills />
-					</Container>
+					</Container> */}
 					{/* <MarketingMaterials /> */}
 					<Container>
 						<WorkWithThomas />

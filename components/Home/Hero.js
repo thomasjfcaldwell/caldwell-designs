@@ -84,7 +84,7 @@ function Hero() {
 						</LinkButtonContainer>
 					</LinksContainer>
 				</ContentContainer>
-				<RequestContainer>
+				{/* <RequestContainer>
 					<Link href='/' passHref>
 						<LinkText>
 							<a>
@@ -92,7 +92,7 @@ function Hero() {
 							</a>
 						</LinkText>
 					</Link>
-				</RequestContainer>
+				</RequestContainer> */}
 			</Wrapper>
 		</div>
 	);
