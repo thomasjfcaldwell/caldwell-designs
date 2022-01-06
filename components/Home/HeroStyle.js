@@ -30,7 +30,7 @@ export const Wrapper = styled.section`
 export const TextContainer = styled.article`
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 90%;
-		margin: 4em 0;
+		margin: 0;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		width: 80%;
@@ -44,7 +44,7 @@ export const TextContainer = styled.article`
 		width: 80%;
 		margin: 2em auto;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		width: 60%;
 		margin: 3em auto;
 	}
@@ -72,7 +72,7 @@ export const Text = styled.p`
 		line-height: 1.5em;
 		text-align: center;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		font-size: 0.9em;
 		line-height: 1.7em;
 		text-align: center;
@@ -100,7 +100,7 @@ export const ContentContainer = styled.div`
 		align-items: center;
 		justify-content: space-around;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		align-items: center;
 		justify-content: space-around;
 		margin: 2em auto;
@@ -128,7 +128,7 @@ export const ImageContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		width: 40%;
 		justify-content: center;
 		align-items: center;
@@ -149,7 +149,7 @@ export const Image = styled.img`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 70%;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		width: 90%;
 	}
 `;
@@ -178,7 +178,7 @@ export const LinksContainer = styled.div`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		flex-direction: column;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		flex-direction: column;
 	}
 `;
@@ -199,7 +199,7 @@ export const LinkButtonContainer = styled.div`
 		margin: 0.3em;
 		width: 500px;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		margin: 0.5em;
 		width: 400px;
 	}
@@ -260,7 +260,7 @@ export const RequestContainer = styled.div`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 	}
 `;
 export const LinkText = styled.p`

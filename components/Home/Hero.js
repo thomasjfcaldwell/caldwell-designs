@@ -51,8 +51,8 @@ function Hero() {
 				<ContentContainer>
 					<ImageContainer>
 						<Image
-							src='https://i.ibb.co/DYQm9jW/thomasportfolioimage-1x1.jpg'
-							alt='thomasportfolioimage'
+							src='https://i.ibb.co/dJjyPrP/New-Portfolio-Image.jpg'
+							alt='New-Portfolio-Image'
 							border='0'
 							// size={500}
 						/>
