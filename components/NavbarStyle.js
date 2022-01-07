@@ -66,8 +66,10 @@ export const TitleContainer = styled.div`
 
 export const LinkContainer = styled.div`
 	display: flex;
+
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		margin: 1em 0em;
+		
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
@@ -79,7 +81,7 @@ export const LinkContainer = styled.div`
 	}
 `;
 
-export const LinkText = styled.a`
+export const LinkText = styled.button`
 	text-decoration: none;
 	color: #e85a4f;
 	display: inline-block;
@@ -87,6 +89,8 @@ export const LinkText = styled.a`
 	border-radius: 30px;
 	border: solid #e85a4f 1.5px;
 	margin: 0 20px;
+	background-color: transparent;
+	line-height: 18px;
 	&:hover {
 		color: #727272;
 		border: solid #727272 1.5px;

@@ -34,7 +34,7 @@ let titleStyle = { }
 							Examples of Work
 							<BsFillArrowRightCircleFill
 								size={10}
-								style={{ margin: '0 2px' }}
+								style={{ margin: '0 5px' }}
 							/>
 						</LinkText>
 					</Link>
@@ -43,7 +43,7 @@ let titleStyle = { }
 							Contact
 							<BsFillArrowRightCircleFill
 								size={10}
-								style={{ margin: '0 2px' }}
+								style={{ margin: '0 5px' }}
 							/>
 						</LinkText>
 					</Link>

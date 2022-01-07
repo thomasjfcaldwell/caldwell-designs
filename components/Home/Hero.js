@@ -23,7 +23,7 @@ import {
 import { Title, Line, TitleContainer } from './HomeStyle';
 
 function Hero() {
-	let iconStyles = { margin: '0 2px', paddingBottom: '2px' };
+	let iconStyles = { margin: '0 1px',};
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
 	}, []);
@@ -62,7 +62,7 @@ function Hero() {
 							<Link href='/contact' passHref>
 								<LinkButton>
 									Contact
-									<GrFormNextLink size={11} style={iconStyles} />
+									<GrFormNextLink size={6} style={iconStyles} />
 								</LinkButton>
 							</Link>
 						</LinkButtonContainer>
@@ -70,7 +70,7 @@ function Hero() {
 							<Link href='/examplesofwork' passHref>
 								<LinkButton>
 									Previous Work
-									<GrFormNextLink size={11} style={iconStyles} />
+									<GrFormNextLink size={6} style={iconStyles} />
 								</LinkButton>
 							</Link>
 						</LinkButtonContainer>
@@ -78,7 +78,7 @@ function Hero() {
 							<Link href='/workhistory' passHref>
 								<LinkButton>
 									Work History
-									<GrFormNextLink size={11} style={iconStyles} />
+									<GrFormNextLink size={6} style={iconStyles} />
 								</LinkButton>
 							</Link>
 						</LinkButtonContainer>
