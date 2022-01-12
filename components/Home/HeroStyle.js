@@ -213,6 +213,7 @@ export const LinkButton = styled.a`
 	padding: 0.5em 1em;
 	border-radius: 30px;
 	border: solid #e98074 1px;
+	transition: all 1s;
 	:hover {
 		background-color: #e85a4f;
 		color: white;

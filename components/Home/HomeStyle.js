@@ -124,13 +124,20 @@ export const HomeButtonContainer = styled.div`
 	align-items: center;
 `;
 
-export const HomeButtonText = styled.div`
+export const HomeButtonText = styled.button`
 	text-decoration: none;
 	color: #8e8d8a;
 	display: inline-block;
+	background: none;
 	font-size: 0.7em;
 	margin-top: 3em;
 	padding: 0.5em 1em;
 	border-radius: 30px;
 	border: solid #8e8d8a 1px;
+	transition: all 0.2s;
+	:hover {
+		font-size: 0.8em;
+		cursor: pointer;
+		transform: translateY(-0.25em);
+	}
 `;

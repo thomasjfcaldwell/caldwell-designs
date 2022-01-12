@@ -69,7 +69,6 @@ export const LinkContainer = styled.div`
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		margin: 1em 0em;
-		
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
@@ -91,9 +90,11 @@ export const LinkText = styled.button`
 	margin: 0 20px;
 	background-color: transparent;
 	line-height: 18px;
+	transition: all 2s;
 	&:hover {
 		color: #727272;
 		border: solid #727272 1.5px;
+		cursor: pointer;
 	}
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		font-size: 0.6em;
