@@ -3,6 +3,8 @@ import {
 	FooterWrapper,
 	ContactContainer,
 	ContactDetailsContainer,
+	FooterBottom,
+	FooterBottomText,
 } from './FooterStyles';
 
 import ContactForm from './ContactForm';
@@ -25,9 +27,12 @@ function Footer() {
 					<ContactForm />
 				</ContactContainer>
 			</FooterWrapper>
-			<div style={{ margin: '1em auto' }}>
-				<HomeButton />
-			</div>
+			<HomeButton />
+			<FooterBottom>
+				<FooterBottomText>
+					Made from Scratch By Thomas Caldwell
+				</FooterBottomText>
+			</FooterBottom>
 		</>
 	);
 }

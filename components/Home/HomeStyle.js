@@ -122,6 +122,7 @@ export const HomeButtonContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto 5rem auto;
 `;
 
 export const HomeButtonText = styled.button`

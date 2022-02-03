@@ -25,48 +25,46 @@ function Work() {
 				<Title>Previous Work</Title>
 				<Line></Line>
 			</TitleContainer>
-			<div>
+			<Wrapper>
 				{Projects.map((user, id) => (
-					<Wrapper key={id}>
-						<ContentContainer>
-							<WorkTitle>{user.title}</WorkTitle>
-							<ImageContainer>
-								<Image src={user.image} alt='the app in action' />
-							</ImageContainer>
-							<IntroContainer>
-								<Intro>{user.intro}</Intro>
-							</IntroContainer>
-							<TechnologiesContainer>
-								<Technologies>{user.technologies}</Technologies>
-							</TechnologiesContainer>
-							<LinksContainer>
-								<Link href={user.deployed} passHref>
-									<Text>
-										Deployed Site{' '}
-										<AiOutlineDeploymentUnit
-											size={20}
-											style={{
-												margin: '0 0.7em',
-											}}
-										/>
-									</Text>
-								</Link>
-								<Link href={user.github} passHref>
-									<Text>
-										Github Repo
-										<AiFillGithub
-											size={20}
-											style={{
-												margin: '0 0.7em',
-											}}
-										/>
-									</Text>
-								</Link>
-							</LinksContainer>
-						</ContentContainer>
-					</Wrapper>
+					<ContentContainer key={id}>
+						<WorkTitle>{user.title}</WorkTitle>
+						<ImageContainer>
+							<Image src={user.image} alt='the app in action' />
+						</ImageContainer>
+						<IntroContainer>
+							<Intro>{user.intro}</Intro>
+						</IntroContainer>
+						<TechnologiesContainer>
+							<Technologies>{user.technologies}</Technologies>
+						</TechnologiesContainer>
+						<LinksContainer>
+							<Link href={user.deployed} passHref>
+								<Text>
+									Deployed Site{' '}
+									<AiOutlineDeploymentUnit
+										size={20}
+										style={{
+											margin: '0 0.7em',
+										}}
+									/>
+								</Text>
+							</Link>
+							<Link href={user.github} passHref>
+								<Text>
+									Github Repo
+									<AiFillGithub
+										size={20}
+										style={{
+											margin: '0 0.7em',
+										}}
+									/>
+								</Text>
+							</Link>
+						</LinksContainer>
+					</ContentContainer>
 				))}
-			</div>
+			</Wrapper>
 		</div>
 	);
 }

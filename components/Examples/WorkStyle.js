@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	padding: 4rem;
+
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		padding: 20px 0px;
+		grid-template-columns: 1fr;
+		padding: 2rem;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
+		grid-template-columns: 1fr 1fr;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		margin: 4em auto;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
@@ -25,27 +28,27 @@ export const ContentContainer = styled.div`
 	background-color: transparent;
 	margin: 1em auto;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		width: 90%;
+		width: 100%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		width: 80%;
+		width: 100%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		width: 75%;
+		width: 100%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		width: 70%;
+		width: 100%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
 	@media only screen and (min-width: 1281px) {
-		width: 60%;
+		width: 100%;
 		border-radius: 20px;
 		border: solid 1px #e98074;
 	}
@@ -226,9 +229,15 @@ export const LinksContainer = styled.div`
 `;
 
 export const Text = styled.p`
-	font-size: 0.4em;
+	font-size: 1rem;
 	color: #e98074;
-	@media only screen and (min-width: 768px) and (max-width: 1024px) {
-		font-size: 0.9em;
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		font-size: 0.8rem;
+	}
+	@media only screen and (min-width: 481px) and (max-width: 768px) {
+		font-size: 0.7rem;
+	}
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		font-size: 0.7rem;
 	}
 `;
