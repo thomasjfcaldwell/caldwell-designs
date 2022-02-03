@@ -109,10 +109,8 @@ export const LinkText = styled.button`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		font-size: 0.6em;
-		padding: 2em;
 	}
 	@media only screen and (min-width: 1281px) {
 		font-size: 0.8em;
-		/* padding: 4em; */
 	}
 `;
