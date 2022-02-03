@@ -92,28 +92,31 @@ export const ContactDetailsContainer = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		justify-content: space-around;
-		align-items: center;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		justify-content: space-around;
-		align-items: center;
 	}
 	@media only screen and (min-width: 1281px) {
-		justify-content: space-around;
-		align-items: center;
 	}
 `;
 
 export const ContactContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: calc(100% - 1rem);
+	padding: 0.5rem;
+
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {

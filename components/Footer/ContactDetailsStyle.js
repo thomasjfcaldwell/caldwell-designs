@@ -18,7 +18,7 @@ export const Container = styled.section`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		flex-direction: column;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		flex-direction: column;
 	}
 `;
@@ -40,13 +40,13 @@ export const ContentContainer = styled.article`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		margin: 0.6em auto;
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		margin: 0.6em auto;
 	}
 `;
 
 export const Text = styled.p`
-	font-size: 0.9em;
+	font-size: 0.6rem;
 	color: #e85a4f;
 	line-height: 15px;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -61,7 +61,7 @@ export const Text = styled.p`
 		border-radius: 7px;
 		/* font-size: 0.9em; */
 	}
-	@media only screen and (min-width: 1281px)  {
+	@media only screen and (min-width: 1281px) {
 		border-radius: 7px;
 		/* font-size: 0.9em; */
 	}
@@ -70,8 +70,8 @@ export const Text = styled.p`
 export const LinkText = styled.a`
 	text-decoration: none;
 	color: #1c1b1b;
-	margin-top: -20px;
-	font-size: 0.8em;
+	font-size: 1rem;
+	margin-top: -1.5rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		font-size: 0.5em;
 	}
@@ -81,7 +81,6 @@ export const LinkText = styled.a`
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
-	@media only screen and (min-width: 1281px)  {
-		font-size:1.5em;
+	@media only screen and (min-width: 1281px) {
 	}
 `;

@@ -90,7 +90,7 @@ export const LinkText = styled.button`
 	margin: 0 20px;
 	background-color: transparent;
 	line-height: 18px;
-	transition: all 2s;
+	transition: all 0.5s;
 	&:hover {
 		color: #727272;
 		border: solid #727272 1.5px;

@@ -11,24 +11,25 @@ export const HeaderContainer = styled.article`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: pink; */
 	width: 100%;
 	height: 100px;
 `;
 
 export const ContactFormWrapper = styled.section`
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
+		width: 100%;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		min-width: 400px;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		width: 350px;
 	}
 	@media only screen and (min-width: 1281px) {
 	}
