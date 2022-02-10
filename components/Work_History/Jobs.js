@@ -18,9 +18,9 @@ import {
 import { Title, Line, TitleContainer } from '../Home/HomeStyle';
 
 export default function Jobs() {
-	const iconStyles = {
-		margin:'5px 10px',
-	};
+	// const iconStyles = {
+	// 	padding: '4rem,',
+	// };
 	return (
 		<div>
 			<TitleContainer>
@@ -31,20 +31,17 @@ export default function Jobs() {
 				{Experience.map((job, id) => (
 					<WorkExperienceContainer key={id}>
 						<Header>{job.company}</Header>
-						<WorkExperienceDate>{job.date}</WorkExperienceDate>
 						<WorkExperiencePosition>{job.position}</WorkExperiencePosition>
+						<WorkExperienceDate>{job.date}</WorkExperienceDate>
 						<DetailsHeader>Technologies & Responsibilities</DetailsHeader>
 						<WorkExperienceTechnologies>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} style={iconStyles} />{' '}
 								{job.technologies[0]}
 							</WorkExperienceTechnologiesList>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} style={iconStyles} />{' '}
 								{job.technologies[1]}
 							</WorkExperienceTechnologiesList>
 							<WorkExperienceTechnologiesList>
-								<AiFillRightCircle size={14} style={iconStyles} />
 								{job.technologies[2]}
 							</WorkExperienceTechnologiesList>
 						</WorkExperienceTechnologies>

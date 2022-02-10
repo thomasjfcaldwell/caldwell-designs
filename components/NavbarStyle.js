@@ -48,22 +48,6 @@ export const TitleContainer = styled.div`
 	@media only screen and (min-width: 1281px) {
 	}
 `;
-// export const Title = styled.h1`
-// 	font-weight: 200;
-// 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-// 		font-size: 1.4rem;
-// 		margin-top: 5px;
-// 	}
-// 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-// 	}
-// 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-// 	}
-// 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-// 	}
-// 	@media only screen and (min-width: 1281px) {
-// 	}
-// `;
-
 export const LinkContainer = styled.div`
 	display: flex;
 

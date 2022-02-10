@@ -1,105 +1,91 @@
 import styled from 'styled-components';
 
-export const WorkExperienceWrapper = styled.article`
-	display: flex;
-	flex-direction: column;
-	@media only screen and (min-width: 769px) {
-		flex-direction: row;
-		margin: 5em auto;
-	}
+export const WorkExperienceWrapper = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 10px;
+	padding: 1rem;
+	margin: 5rem 0;
+	justify-content: center;
 `;
 
-export const WorkExperienceContainer = styled.article`
-	padding: 10px;
+export const WorkExperienceContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 0 5px;
-	@media only screen and (min-width: 769px) {
-		width: 20%;
-	}
-	@media only screen and (max-width: 769px) {
-		margin: 10px auto;
-		width: 95%;
-	}
+	box-shadow: 0rem 0.3rem 10px rgba(0, 0, 0, 0.3);
+	background: repeating-linear-gradient(
+		#e98074,
+		#e98074 12.9%,
+		white 13.1%,
+		white 100%
+	);
+	border-radius: 2em;
+	border: 0.1rem solid #e98074;
 `;
 
 export const Header = styled.h1`
-	font-size: 1.5em;
+	font-size: 0.9rem;
 	text-align: center;
-	font-weight: 600;
-	height: 1em;
+	font-weight: 500;
+	color: white;
+	margin-top: 0.8rem;
 	@media only screen and (min-width: 320px) and (max-width: 1024px) {
-		font-size: 0.9em;
-		height: 2em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		font-size: 0.9em;
 	}
 	@media only screen and (min-width: 1281px) {
-		font-size: 0.8em;
-		/* padding: 4em; */
 	}
-`;
-
-export const WorkExperienceDate = styled.p`
-	font-size: 0.7em;
-	text-align: center;
-	height: 2em;
 `;
 
 export const DetailsHeader = styled.h2`
 	font-size: 0.7em;
 	text-align: center;
 	font-weight: 600;
-	display: inline;
-	height: 2em;
+	margin: 1rem auto;
+`;
+export const WorkExperienceDate = styled.p`
+	font-size: 0.8rem;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	display: inline-block;
 `;
 
 export const WorkExperiencePosition = styled.p`
 	text-align: center;
-	font-weight: 200;
-	color: red;
-	height: 2em;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	font-size: 0.8rem;
+	margin-top: 1.5rem;
+	text-transform: uppercase;
 	@media only screen and (min-width: 769px) and (max-width: 1023px) {
-		font-size: 0.75em;
 	}
 	@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-		font-size: 0.75em;
 	}
 	@media only screen and (min-width: 1281px) {
-		font-size: 0.8em;
-		/* padding: 4em; */
 	}
 `;
 
-export const WorkExperienceTechnologies = styled.ul`
+export const WorkExperienceTechnologies = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	margin: 0 auto; /* Remove margins */
+	margin: 0.2rem auto;
+	align-items: center;
+	width: 100%;
 `;
-export const WorkExperienceTechnologiesList = styled.li`
-	font-size: 0.8em;
-	font-weight: 450;
-	margin: 0 2px;
-	color: #e98074;
-	@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-		font-size: 0.6em;
-	}
+export const WorkExperienceTechnologiesList = styled.p`
+	margin: 0;
+	padding: 0 0.5rem;
+	font-size: 0.7rem;
+	font-weight: 500;
 `;
 
 export const WorkExperienceResponsibilities = styled.p`
-	font-size: 0.6em;
+	font-size: 0.8em;
 	line-height: 1.6em;
-	padding: 5px;
 	text-align: center;
+	padding: 1rem;
 	color: #727272;
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		font-size: 0.8em;
-		line-height: 1.3em;
-		margin: 0.4em 8em;
-	}
 `;
