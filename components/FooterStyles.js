@@ -79,6 +79,7 @@ export const Line = styled.div`
 `;
 
 export const ContactDetailsContainer = styled.div`
+	padding: 3rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -114,8 +115,7 @@ export const ContactContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	width: calc(100% - 1rem);
-	padding: 0.5rem;
+	width: 100%;
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}

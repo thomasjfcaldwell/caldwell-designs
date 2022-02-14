@@ -61,26 +61,26 @@ function ContactForm() {
 				method='get'>
 				<FormInputContainer>
 					<Label id='entry.1673834915' htmlFor='name'>
-						Name
+						{/* Name */}
 					</Label>
 					<Input type='text' name='entry.1673834915' placeholder='Name' />
 				</FormInputContainer>
 				<FormInputContainer>
 					<Label name='entry.218700094' htmlFor='email'>
-						Email
+						{/* Email */}
 					</Label>
 					<Input type='text' name='entry.218700094' placeholder='Email' />
 				</FormInputContainer>
 				<FormInputContainer>
 					<Label name='entry.1613609491' htmlFor='phone'>
-						Phone
+						{/* Phone */}
 					</Label>
 					<Input type='text' name='entry.1613609491' placeholder='Phone' />
 				</FormInputContainer>
 				<MessageTitle>Send A Message</MessageTitle>
 				<FormInputContainer>
 					<Label name='entry.1359360774' htmlFor='message'>
-						Message
+						{/* Message */}
 					</Label>
 					<InputMessage type='text' name='entry.1359360774' />
 				</FormInputContainer>

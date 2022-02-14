@@ -12,12 +12,12 @@ export default function Skills() {
 	return (
 		<div>
 			<TitleContainer>
-				<Title>Tech Skills</Title>
+				<Title>Skills</Title>
 				<Line></Line>
 			</TitleContainer>
 			<SkillsWrapper>
 				<SkillsContainer>
-					<SkillsHeader>Languages & Frameworks</SkillsHeader>
+					<SkillsHeader>Technologies</SkillsHeader>
 					<SkillsList>
 						<SkillsListItem>HTML</SkillsListItem>
 						<SkillsListItem>CSS</SkillsListItem>
@@ -25,21 +25,29 @@ export default function Skills() {
 						<SkillsListItem>React</SkillsListItem>
 						<SkillsListItem>Next JS</SkillsListItem>
 					</SkillsList>
-				</SkillsContainer>
-				<SkillsContainer>
-					<SkillsHeader>Software</SkillsHeader>
+					<SkillsList>
+						<SkillsListItem>Wordpress</SkillsListItem>
+						<SkillsListItem>Visual Studio Code</SkillsListItem>
+						<SkillsListItem>Big Commerce</SkillsListItem>
+						<SkillsListItem>Shopify</SkillsListItem>
+						<SkillsListItem>Constant Contact</SkillsListItem>
+					</SkillsList>
 					<SkillsList>
 						<SkillsListItem>Photoshop</SkillsListItem>
 						<SkillsListItem>Illustrator</SkillsListItem>
 						<SkillsListItem>InDesign</SkillsListItem>
 						<SkillsListItem>Adobe XD</SkillsListItem>
+						<SkillsListItem>Dreamweaver</SkillsListItem>
 					</SkillsList>
 				</SkillsContainer>
 				<SkillsContainer>
 					<SkillsHeader>Other Skills</SkillsHeader>
 					<SkillsList>
-						<SkillsListItem>Constant Contact</SkillsListItem>
-						<SkillsListItem>Quickbooks</SkillsListItem>
+						<SkillsListItem>Time management</SkillsListItem>
+						<SkillsListItem>Problem-solving</SkillsListItem>
+						<SkillsListItem>Attention to detail</SkillsListItem>
+						<SkillsListItem>Flexible</SkillsListItem>
+						<SkillsListItem>Open Minded</SkillsListItem>
 					</SkillsList>
 				</SkillsContainer>
 			</SkillsWrapper>

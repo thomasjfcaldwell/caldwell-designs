@@ -1,45 +1,50 @@
 import styled from 'styled-components';
 export const SkillsWrapper = styled.div`
-	display: flex;
-	width: 100%;
-	padding: 20px;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	padding: 5rem;
+	align-items: start;
+	gap: 1rem;
+
 	@media only screen and (min-width: 320px) and (max-width: 600px) {
-		flex-direction: column;
-		align-text: center;
+		grid-template-columns: 1fr;
+		padding: 0;
 	}
 `;
 export const SkillsContainer = styled.div`
-	width: 33.3%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
-	margin: 0 5px;
+	background-color: white;
+	padding: 4rem;
+	height: 15rem;
+	border: solid 0.3rem #e98074;
+	border-radius: 0.8rem;
+	box-shadow: 0rem 0.3rem 10px rgba(0, 0, 0, 0.3);
 	@media only screen and (min-width: 320px) and (max-width: 600px) {
-		width: 100%;
+		flex-direction: column;
+		height: 30rem;
+		padding: 1rem;
+		width: 80%;
 		margin: 0 auto;
+		justify-content: center;
 	}
 `;
 export const SkillsHeader = styled.h1`
-	font-size: 0.9em;
+	font-size: 1.2rem;
 	font-weight: 550;
 	text-align: center;
-	margin: 10px auto;
-	border-radius: 20px;
-	border: solid 1px #e98074;
-	padding: 5px 10px;
-`;
-
-export const SkillsList = styled.ul`
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	/* margin: 0 auto; / */
-`;
-
-export const SkillsListItem = styled.li`
-	font-size: 0.8em;
-	font-weight: 600;
-	/* margin: 0 2px; */
 	color: #e98074;
+`;
+
+export const SkillsList = styled.div``;
+
+export const SkillsListItem = styled.p`
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin: 0.2rem auto;
 `;
