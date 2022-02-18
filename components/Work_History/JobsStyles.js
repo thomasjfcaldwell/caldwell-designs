@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const WorkExperienceWrapper = styled.div`
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-template-rows: 1fr;
-	grid-column-gap: 0.5rem;
-	grid-row-gap: 10px;
-	padding: 1rem;
-	margin: 5rem 0;
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1rem;
+	padding: 5rem;
+	margin: 3rem 0;
 	justify-content: center;
 `;
 
@@ -83,9 +83,11 @@ export const WorkExperienceTechnologiesList = styled.p`
 `;
 
 export const WorkExperienceResponsibilities = styled.p`
-	font-size: 0.8em;
-	line-height: 1.6em;
+	font-size: 0.7rem;
+	line-height: 1.6;
 	text-align: center;
+	margin: 0 auto;
 	padding: 1rem;
 	color: #727272;
+	width: 70%;
 `;
