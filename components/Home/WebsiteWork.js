@@ -12,6 +12,8 @@ import {
 	LinkText,
 	SectionHeaderContainer,
 	SectionHeader,
+	LinkToSitesContainer,
+	LinkToSites,
 } from '../Home/WebsiteWorkStyle.js';
 import { ImageContainer } from '../Home/WebsiteWorkStyle';
 import {
@@ -29,7 +31,6 @@ import EcommerceImage from '../../public/Images/HomePage/Ecommence.mockupsAll.pn
 import PicnicImage from '../../public/Images/HomePage/picnic.Mockup.All.png';
 
 function WebsiteWork() {
-	let iconStyles = { margin: '10px 10px' };
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
 	}, []);
@@ -58,9 +59,9 @@ function WebsiteWork() {
 							<LinkText>
 								See Live Site
 								<CgWebsite
-									size={20}
+									size={30}
 									style={{
-										margin: '0 0.3em',
+										padding: '0 0.2rem',
 									}}
 								/>
 							</LinkText>
@@ -84,11 +85,11 @@ function WebsiteWork() {
 					<SiteLinkContainer>
 						<Link href='http://www.pop-uppicnics.com/' passHref>
 							<LinkText>
-								See Live Site
+								See Live Site{' '}
 								<CgWebsite
-									size={20}
+									size={30}
 									style={{
-										margin: '0 0.3em',
+										padding: '0 0.2rem',
 									}}
 								/>
 							</LinkText>
@@ -96,6 +97,11 @@ function WebsiteWork() {
 					</SiteLinkContainer>
 				</Container>
 			</Wrapper>
+			<LinkToSitesContainer>
+				<Link href='/examplesofwork' passHref>
+					<LinkToSites>See More Sites Here</LinkToSites>
+				</Link>
+			</LinkToSitesContainer>
 		</div>
 	);
 }

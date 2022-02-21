@@ -231,7 +231,6 @@ export const SiteLinkContainer = styled.div`
 	align-items: center;
 	margin: 2em 0;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		margin: 1em 0;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
@@ -248,7 +247,12 @@ export const LinkText = styled.a`
 	align-items: center;
 	text-decoration: none;
 	color: #e98074;
-	font-size: 0.6em;
+	font-size: 1rem;
+	:hover {
+		transition: all 0.5s ease-out;
+		color: #727272;
+		cursor: pointer;
+	}
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -258,5 +262,39 @@ export const LinkText = styled.a`
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}
 	@media only screen and (min-width: 1281px) {
+	}
+`;
+
+export const LinkToSitesContainer = styled.div`
+	display: flex;
+	height: 2rem;
+	justify-content: center;
+	align-items: center;
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		margin: 1rem 0;
+	}
+`;
+
+export const LinkToSites = styled.p`
+	margin: 0;
+	font-size: 1rem;
+	padding: 0.75rem 1.5rem;
+	background-color: #e98074;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: white;
+	border-radius: 0.5rem;
+	letter-spacing: 0.05rem;
+	border: 0.1rem solid white;
+	filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.4));
+	:hover {
+		transition: all 1.5s ease-out;
+		color: #e98074;
+		background-color: white;
+		border: 0.1rem solid #e98074;
+		cursor: pointer;
+	}
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		font-size: 0.7rem;
 	}
 `;

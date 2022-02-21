@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background: url('https://i.ibb.co/GHddbQ8/New-Portfolio-Image.jpg') contain
+		no-repeat;
+	padding: 3rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		align-items: center;
 		text-decoration: none;
+		flex-direction: column;
 		/* padding: 1em; */
 		/* background-color: blue; */
 	}
@@ -21,7 +25,6 @@ export const Wrapper = styled.section`
 		/* padding: 1em; */
 	}
 	@media only screen and (min-width: 1281px) {
-		align-items: center;
 		text-decoration: none;
 		padding: 4em;
 	}
@@ -29,24 +32,14 @@ export const Wrapper = styled.section`
 
 export const TextContainer = styled.article`
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		width: 90%;
-		margin: 0;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		width: 80%;
-		margin: 1.5em auto;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		margin: 2em auto;
-		width: 75%;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		width: 80%;
-		margin: 2em auto;
 	}
 	@media only screen and (min-width: 1281px) {
-		width: 60%;
-		margin: 3em auto;
 	}
 `;
 
@@ -79,78 +72,44 @@ export const Text = styled.p`
 	}
 `;
 export const ContentContainer = styled.div`
-	display: flex;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		flex-direction: column;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		flex-direction: row;
-		align-items: center;
-		/* background-color: aquamarine; */
-		justify-content: center;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		align-items: center;
-		justify-content: center;
-		width: 80%;
-		margin: 0 auto;
-		padding: 30px;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		align-items: center;
-		justify-content: space-around;
 	}
 	@media only screen and (min-width: 1281px) {
-		align-items: center;
-		justify-content: space-around;
-		margin: 2em auto;
 	}
 `;
 
 export const ImageContainer = styled.div`
-	display: flex;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		justify-content: center;
-		margin: 1em 0;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		justify-content: center;
-		width: 50%;
-		margin: 0.5em 0;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		width: 50%;
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		width: 40%;
-		justify-content: center;
-		align-items: center;
 	}
 	@media only screen and (min-width: 1281px) {
-		width: 40%;
-		justify-content: center;
-		align-items: center;
 	}
 `;
 
 export const Image = styled.img`
 	border-radius: 50%;
+	filter: drop-shadow(0 0 0.7rem rgba(0, 0, 0, 0.5));
+
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		width: 60%;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		width: 70%;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		width: 70%;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		width: 70%;
 	}
 	@media only screen and (min-width: 1281px) {
-		width: 90%;
 	}
 `;
 

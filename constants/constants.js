@@ -12,7 +12,6 @@ export const process = [
 		description:
 			'In are first meeting we will talk about your exit goods and requirements, I’ll answer any questions you have define goals and next steps',
 		headline: 'First Meeting',
-		
 	},
 	{
 		id: 2,
@@ -43,7 +42,7 @@ export const Projects = [
 		title: 'Pop Up Picnics Site',
 		image: 'https://i.ibb.co/RBhJVD9/picnic-Site-For-Work.png',
 		intro:
-		'This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all content myself, including photography..',
+			'This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all content myself, including photography..',
 		technologies: 'React and React Bootstrap.',
 		deployed: 'http://www.pop-uppicnics.com/',
 		github: 'https://github.com/thomasjfcaldwell/popuppicnicsbywow',
@@ -53,9 +52,9 @@ export const Projects = [
 		title: 'Know Your Wizard',
 		image: 'https://i.ibb.co/RHpvHbW/wizard-For-Work.png',
 		intro:
-		"This app was developed while I was attending a immersive software developer Boot-camp by General Assembly. Initially I had planned to do an app where the user would be able to search local breweries but after getting in touch with the developer who had put together the API for the data and was informed that the API was suffering from issues - developer had reason to believe that someone had an infinite loop running. I had always been a fan of the Harry Potter world and after research I found the API was very stable I decided to develop 'Know Your Wizard' - an app for fans of Harry Potter or non fans to learn about each character of the Harry Potter World",
+			"This app was developed while I was attending a immersive software developer Boot-camp by General Assembly. I had always been a fan of the Harry Potter world and after research I found the API was very stable I decided to develop 'Know Your Wizard' - an app for fans of Harry Potter or non fans to learn about each character of the Harry Potter World",
 		technologies:
-		'I used React for the framework to develop this App and React Bootstrap for the styling. I also used Axios to bring in the data from the third party API and React Router for rendering multiple pages.',
+			'I used React for the framework to develop this App and React Bootstrap for the styling. I also used Axios to bring in the data from the third party API and React Router for rendering multiple pages.',
 		deployed: 'https://knowyourwizard.herokuapp.com/',
 		github: 'https://github.com/thomasjfcaldwell/know-your-wizard',
 	},
@@ -64,9 +63,9 @@ export const Projects = [
 		title: 'Fleet App',
 		image: 'https://i.ibb.co/tzBcd37/fleeet-For-Work.png',
 		intro:
-		'This was a group developed app with myself and 3 other developers. The app is for business owners or members of the public with multiple vehicles, by using the app they will be able to keep track of such things as mileage, if the vehicles needs maintenance etc. The app has authentication built into it so each account has different data.',
+			'This was a group developed app with myself and 3 other developers. The app is for business owners or members of the public with multiple vehicles, by using the app they will be able to keep track of such things as mileage, if the vehicles needs maintenance etc. The app has authentication built into it so each account has different data.',
 		technologies:
-		'We used many technologies including Node, Express, Mongoose, React, React-Bootstrap',
+			'We used many technologies including Node, Express, Mongoose, React, React-Bootstrap',
 		deployed: 'https://warm-brook-93750.herokuapp.com/',
 		github: 'https://github.com/SEIR622-Cass-theCassettes/fleet-frontend',
 	},
@@ -75,9 +74,9 @@ export const Projects = [
 		title: 'FetchGoal App',
 		image: 'https://i.ibb.co/7z5dh1B/fetchgoalforsite.png',
 		intro:
-		"This app was made as a passion of made...'football' it was also my capstone project for my software immersive boot-camp. It was originally a paired developed app with another developer from my boot-camp. We split into frontend and backend with myself in charge of the frontend. I have since completed the backend myself to add experience and knowledge to my backend portfolio.",
+			"This app was made as a passion of made...'football' it was also my capstone project for my software immersive boot-camp. It was originally a paired developed app with another developer from my boot-camp. We split into frontend and backend with myself in charge of the frontend. I have since completed the backend myself to add experience and knowledge to my backend portfolio.",
 		technologies:
-		'The backend was built using Django and Python. The frontend I used React , React Bootstrap and SASS.',
+			'The backend was built using Django and Python. The frontend I used React , React Bootstrap and SASS.',
 		deployed: 'www.bbc.com',
 		github: 'github.com',
 	},
