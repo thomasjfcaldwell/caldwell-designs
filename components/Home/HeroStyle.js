@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	background: url('https://i.ibb.co/GHddbQ8/New-Portfolio-Image.jpg') contain
-		no-repeat;
-	padding: 3rem;
+	display: flex;
+	flex-direction: column;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		align-items: center;
 		text-decoration: none;
@@ -72,7 +69,11 @@ export const Text = styled.p`
 	}
 `;
 export const ContentContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		flex-direction: column;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
@@ -85,6 +86,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+	margin: 3rem 0;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -100,6 +102,7 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
 	border-radius: 50%;
 	filter: drop-shadow(0 0 0.7rem rgba(0, 0, 0, 0.5));
+	width: 20rem;
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}

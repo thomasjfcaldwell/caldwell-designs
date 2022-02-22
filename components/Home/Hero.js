@@ -23,7 +23,7 @@ import {
 import { Title, Line, TitleContainer } from './HomeStyle';
 
 function Hero() {
-	let iconStyles = { margin: '0 1px',};
+	let iconStyles = { margin: '0 1px' };
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
 	}, []);
@@ -37,15 +37,13 @@ function Hero() {
 				<TextContainer>
 					<Text>
 						Thomas is a web developer and designer currently residing in
-						Huntington Beach, CA.
-						<span>
-							He uses all of the latest technologies to design and develop.
-							Including all of Adobe’s creative cloud specializing in Photoshop,
-							Illustrator, XD and InDesign. He has developed website using React
-							Framework, Wordpress and Shopify. Originally from The United
-							Kingdom he lives with his wife and pets. When he is not designing
-							websites he like long walks on the beach and surfing.
-						</span>
+						Huntington Beach, CA. He uses all of the latest technologies to
+						design and develop. Including all of Adobe’s creative cloud
+						specializing in Photoshop, Illustrator, XD and InDesign. He has
+						developed website using React Framework, Wordpress and Shopify.
+						Originally from The United Kingdom he lives with his wife and pets.
+						When he is not designing websites he like long walks on the beach
+						and surfing.
 					</Text>
 				</TextContainer>
 				<ContentContainer>
