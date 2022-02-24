@@ -187,6 +187,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
+	height: 2em;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		width: 90%;
 		margin-top: 3em;
@@ -195,6 +196,7 @@ export const TextContainer = styled.div`
 		width: 100%;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		height: 3em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 		width: 80%;
@@ -265,6 +267,7 @@ export const LinkText = styled.a`
 
 export const LinkToSitesContainer = styled.div`
 	display: flex;
+	height: 2rem;
 	justify-content: center;
 	align-items: center;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
