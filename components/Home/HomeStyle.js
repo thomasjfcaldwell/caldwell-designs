@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const Title = styled.h2`
 	font-weight: 600;
 	line-height: 0.8em;
-	font-size: 1rem;
-	color: #e98074;
-	width: 50%;
+	font-size: 3.5rem;
+	color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	margin: 0 auto;
 	@media only screen and (min-width: 80px) and (max-width: 424px) {
 	}
 	@media only screen and (min-width: 425px) and (max-width: 480px) {
@@ -26,6 +27,7 @@ export const TitleContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding: 1.5rem;
 `;
 
 export const Container = styled.div`

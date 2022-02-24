@@ -116,7 +116,6 @@ export const Intro = styled.p`
 
 export const IntroContainer = styled.div`
 	width: 90%;
-	height: 7rem;
 	margin-top: 1rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
@@ -148,7 +147,6 @@ export const Technologies = styled.p`
 
 export const TechnologiesContainer = styled.div`
 	width: 100%;
-	height: 3rem;
 	margin-bottom: 1rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}

@@ -17,7 +17,9 @@ export const BackgroundDiv = styled.div`
 export const Wrapper = styled.section`
 	display: flex;
 	padding: 0 0.5rem;
-	/* max-width: 1840px; */
+	max-width: 1440px;
+	margin: 5rem auto;
+
 	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		grid-template-columns: 1fr;
 		padding: 2rem;
@@ -45,9 +47,9 @@ export const HomeTitleContainer = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-	font-size: 7rem;
+	font-size: 6rem;
 	width: 100%;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 0.9;
 	font-family: 'Poppins', sans-serif;
 	@media only screen and (min-width: 320px) and (max-width: 1440px) {
@@ -98,9 +100,11 @@ export const Image = styled.img`
 	width: 90%;
 	border-radius: 1rem;
 	filter: drop-shadow(0 0 0.9rem rgba(0, 0, 0, 0.1));
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+	}
 
-	@media only screen and (min-width: 320px) and (max-width: 768px) {
-		width: 100%;
+	@media only screen and (min-width: 480px) and (max-width: 768px) {
+		width: 50%;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
@@ -145,6 +149,8 @@ export const Text = styled.p`
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		padding: 0.75rem;
+		font-size: 0.8rem;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	}

@@ -22,7 +22,7 @@ export const ContentContainer = styled.article`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 70px;
+	/* min-height: 70px; */
 	margin: 0.25rem auto;
 
 	@media only screen and (min-width: 320px) and (max-width: 480px) {

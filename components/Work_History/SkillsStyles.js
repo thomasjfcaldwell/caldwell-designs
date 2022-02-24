@@ -6,9 +6,10 @@ export const SkillsWrapper = styled.div`
 	align-items: start;
 	gap: 1rem;
 
-	@media only screen and (min-width: 320px) and (max-width: 600px) {
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		grid-template-columns: 1fr;
 		padding: 0;
+		margin: 0 1rem;
 	}
 `;
 export const SkillsContainer = styled.div`

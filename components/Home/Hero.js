@@ -29,13 +29,12 @@ function Hero() {
 		Aos.init({ duration: 3000 });
 	}, []);
 
-	//  data-aos='fade-up'
 	return (
 		<div>
 			<BackgroundDiv></BackgroundDiv>
 			<Wrapper>
 				<ContentContainer>
-					<HomeTitleContainer>
+					<HomeTitleContainer data-aos='fade-up'>
 						<HomeTitle>Get To Know Thomas</HomeTitle>
 					</HomeTitleContainer>
 					<ImageContainer>
