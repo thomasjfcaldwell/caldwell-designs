@@ -16,8 +16,8 @@ export const BackgroundDiv = styled.div`
 
 export const Wrapper = styled.section`
 	display: flex;
-	padding: 6rem;
-	margin: 3rem auto;
+	padding: 0 0.5rem;
+	/* max-width: 1840px; */
 	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		grid-template-columns: 1fr;
 		padding: 2rem;

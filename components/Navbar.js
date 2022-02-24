@@ -13,7 +13,7 @@ import logo from '.././public/Images/HomePage/Asset 3.svg';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
-let titleStyle = { }
+	let titleStyle = {};
 
 	return (
 		<>
@@ -30,22 +30,13 @@ let titleStyle = { }
 				</TitleContainer>
 				<LinkContainer>
 					<Link href='/examplesofwork' passHref>
-						<LinkText>
-							Examples of Work
-							<BsFillArrowRightCircleFill
-								size={10}
-								style={{ margin: '0 5px' }}
-							/>
-						</LinkText>
+						<LinkText>Examples of Work</LinkText>
 					</Link>
 					<Link href='/contact' passHref>
-						<LinkText>
-							Contact
-							<BsFillArrowRightCircleFill
-								size={10}
-								style={{ margin: '0 5px' }}
-							/>
-						</LinkText>
+						<LinkText>Contact</LinkText>
+					</Link>
+					<Link href='/workhistory' passHref>
+						<LinkText>Work History</LinkText>
 					</Link>
 				</LinkContainer>
 			</Container>

@@ -59,7 +59,7 @@ function Hero() {
 							beach and surfing.
 						</Text>
 					</TextContainer>
-					<LinksContainer>
+					{/* <LinksContainer>
 						<LinkButtonContainer>
 							<Link href='/contact' passHref>
 								<LinkButton>
@@ -84,7 +84,7 @@ function Hero() {
 								</LinkButton>
 							</Link>
 						</LinkButtonContainer>
-					</LinksContainer>
+					</LinksContainer> */}
 				</ContentContainer>
 			</Wrapper>
 		</div>
