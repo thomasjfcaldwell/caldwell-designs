@@ -17,7 +17,6 @@ function Footer() {
 		<>
 			<TitleContainer>
 				<Title>Connect With Thomas</Title>
-				<Line></Line>
 			</TitleContainer>
 			<FooterWrapper>
 				<ContactDetailsContainer>

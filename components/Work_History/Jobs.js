@@ -25,7 +25,6 @@ export default function Jobs() {
 		<div>
 			<TitleContainer>
 				<Title>Work Experience</Title>
-				<Line></Line>
 			</TitleContainer>
 			<WorkExperienceWrapper>
 				{Experience.map((job, id) => (

@@ -13,7 +13,6 @@ export default function Skills() {
 		<div>
 			<TitleContainer>
 				<Title>Skills</Title>
-				<Line></Line>
 			</TitleContainer>
 			<SkillsWrapper>
 				<SkillsContainer>

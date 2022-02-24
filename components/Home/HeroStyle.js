@@ -1,95 +1,90 @@
 import styled from 'styled-components';
 
+export const BackgroundDiv = styled.div`
+	/* position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 20vh;
+	background: #2c3e50;
+	z-index: 0;
+	transform: skewY(2deg);
+	transform-origin: top right; */
+`;
+
 export const Wrapper = styled.section`
 	display: flex;
-	flex-direction: column;
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		align-items: center;
-		text-decoration: none;
-		flex-direction: column;
-		/* padding: 1em; */
-		/* background-color: blue; */
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		flex-direction: column;
+	padding: 6rem;
+	margin: 3rem auto;
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		grid-template-columns: 1fr;
+		padding: 2rem;
+		margin: 0 auto;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		margin: 2em auto;
+		padding: 0;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		align-items: center;
-		text-decoration: none;
-		/* padding: 1em; */
-	}
-	@media only screen and (min-width: 1281px) {
-		text-decoration: none;
-		padding: 4em;
-	}
-`;
-
-export const TextContainer = styled.article`
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-	}
-	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-	}
-	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+		padding: 2rem;
 	}
 	@media only screen and (min-width: 1281px) {
 	}
 `;
 
-export const Text = styled.p`
-	font-size: 0.5em;
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		font-size: 0.5em;
-		line-height: 1.8em;
-		text-align: center;
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		font-size: 0.6em;
-		line-height: 1.5em;
-		text-align: center;
-	}
-	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		font-size: 0.6em;
-		line-height: 1.5em;
-		text-align: center;
-	}
-	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		font-size: 0.7em;
-		line-height: 1.5em;
-		text-align: center;
-	}
-	@media only screen and (min-width: 1281px) {
-		font-size: 0.9em;
-		line-height: 1.7em;
-		text-align: center;
-	}
-`;
-export const ContentContainer = styled.div`
+export const HomeTitleContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
+	width: 25%;
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		width: 100%;
+		margin: 0 auto;
+	}
+`;
+
+export const HomeTitle = styled.h1`
+	font-size: 7rem;
+	width: 100%;
+	font-weight: 800;
+	line-height: 0.9;
+	font-family: 'Poppins', sans-serif;
+	@media only screen and (min-width: 320px) and (max-width: 1440px) {
+		text-align: center;
+		font-size: 4rem;
+	}
+`;
+
+export const ContentContainer = styled.div`
+display:flex;
+justify-content: space-evenly;
+	
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		flex-direction: column;
+		
 	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-	}
+
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		
+	}
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+		
+	}
 	}
 	@media only screen and (min-width: 1281px) {
 	}
 `;
 
 export const ImageContainer = styled.div`
-	margin: 3rem 0;
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		width: 90%;
+		margin: 3em auto;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
@@ -100,11 +95,52 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-	border-radius: 50%;
-	filter: drop-shadow(0 0 0.7rem rgba(0, 0, 0, 0.5));
-	width: 20rem;
+	width: 90%;
+	border-radius: 1rem;
+	filter: drop-shadow(0 0 0.9rem rgba(0, 0, 0, 0.1));
 
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		width: 100%;
+	}
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	}
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	}
+	@media only screen and (min-width: 1281px) {
+	}
+`;
+
+export const TextContainer = styled.article`
+	/* background-color: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		width: 100%;
+		margin: 0 auto;
+	}
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	}
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	}
+	@media only screen and (min-width: 1281px) {
+	}
+`;
+
+export const Text = styled.p`
+	font-size: 1rem;
+	filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.4));
+	padding: 2rem;
+	background-color: white;
+	line-height: 1.5;
+	margin: 0;
+	border-radius: 2.5rem;
+	text-align: center;
+
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
+		padding: 1rem;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 	}
@@ -117,96 +153,61 @@ export const Image = styled.img`
 `;
 
 export const LinksContainer = styled.div`
+	/* background-color: blue; */
+	width: 25%;
 	display: flex;
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		width: 100%;
-		margin: 0 auto;
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
-		padding: 1em;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		flex-direction: column;
 	}
 	@media only screen and (min-width: 1281px) {
-		flex-direction: column;
 	}
 `;
 
 export const LinkButtonContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin: 1rem auto;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		margin: 0.2em;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		margin: 0.2em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		margin: 0.3em;
-		width: 500px;
 	}
 	@media only screen and (min-width: 1281px) {
-		margin: 0.5em;
-		width: 400px;
 	}
 `;
 
 export const LinkButton = styled.a`
-	text-decoration: none;
-	color: #e85a4f;
-	display: inline-block;
-	font-size: 0.5em;
-	padding: 0.5em 1em;
-	border-radius: 30px;
-	border: solid #e98074 1px;
-	transition: all 1s;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #e85a4f;
+	color: white;
+	border-radius: 1rem;
+	transition: all 1s ease-out;
+
 	:hover {
-		background-color: #e85a4f;
-		color: white;
+		color: #e85a4f;
+		background-color: white;
 	}
 	@media only screen and (min-width: 0px) and (max-width: 320px) {
-		font-size: 0.5em;
-		text-align: center;
 	}
 
 	@media only screen and (min-width: 321px) and (max-width: 480px) {
-		font-size: 0.6em;
-		line-height: 10px;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		font-size: 0.8em;
-		line-height: 14px;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		font-size: 0.9em;
-		letter-spacing: 0.04em;
-		line-height: 12px;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		font-size: 0.8em;
-		letter-spacing: 0.04em;
-		line-height: 12px;
 	}
 	@media only screen and (min-width: 1281px) {
-		font-size: 0.9em;
-		letter-spacing: 0.04em;
-		line-height: 12px;
 	}
 `;
 

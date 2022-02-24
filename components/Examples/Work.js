@@ -23,7 +23,6 @@ function Work() {
 		<div>
 			<TitleContainer>
 				<Title>Previous Work</Title>
-				<Line></Line>
 			</TitleContainer>
 			<Wrapper>
 				{Projects.map((user, id) => (
