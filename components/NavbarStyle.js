@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	max-height: 10vh;
+	max-height: (10vh, 50vh, 30vh);
 
 	@media only screen and (min-width: 80px) and (max-width: 480px) {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		max-height: 50vh;
+		/* max-height: 50vh; */
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
-		max-height: 30vh;
+		/* max-height: 30vh; */
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		align-items: center;
@@ -34,9 +34,15 @@ export const TitleContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: -15rem;
-	@media only screen and (min-width: 320px) and (max-width: 1425px) {
-		margin: 1rem;
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		margin: 1rem 0;
+	}
+`;
+
+export const Title = styled.div`
+	margin: 0;
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		margin: 1rem 2rem;
 	}
 `;
 export const LinkContainer = styled.div`

@@ -6,8 +6,8 @@ export const WorkExperienceWrapper = styled.div`
 	grid-template-rows: 1fr;
 	grid-column-gap: 1.5rem;
 	grid-row-gap: 1rem;
-	padding: 5rem;
-	margin: 3rem 0;
+	padding: 1rem;
+	margin: 1rem 0;
 	justify-content: center;
 `;
 
@@ -23,6 +23,7 @@ export const WorkExperienceContainer = styled.div`
 	);
 	border-radius: 2em;
 	border: 0.1rem solid #e98074;
+	min-width: 270px;
 `;
 
 export const Header = styled.h1`
@@ -87,7 +88,7 @@ export const WorkExperienceResponsibilities = styled.p`
 	line-height: 1.6;
 	text-align: center;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 0.25em;
 	color: #727272;
 	width: 70%;
 `;

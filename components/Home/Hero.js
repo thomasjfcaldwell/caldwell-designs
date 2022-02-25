@@ -25,6 +25,8 @@ function Hero() {
 	let iconStyles = {
 		margin: '0 1px',
 	};
+
+	const portfolioImage = 'https://i.ibb.co/26FK8tR/New-Portfolio-Image2-24.png';
 	useEffect(() => {
 		Aos.init({ duration: 3000 });
 	}, []);
@@ -39,7 +41,7 @@ function Hero() {
 					</HomeTitleContainer>
 					<ImageContainer>
 						<Image
-							src='https://i.ibb.co/vQ7h0nj/portfolio-Image2-23.png'
+							src={portfolioImage}
 							alt='New-Portfolio-Image'
 							border='0'
 							// size={500}

@@ -23,7 +23,7 @@ export const Experience = [
 		position: 'Software Immersive Student',
 		date: 'June 2020 - September 2020',
 		responsibilities:
-			'12 weeks intensive Boot-Camp 360 hours of tuition and 4 projects. Introduction to React, Node/Express, and Python/Django. ', 
+			'12 weeks intensive Boot-Camp 360 hours of tuition and 4 projects. Introduction to React, Node/Express, and Python/Django. ',
 		technologies: ['React', 'Django', 'Plus more'],
 	},
 	{
@@ -32,7 +32,7 @@ export const Experience = [
 		position: 'Vice President Of Marketing',
 		date: 'March 2016 - April 2020',
 		responsibilities:
-			'Set up and managed company ECommerce website to receive orders. Integrated 3rd party software to communicate with Quickbooks. Responsible for design and production for all marketing materials online and print. Including social media, flyers, web banners etc.',
+			'Managed company ECommerce website used Big Commerce Platform plus Integrated 3rd party software. Responsible for design and production for all marketing materials',
 		technologies: ['Constant Contact', 'Big Commerce', 'Wordpress'],
 	},
 	{
@@ -40,7 +40,8 @@ export const Experience = [
 		company: 'Burger Monster',
 		position: 'Office Manager',
 		date: 'July 2013 - March 2016',
-		responsibilities: 'Promoted to Inside sales November 2013 Social media management.  Responsible for all incoming and outgoing correspondence. Answering all emails and phone calls. Customizing quotes and securing business ',
+		responsibilities:
+			'Promoted to Inside sales November 2013 Social media management.  Responsible for all incoming and outgoing correspondence. Answering all emails and phone calls. Customizing quotes and securing business ',
 		technologies: ['Google Suite', 'Salesforce', 'Adobe'],
 	},
 ];

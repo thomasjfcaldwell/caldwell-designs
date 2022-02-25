@@ -13,19 +13,17 @@ import logo from '.././public/Images/HomePage/Asset 3.svg';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 export const Navbar = () => {
-	let titleStyle = {};
-
 	return (
 		<>
 			<Head>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 			</Head>
 			<Container>
-				<TitleContainer style={titleStyle}>
+				<TitleContainer>
 					<Link href='/' passHref>
-						<div>
+						<Title>
 							<Image src={logo} alt='thomascaldwellportfolio' />
-						</div>
+						</Title>
 					</Link>
 				</TitleContainer>
 				<LinkContainer>
