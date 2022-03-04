@@ -50,14 +50,15 @@ function Hero() {
 
 					<TextContainer>
 						<Text>
-							Thomas is a web developer and designer currently residing in
-							Huntington Beach, CA. He uses all of the latest technologies to
-							design and develop. Including all of Adobe’s creative cloud
-							specializing in Photoshop, Illustrator, XD and InDesign. He has
-							developed website using React Framework, Wordpress and Shopify.
-							Originally from The United Kingdom he lives with his wife and
-							pets. When he is not designing websites he like long walks on the
-							beach and surfing.
+							Forward thinking and mature web designer with proven experince
+							designing and building clean, functional sites. Skilled in Adobe
+							Creative Suite, HTML, CSS, JavaScript and implements seamless UX
+							and UI with creatively. Designed and Developed multiple sites
+							including for small business’, solo owned business’ and Ecommerce
+							store Originally from The United Kingdom Thomas lives with his
+							wife and pets. When he is not designing websites he like long
+							walks on the beach, surfing and following his favorite sports team
+							Plymouth Argyle FC.
 						</Text>
 					</TextContainer>
 					{/* <LinksContainer>

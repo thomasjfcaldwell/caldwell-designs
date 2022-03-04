@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	max-height: (10vh, 50vh, 30vh);
+	height: 90px;
 
 	@media only screen and (min-width: 80px) and (max-width: 480px) {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		/* max-height: 50vh; */
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		flex-direction: column;
@@ -21,7 +20,7 @@ export const Container = styled.div`
 		justify-content: space-between;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		align-items: center;
+		/* align-items: center; */
 		justify-content: space-around;
 	}
 	@media only screen and (min-width: 1281px) {
@@ -41,6 +40,7 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.div`
 	margin: 0;
+	cursor: pointer;
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		margin: 1rem 2rem;
 	}
