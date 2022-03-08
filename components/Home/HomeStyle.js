@@ -4,7 +4,7 @@ export const Title = styled.h2`
 	font-weight: 600;
 	line-height: 0.8em;
 	font-size: 3rem;
-	color: rgba(0, 0, 0, 0.6);
+	color: #0b1628;
 	width: 100%;
 	margin: 0 auto;
 	@media only screen and (min-width: 80px) and (max-width: 424px) {

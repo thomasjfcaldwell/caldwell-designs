@@ -179,6 +179,7 @@ export const LinksContainer = styled.div`
 export const Text = styled.p`
 	font-size: 0.75rem;
 	color: #e98074;
+	cursor: pointer;
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {

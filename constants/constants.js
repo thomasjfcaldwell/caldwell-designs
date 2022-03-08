@@ -77,8 +77,8 @@ export const Projects = [
 			"This app was made as a passion of made...'football' it was also my capstone project for my software immersive boot-camp. It was originally a paired developed app with another developer from my boot-camp. We split into frontend and backend with myself in charge of the frontend. I have since completed the backend myself to add experience and knowledge to my backend portfolio.",
 		technologies:
 			'The backend was built using Django and Python. The frontend I used React , React Bootstrap and SASS.',
-		deployed: 'www.bbc.com',
-		github: 'github.com',
+		deployed: 'https://mysterious-refuge-41535.herokuapp.com/',
+		github: 'https://github.com/The-Englishmen/fetchGoal_FrontEnd',
 	},
 	{
 		id: 5,
@@ -97,9 +97,9 @@ export const Projects = [
 		title: 'Events Company Site',
 		image: 'https://i.ibb.co/k3xQ707/picnicforsite.png',
 		intro:
-			'This is the main site for the events company. I helped to build additional pages with new service where I learnt Wordpress. Integrated Google forms to accept bookings ',
+			'This is the main site for the events company. I helped to build additional pages with new service where I learnt Wordpress. Integrated Google forms to accept bookings **Git Hub Repo unavailable',
 		technologies: 'Wordpress, Google forms and Dubsado',
-		deployed: 'https://www.wowevents.com/events-types/',
-		github: 'github.com',
+		deployed: 'https://www.wowevents.com/pop-up-picnics/',
+		github: 'https://www.wowevents.com/pop-up-picnics/',
 	},
 ];
