@@ -17,7 +17,6 @@ export const BackgroundDiv = styled.div`
 export const Wrapper = styled.section`
 	display: flex;
 	padding: 0 0.5rem;
-	height: 80vh;
 	@media only screen and (min-width: 320px) and (max-width: 768px) {
 		grid-template-columns: 1fr;
 		padding: 2rem;
@@ -45,12 +44,12 @@ export const HomeTitleContainer = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-	font-size: 6rem;
+	font-size: 4rem;
 	width: 100%;
 	font-weight: 700;
 	line-height: 0.9;
 	font-family: 'Poppins', sans-serif;
-	color: #0b1628;
+	color: #f0f3f0;
 	@media only screen and (min-width: 320px) and (max-width: 1440px) {
 		text-align: center;
 		font-size: 4rem;

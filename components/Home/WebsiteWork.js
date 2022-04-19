@@ -37,8 +37,7 @@ function WebsiteWork() {
 	return (
 		<div data-aos='fade-right'>
 			<SectionHeaderContainer>
-				<SectionHeader>Developed Websites</SectionHeader>
-				<Line></Line>
+				<SectionHeader>Built Websites</SectionHeader>
 			</SectionHeaderContainer>
 			<Wrapper>
 				<Container>

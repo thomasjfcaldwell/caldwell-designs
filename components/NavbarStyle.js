@@ -2,18 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	height: 90px;
+	height: 100px;
 
 	@media only screen and (min-width: 80px) and (max-width: 480px) {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
+		height: 200px;
 	}
 	@media only screen and (min-width: 481px) and (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
-		/* max-height: 30vh; */
+		height: 200px;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		align-items: center;
@@ -65,13 +66,13 @@ export const LinkContainer = styled.div`
 
 export const LinkText = styled.a`
 	text-decoration: none;
-	color: #e85a4f;
+	color: #bebfbe;
 	display: inline-block;
 	margin: 0 1.5rem;
 	background-color: transparent;
 	line-height: 18px;
 	transition: all 0.5s ease-out;
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	&:hover {
 		color: #727272;
 		cursor: pointer;
@@ -84,9 +85,8 @@ export const LinkText = styled.a`
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		font-size: 0.6em;
 	}
 	@media only screen and (min-width: 1281px) {
-		font-size: 0.8em;
+		/* font-size: 1.5rem; */
 	}
 `;

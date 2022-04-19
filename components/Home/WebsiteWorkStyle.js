@@ -27,6 +27,12 @@ export const SectionHeaderContainer = styled.div`
 
 export const SectionHeader = styled.h2`
 	text-transform: uppercase;
+	color: #bebfbe;
+	letter-spacing: 0.05rem;
+	font-size: 1.5rem;
+	background-color: red;
+	padding: 0.5rem 1rem;
+	border-radius: 0.8rem;
 	@media only screen and (min-width: 320px) and (max-width: 480px) {
 		margin-top: -10px;
 		padding: 2px;
@@ -40,50 +46,10 @@ export const SectionHeader = styled.h2`
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px) {
 		margin-left: 14px;
-		letter-spacing: 0.1em;
-		font-size: 2.3em;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		font-size: 2.3em;
-		letter-spacing: 0.1em;
 	}
 	@media only screen and (min-width: 1281px) {
-		letter-spacing: 0.1em;
-		font-size: 2.3em;
-	}
-`;
-
-export const Line = styled.div`
-	@media only screen and (min-width: 320px) and (max-width: 480px) {
-		height: 2px;
-		width: 14em;
-		background-color: #e85a4f;
-		margin-top: -12px;
-	}
-	@media only screen and (min-width: 481px) and (max-width: 768px) {
-		height: 1px;
-		width: 20em;
-		background-color: #e85a4f;
-		margin-top: -12px;
-		padding: 1px;
-	}
-	@media only screen and (min-width: 769px) and (max-width: 1024px) {
-		height: 2px;
-		width: 23.2em;
-		background-color: #e85a4f;
-		margin-top: -12px;
-	}
-	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-		height: 2px;
-		width: 25.4em;
-		background-color: #e85a4f;
-		margin-top: -12px;
-	}
-	@media only screen and (min-width: 1281px) {
-		height: 2px;
-		width: 25.4em;
-		background-color: #e85a4f;
-		margin-top: -7px;
 	}
 `;
 
