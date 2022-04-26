@@ -1,16 +1,13 @@
 import React from 'react';
-import Head from 'next/head';
 
-import { Navbar } from '../components/Navbar';
+import Nav from '../components/Nav';
 import { Container } from './LayoutStyles';
-import Footer from '../components/Footer';
 
 export const Layout = ({ children }) => {
 	return (
 		<Container>
-			<Navbar />
+			<Nav />
 			<main>{children}</main>
-			<Footer />
 		</Container>
 	);
 };
