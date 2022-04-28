@@ -6,13 +6,15 @@ export const Container = styled.div`
 	grid-template-rows: 1fr;
 	grid-column-gap: 2rem;
 	padding: 1rem;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-around;
 		width: 90%;
 		margin-inline: auto;
 		position: sticky;
+		top: 0.1px;
+		background-color: ${(props) => props.theme.colors.primary};
 	}
 `;
 

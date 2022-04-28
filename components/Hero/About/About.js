@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import {
 	AboutTitle,
@@ -9,13 +10,13 @@ import {
 
 import { AboutLink } from '../LinkButton/LinkButton.Styles';
 
-import imageThomas from '../../../public/Images/NewPortfolioImage4.27.png';
+// import imageThomas from 'https://i.ibb.co/4jnGfqT/New-Portfolio-Image4-27.png';
 
 const About = () => {
 	return (
 		<AboutContainer>
 			<AboutTitle>About</AboutTitle>
-			<AboutImage src={imageThomas} />
+			{/* <Image /> */}
 			<AboutText>
 				Forward thinking and mature web designer with proven experience
 				designing and building clean, functional sites. Loves to learn while
