@@ -13,16 +13,15 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     background: ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.secondary};
+    font-family: ${(props) => props.theme.fonts.main};
     cursor: default;
   }
-  h1,h2,h3,h4,h5,h6,button {
-
-  }
-  a {
-    text-decoration: none;
+  h2 {
+    color: ${(props) => props.theme.colors.header};
+    font-family:${(props) => props.theme.fonts.title};
   }
   li{
     list-style: none;

@@ -12,4 +12,8 @@ export default {
 		secondary: '#F0F3F0',
 		highlight: '#7FBD9B',
 	},
+	fonts: {
+		main: 'roboto, sans-serif',
+		title: 'Roboto Slab, serif',
+	},
 };
