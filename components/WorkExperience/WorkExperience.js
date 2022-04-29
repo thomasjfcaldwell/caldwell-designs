@@ -14,12 +14,21 @@ import {
 	JobBox,
 	JobBoxHeader,
 	JobText,
+	WowJobBox,
+	WowJobBoxHeader,
+	WowJobText,
+	WowTabletImage,
+	WowDesktopImage,
 	EasyAndQuickImage,
 } from './WorkExperienceStyles';
 import {
 	WorkExperienceTitleContainer,
 	WorkExperienceTitle,
 } from '../Hero/Title/TitleStyles';
+
+const quickAndEasyImage = 'https://i.ibb.co/F37wjJB/store-Mock-Up1-phone.png';
+const wowTabletImage = 'https://i.ibb.co/0rxLhkV/picnics-Mockup-Tablet.png';
+const wowDesktopImage = 'https://i.ibb.co/1Xs799T/picnic-destop-mock-Up.png';
 
 export default function WorkExperience() {
 	return (
@@ -36,13 +45,18 @@ export default function WorkExperience() {
 					</CompanyAndPositionContainer>
 				</JobTitleContainer>
 				<JobBox>
-					<EasyAndQuickImage />
+					<EasyAndQuickImage
+						loading='lazy'
+						src={quickAndEasyImage}
+						alt='Mock up of Easy and Quick gifts'
+						className=''
+					/>
 					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
 					<JobText>
-						{/* Set up Shopify store with React. Designed all products for sale.
+						Set up Shopify store with React. Designed all products for sale.
 						Poduced all UI including components using CSS/SCSS. Set up payment
 						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS. */}
+						CSS.
 					</JobText>
 				</JobBox>
 			</EasyAndQuickContainer>
@@ -54,16 +68,27 @@ export default function WorkExperience() {
 						<PositionText>WEB DESIGN</PositionText>
 					</CompanyAndPositionContainer>
 				</JobTitleContainer>
-				<JobBox>
-					<EasyAndQuickImage />
-					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
-					<JobText>
-						{/* Set up Shopify store with React. Designed all products for sale.
+				<WowJobBox>
+					<WowTabletImage
+						loading='lazy'
+						src={wowTabletImage}
+						alt='Mock up of Wow Picnics Tablet'
+						className=''
+					/>
+					<WowDesktopImage
+						loading='lazy'
+						src={wowDesktopImage}
+						alt='Mock up of Wow Picnics desktop'
+						className=''
+					/>
+					<WowJobBoxHeader>Responsibilities And Achievements</WowJobBoxHeader>
+					<WowJobText>
+						Set up Shopify store with React. Designed all products for sale.
 						Poduced all UI including components using CSS/SCSS. Set up payment
 						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS. */}
-					</JobText>
-				</JobBox>
+						CSS.
+					</WowJobText>
+				</WowJobBox>
 			</WowContainer>
 			<ECigContainer className='e-cig'>
 				<JobTitleContainer>
@@ -77,10 +102,10 @@ export default function WorkExperience() {
 					<EasyAndQuickImage />
 					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
 					<JobText>
-						{/* Set up Shopify store with React. Designed all products for sale.
-							Poduced all UI including components using CSS/SCSS. Set up payment
-							channels and shipping. Photoshop Illustrator Shopify React library
-							CSS. */}
+						Set up Shopify store with React. Designed all products for sale.
+						Poduced all UI including components using CSS/SCSS. Set up payment
+						channels and shipping. Photoshop Illustrator Shopify React library
+						CSS.
 					</JobText>
 				</JobBox>
 			</ECigContainer>
@@ -96,10 +121,10 @@ export default function WorkExperience() {
 					<EasyAndQuickImage />
 					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
 					<JobText>
-						{/* Set up Shopify store with React. Designed all products for sale.
+						Set up Shopify store with React. Designed all products for sale.
 						Poduced all UI including components using CSS/SCSS. Set up payment
 						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS. */}
+						CSS.
 					</JobText>
 				</JobBox>
 			</BurgerContainer>
