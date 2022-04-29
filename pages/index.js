@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React, { Component } from 'react';
-import { Layout } from '../layout/layout';
+import { Layout } from './../layout/layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import WorkExperience from '../components/WorkExperience/WorkExperience';
