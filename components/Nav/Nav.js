@@ -7,7 +7,7 @@ const Nav = () => (
 		<LinkText>contact</LinkText>
 		<LinkText>projects</LinkText>
 		<LinkText>work history</LinkText>
-		<LinkText>about me</LinkText>
+		<LinkText>about me!</LinkText>
 	</Container>
 );
 
