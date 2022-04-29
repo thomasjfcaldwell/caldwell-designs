@@ -17,6 +17,12 @@ import {
 	WowJobBox,
 	WowJobBoxHeader,
 	WowJobText,
+	ECigJobBox,
+	ECigJobBoxHeader,
+	ECigJobText,
+	BurgerJobBox,
+	BurgerJobBoxHeader,
+	BurgerJobText,
 	WowTabletImage,
 	WowDesktopImage,
 	EasyAndQuickImage,
@@ -94,20 +100,19 @@ export default function WorkExperience() {
 				<JobTitleContainer>
 					<YearText>2016-20</YearText>
 					<CompanyAndPositionContainer>
-						<CompanyText>WOW EVENTS</CompanyText>
-						<PositionText>WEB DESIGN</PositionText>
+						<CompanyText>E-CIG GALLERY</CompanyText>
+						<PositionText>MARKETING MANAGER/DESIGNER</PositionText>
 					</CompanyAndPositionContainer>
 				</JobTitleContainer>
-				<JobBox>
-					<EasyAndQuickImage />
-					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
-					<JobText>
+				<ECigJobBox>
+					<ECigJobBoxHeader>Responsibilities And Achievements</ECigJobBoxHeader>
+					<ECigJobText>
 						Set up Shopify store with React. Designed all products for sale.
 						Poduced all UI including components using CSS/SCSS. Set up payment
 						channels and shipping. Photoshop Illustrator Shopify React library
 						CSS.
-					</JobText>
-				</JobBox>
+					</ECigJobText>
+				</ECigJobBox>
 			</ECigContainer>
 			<BurgerContainer>
 				<JobTitleContainer>
@@ -117,16 +122,17 @@ export default function WorkExperience() {
 						<PositionText>SALES/OFFICE MANAGER</PositionText>
 					</CompanyAndPositionContainer>
 				</JobTitleContainer>
-				<JobBox>
-					<EasyAndQuickImage />
-					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
-					<JobText>
+				<BurgerJobBox>
+					<BurgerJobBoxHeader>
+						Responsibilities And Achievements
+					</BurgerJobBoxHeader>
+					<BurgerJobText>
 						Set up Shopify store with React. Designed all products for sale.
 						Poduced all UI including components using CSS/SCSS. Set up payment
 						channels and shipping. Photoshop Illustrator Shopify React library
 						CSS.
-					</JobText>
-				</JobBox>
+					</BurgerJobText>
+				</BurgerJobBox>
 			</BurgerContainer>
 		</WorkExperienceContainer>
 	);

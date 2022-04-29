@@ -12,7 +12,7 @@ export const JobTitleContainer = styled.div`
 	display: grid;
 	grid-template-columns: max-content max-content;
 	grid-template-rows: min-height;
-	margin-left: 3px;
+	margin-left: 15px;
 `;
 
 export const YearText = styled.h3`
@@ -52,7 +52,7 @@ export const BurgerContainer = styled(EasyAndQuickContainer)``;
 
 export const JobBox = styled.div`
 	background-color: ${(props) => props.theme.colors.secondary};
-	margin: auto;
+	margin: 1rem auto;
 	border-radius: 10px;
 	width: 300px;
 	display: grid;
@@ -98,3 +98,18 @@ export const WowDesktopImage = styled.img`
 	width: 100px;
 	margin: auto;
 `;
+
+export const ECigJobBox = styled(JobBox)`
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+`;
+export const ECigJobBoxHeader = styled(JobBoxHeader)``;
+export const ECigJobText = styled(JobText)``;
+export const BurgerJobBox = styled(JobBox)`
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+`;
+export const BurgerJobBoxHeader = styled(JobBoxHeader)``;
+export const BurgerJobText = styled(JobText)``;
