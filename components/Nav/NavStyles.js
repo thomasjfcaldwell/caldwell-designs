@@ -10,10 +10,10 @@ export const Container = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-around;
-		width: 90%;
+		width: 100%;
 		margin-inline: auto;
 		position: sticky;
-		top: 0.1px;
+		top: 0.01px;
 		background-color: ${(props) => props.theme.colors.primary};
 	}
 `;

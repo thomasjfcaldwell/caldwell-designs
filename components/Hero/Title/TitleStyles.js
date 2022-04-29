@@ -23,6 +23,12 @@ export const WorkExperienceTitle = styled(ProjectTitle)``;
 export const WorkExperienceTitleContainer = styled(TitleContainer)`
 	justify-content: center;
 `;
+
+export const ContactThomasTitle = styled(ProjectTitle)``;
+export const ContactThomasContainer = styled(TitleContainer)`
+	justify-content: center;
+`;
+
 // export const MoreProjectsLink = styled.a`
 // 	font-size: 9px;
 // 	border: 2px ${(props) => props.theme.colors.secondary} solid;

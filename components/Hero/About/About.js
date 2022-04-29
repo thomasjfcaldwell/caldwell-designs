@@ -10,13 +10,18 @@ import {
 
 import { AboutLink } from '../LinkButton/LinkButton.Styles';
 
-// import imageThomas from 'https://i.ibb.co/4jnGfqT/New-Portfolio-Image4-27.png';
+const imageThomas = 'https://i.ibb.co/4jnGfqT/New-Portfolio-Image4-27.png';
 
 const About = () => {
 	return (
 		<AboutContainer>
 			<AboutTitle>About</AboutTitle>
-			{/* <Image /> */}
+			<AboutImage
+				loading='lazy'
+				src={imageThomas}
+				alt='photo of thomas'
+				className=''
+			/>
 			<AboutText>
 				Forward thinking and mature web designer with proven experience
 				designing and building clean, functional sites. Loves to learn while

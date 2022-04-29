@@ -11,7 +11,10 @@ export const AboutTitle = styled.h2`
 	text-align: center;
 `;
 
-export const AboutImage = styled.image``;
+export const AboutImage = styled.img`
+	margin-top: 10px;
+	width: 120px;
+`;
 
 export const AboutText = styled.p`
 	font-size: 13px;
