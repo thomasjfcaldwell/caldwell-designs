@@ -6,6 +6,15 @@ import {
 	WowContainer,
 	ECigContainer,
 	BurgerContainer,
+	JobTitleContainer,
+	YearText,
+	CompanyAndPositionContainer,
+	CompanyText,
+	PositionText,
+	JobBox,
+	JobBoxHeader,
+	JobText,
+	EasyAndQuickImage,
 } from './WorkExperienceStyles';
 import {
 	WorkExperienceTitleContainer,
@@ -19,16 +28,80 @@ export default function WorkExperience() {
 				<WorkExperienceTitle>Work Experience</WorkExperienceTitle>
 			</WorkExperienceTitleContainer>
 			<EasyAndQuickContainer>
-				<h1 style={{ color: 'black' }}>Easy & Quick Gifts</h1>
+				<JobTitleContainer>
+					<YearText>2022</YearText>
+					<CompanyAndPositionContainer>
+						<CompanyText>EASY AND QUICK GIFTS</CompanyText>
+						<PositionText>WEB DESIGNER/OWNER</PositionText>
+					</CompanyAndPositionContainer>
+				</JobTitleContainer>
+				<JobBox>
+					<EasyAndQuickImage />
+					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
+					<JobText>
+						{/* Set up Shopify store with React. Designed all products for sale.
+						Poduced all UI including components using CSS/SCSS. Set up payment
+						channels and shipping. Photoshop Illustrator Shopify React library
+						CSS. */}
+					</JobText>
+				</JobBox>
 			</EasyAndQuickContainer>
 			<WowContainer>
-				<h1 style={{ color: 'black' }}>Wow Events</h1>
+				<JobTitleContainer>
+					<YearText>2021</YearText>
+					<CompanyAndPositionContainer>
+						<CompanyText>WOW EVENTS</CompanyText>
+						<PositionText>WEB DESIGN</PositionText>
+					</CompanyAndPositionContainer>
+				</JobTitleContainer>
+				<JobBox>
+					<EasyAndQuickImage />
+					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
+					<JobText>
+						{/* Set up Shopify store with React. Designed all products for sale.
+						Poduced all UI including components using CSS/SCSS. Set up payment
+						channels and shipping. Photoshop Illustrator Shopify React library
+						CSS. */}
+					</JobText>
+				</JobBox>
 			</WowContainer>
-			<ECigContainer>
-				<h1 style={{ color: 'black' }}>E-Cig Gallery Wholesale</h1>
+			<ECigContainer className='e-cig'>
+				<JobTitleContainer>
+					<YearText>2016-20</YearText>
+					<CompanyAndPositionContainer>
+						<CompanyText>WOW EVENTS</CompanyText>
+						<PositionText>WEB DESIGN</PositionText>
+					</CompanyAndPositionContainer>
+				</JobTitleContainer>
+				<JobBox>
+					<EasyAndQuickImage />
+					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
+					<JobText>
+						{/* Set up Shopify store with React. Designed all products for sale.
+							Poduced all UI including components using CSS/SCSS. Set up payment
+							channels and shipping. Photoshop Illustrator Shopify React library
+							CSS. */}
+					</JobText>
+				</JobBox>
 			</ECigContainer>
 			<BurgerContainer>
-				<h1 style={{ color: 'black' }}>Burger Monster</h1>
+				<JobTitleContainer>
+					<YearText>2013-16</YearText>
+					<CompanyAndPositionContainer>
+						<CompanyText>BURGER MONSTER</CompanyText>
+						<PositionText>SALES/OFFICE MANAGER</PositionText>
+					</CompanyAndPositionContainer>
+				</JobTitleContainer>
+				<JobBox>
+					<EasyAndQuickImage />
+					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
+					<JobText>
+						{/* Set up Shopify store with React. Designed all products for sale.
+						Poduced all UI including components using CSS/SCSS. Set up payment
+						channels and shipping. Photoshop Illustrator Shopify React library
+						CSS. */}
+					</JobText>
+				</JobBox>
 			</BurgerContainer>
 		</WorkExperienceContainer>
 	);

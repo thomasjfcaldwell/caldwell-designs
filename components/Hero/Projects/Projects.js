@@ -12,9 +12,12 @@ import {
 	ShopImage,
 	ShopTitle,
 	ShopText,
+	ShopLinkContainer,
 	ShopLink,
 	ShopCodeLink,
 } from './ProjectsStyles';
+
+const shopImage = 'https://i.ibb.co/N2LTVg6/store-Mock-Up1-phonetablet.png';
 
 const gameImage = 'https://i.ibb.co/rHv6ZqK/capital-Mock-Up.png';
 
@@ -27,7 +30,7 @@ const Projects = () => {
 				<GameImage
 					loading='lazy'
 					src={gameImage}
-					alt='photo of thomas'
+					alt='Mock up of Trivia'
 					className=''
 				/>
 				<GameTitle>GAME</GameTitle>
@@ -44,13 +47,23 @@ const Projects = () => {
 				</GameLinkContainer>
 			</GameContainer>
 			<ShopContainer>
-				<ShopImage />
-				<ShopTitle>Shop</ShopTitle>
-				{/* <ShopText>
-				
-				</ShopText> */}
-				<ShopLink>Play Shop</ShopLink>
-				<ShopCodeLink>See Code</ShopCodeLink>
+				<ShopImage
+					loading='lazy'
+					src={shopImage}
+					alt='Mock Up of Store'
+					className=''
+				/>
+				<ShopTitle>E-COMMENCE</ShopTitle>
+				<ShopText>
+					Store built using Shopify and React. I wanted to build an Unquote site
+					that allowed me To use Shopify for the backend and routes but use All
+					of my own custom CSS to Bring the site to life and stamp on own
+					personality on to it.
+				</ShopText>
+				<ShopLinkContainer>
+					<ShopLink>Play Shop</ShopLink>
+					<ShopCodeLink>See Code</ShopCodeLink>
+				</ShopLinkContainer>
 			</ShopContainer>
 			<WorkButton>Go to Work Experince</WorkButton>
 		</Container>

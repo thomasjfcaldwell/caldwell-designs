@@ -46,18 +46,26 @@ export const GameLinkContainer = styled.div`
 export const GameLink = styled.a``;
 export const GameCodeLink = styled.a``;
 
-export const ShopContainer = styled.div`
-	background-color: ${(props) => props.theme.colors.secondary};
-	color: ${(props) => props.theme.colors.primary};
-	width: 290px;
-	height: 200px;
-	border-radius: 10px;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+export const ShopContainer = styled(GameContainer)`
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 30px 1fr 30px;
 `;
 
-export const ShopImage = styled.image``;
-export const ShopTitle = styled.h5``;
-export const ShopText = styled.p``;
+export const ShopImage = styled.img`
+	width: 150px;
+	grid-column-start: 2;
+	grid-row-start: span 2;
+	margin: auto;
+`;
+export const ShopTitle = styled(GameTitle)`
+	text-transform: uppercase;
+	grid-row-start: 1;
+`;
+export const ShopText = styled(GameText)`
+	grid-column-start: 1;
+	padding-inline-start: 0.9rem;
+`;
+
+export const ShopLinkContainer = styled(GameLinkContainer)``;
 export const ShopLink = styled.a``;
 export const ShopCodeLink = styled.a``;
