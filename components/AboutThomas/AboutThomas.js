@@ -6,10 +6,18 @@ import {
 	AboutThomasText,
 } from './AboutThomasStyles';
 
+const imageOfThomas =
+	'https://i.ibb.co/Dz1Kxf5/austin-distel-Tlu-Mvvr-Z57g-unsplash.jpg';
+
 export default function AboutThomas() {
 	return (
 		<AboutThomasContainer>
-			<AboutThomasImage />
+			<AboutThomasImage
+				loading='lazy'
+				src={imageOfThomas}
+				alt='image of thomas'
+				className=''
+			/>
 			<AboutThomasText>
 				A keen traveller, surfer and runner British by birth, but based in the
 				US. Always curious about code and how web sites work but equally scared.

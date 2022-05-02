@@ -6,7 +6,12 @@ import {
 	ContactThomasSocialMediaLink,
 	ContactThomasTitleContainer,
 	ContactThomasTitle,
+	SocialMediaIcon,
+	SocialTextContainer,
+	SocialMediaTitle,
 } from './ContactThomasStyles';
+
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 const socialMediaData = [
 	{ number: 1, text: 'bummmy bum' },
@@ -21,9 +26,30 @@ function ContactThomas() {
 				<ContactThomasTitle>Contact Thomas</ContactThomasTitle>
 			</ContactThomasTitleContainer>
 			<ContactThomasSocialMediaContainer>
-				<ContactThomasSocialMediaLink>email</ContactThomasSocialMediaLink>
-				<ContactThomasSocialMediaLink>linkedin</ContactThomasSocialMediaLink>
-				<ContactThomasSocialMediaLink>Github</ContactThomasSocialMediaLink>
+				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+					<SocialMediaIcon>
+						<AiOutlineMail />
+					</SocialMediaIcon>
+					<SocialTextContainer>
+						<SocialMediaTitle>Email</SocialMediaTitle>
+					</SocialTextContainer>
+				</ContactThomasSocialMediaLink>
+				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+					<SocialMediaIcon>
+						<AiFillLinkedin />
+					</SocialMediaIcon>
+					<SocialTextContainer>
+						<SocialMediaTitle>Linkedin</SocialMediaTitle>
+					</SocialTextContainer>
+				</ContactThomasSocialMediaLink>
+				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+					<SocialMediaIcon>
+						<AiFillGithub />
+					</SocialMediaIcon>
+					<SocialTextContainer>
+						<SocialMediaTitle>Git Hub</SocialMediaTitle>
+					</SocialTextContainer>
+				</ContactThomasSocialMediaLink>
 			</ContactThomasSocialMediaContainer>
 		</ContactThomasContainer>
 	);

@@ -8,6 +8,9 @@ import {
 	GameLinkContainer,
 	GameLink,
 	GameCodeLink,
+	GameIcon,
+	LinkTextContainer,
+	LinkTitle,
 	ShopContainer,
 	ShopImage,
 	ShopTitle,
@@ -15,11 +18,20 @@ import {
 	ShopLinkContainer,
 	ShopLink,
 	ShopCodeLink,
+	ShopIcon,
+	ShopLinkTextContainer,
+	ShopLinkTitle,
 } from './ProjectsStyles';
 
 const shopImage = 'https://i.ibb.co/N2LTVg6/store-Mock-Up1-phonetablet.png';
 
 const gameImage = 'https://i.ibb.co/rHv6ZqK/capital-Mock-Up.png';
+
+import {
+	AiFillGithub,
+	AiFillPlayCircle,
+	AiOutlineShoppingCart,
+} from 'react-icons/ai';
 
 import { WorkButton } from '../LinkButton/LinkButton.Styles';
 
@@ -42,8 +54,22 @@ const Projects = () => {
 					loose and reset.
 				</GameText>
 				<GameLinkContainer>
-					<GameLink>Play Game</GameLink>
-					<GameCodeLink>See Code</GameCodeLink>
+					<GameLink>
+						<GameIcon style={{ color: '#7FBD9B' }}>
+							<AiFillPlayCircle />
+						</GameIcon>
+						<LinkTextContainer>
+							<LinkTitle>Play Game</LinkTitle>
+						</LinkTextContainer>
+					</GameLink>
+					<GameLink>
+						<GameIcon>
+							<AiFillGithub />
+						</GameIcon>
+						<LinkTextContainer>
+							<LinkTitle>See Code</LinkTitle>
+						</LinkTextContainer>
+					</GameLink>
 				</GameLinkContainer>
 			</GameContainer>
 			<ShopContainer>
@@ -61,8 +87,22 @@ const Projects = () => {
 					personality on to it.
 				</ShopText>
 				<ShopLinkContainer>
-					<ShopLink>Play Shop</ShopLink>
-					<ShopCodeLink>See Code</ShopCodeLink>
+					<ShopLink href='#' target='_blank' rel='noreferrer'>
+						<ShopIcon style={{ color: '#7FBD9B' }}>
+							<AiOutlineShoppingCart />
+						</ShopIcon>
+						<LinkTextContainer>
+							<LinkTitle>Visit Shop</LinkTitle>
+						</LinkTextContainer>
+					</ShopLink>
+					<ShopLink href='#' target='_blank' rel='noreferrer'>
+						<ShopIcon>
+							<AiFillGithub />
+						</ShopIcon>
+						<LinkTextContainer>
+							<LinkTitle>See Code</LinkTitle>
+						</LinkTextContainer>
+					</ShopLink>
 				</ShopLinkContainer>
 			</ShopContainer>
 			<WorkButton>Go to Work Experince</WorkButton>

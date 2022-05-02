@@ -43,8 +43,22 @@ export const GameLinkContainer = styled.div`
 	justify-content: space-around;
 	padding-block: 0.5rem;
 `;
-export const GameLink = styled.a``;
-export const GameCodeLink = styled.a``;
+export const GameLink = styled.a`
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+`;
+
+export const GameIcon = styled.div``;
+export const LinkTextContainer = styled.div``;
+export const LinkTitle = styled.h5`
+	font-size: 11px;
+	padding-inline: 5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: ${(props) => props.theme.colors.primary};
+`;
 
 export const ShopContainer = styled(GameContainer)`
 	grid-template-columns: 2fr 1fr;
@@ -67,5 +81,10 @@ export const ShopText = styled(GameText)`
 `;
 
 export const ShopLinkContainer = styled(GameLinkContainer)``;
-export const ShopLink = styled.a``;
+export const ShopLink = styled.a`
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+`;
 export const ShopCodeLink = styled.a``;
+export const ShopIcon = styled.div``;

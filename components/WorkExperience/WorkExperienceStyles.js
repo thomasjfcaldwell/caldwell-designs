@@ -61,12 +61,18 @@ export const JobBox = styled.div`
 `;
 export const JobBoxHeader = styled.h5`
 	color: ${(props) => props.theme.colors.header};
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1rem;
+	font-size: 0.9rem;
 `;
 export const JobText = styled.p`
-	color: ${(props) => props.theme.colors.header};
+	color: ${(props) => props.theme.colors.primary};
 	grid-column-start: 2;
 	grid-row-start: 2;
-	padding: 0.5rem;
+	padding: 0.1rem;
+	line-height: 1.4;
+	font-family: ${(props) => props.theme.fonts.main};
 `;
 
 export const WowJobBox = styled(JobBox)`

@@ -6,8 +6,7 @@ import Hero from '../components/Hero/Hero';
 import WorkExperience from '../components/WorkExperience/WorkExperience';
 import EducationAndSkills from '../components/EducationAndSkills/EducationAndSkills';
 import AboutThomas from '../components/AboutThomas/AboutThomas';
-import ContactThomas from '../components/ContactThomas/ContactThomas';
-import ThisSite from '../components/ThisSite/ThisSite';
+import ContactAndThisSite from '../components/ContactAndThisSite/ContactAndThisSite';
 // import GlobalStyles from '../styles/globels';
 
 class Home extends Component {
@@ -19,8 +18,7 @@ class Home extends Component {
 				<WorkExperience />
 				<EducationAndSkills />
 				<AboutThomas />
-				<ContactThomas />
-				<ThisSite />
+				<ContactAndThisSite />
 			</Layout>
 		);
 	}
