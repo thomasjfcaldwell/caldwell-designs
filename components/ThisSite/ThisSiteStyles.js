@@ -23,7 +23,13 @@ export const ThisSiteText = styled.p`
 	color: ${(props) => props.theme.colors.primary};
 	margin: 10px 4px;
 	color: ${(props) => props.theme.colors.primary};
-	font-size: 10px;
+	font-size: 9px;
+	text-align: justify;
+	:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
 `;
 export const ThisSiteLink = styled.a`
 	display: flex;

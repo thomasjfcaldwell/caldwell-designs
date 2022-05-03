@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
 	display: grid;
-	grid-template-columns: 160px 1fr;
-	grid-template-rows: 20px 150px 20px;
+	grid-template-columns: 130px 1fr;
+	grid-template-rows: 20px 130px 20px 20px;
+	margin: 2rem auto;
 `;
 
 export const AboutTitle = styled.h2`
@@ -22,5 +23,6 @@ export const AboutText = styled.p`
 	grid-column-start: 2;
 	line-height: 1.4;
 	grid-row-start: 1;
-	padding: 0 10px;
+	grid-row-end: 2;
+	/* padding: 0 10px; */
 `;

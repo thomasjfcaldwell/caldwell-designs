@@ -23,7 +23,7 @@ export const YearText = styled.h3`
 export const CompanyAndPositionContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-top: 7px;
+	margin-top: 5px;
 	margin-left: 2px;
 `;
 export const CompanyText = styled.h4`
@@ -92,6 +92,7 @@ export const WowJobText = styled(JobText)`
 	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 4;
+	padding-inline: 2rem;
 `;
 
 export const WowTabletImage = styled.img`

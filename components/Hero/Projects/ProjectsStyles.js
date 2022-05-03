@@ -27,7 +27,8 @@ export const GameImage = styled.img`
 export const GameTitle = styled.h5`
 	text-align: center;
 	margin-top: 1px;
-	font-size: 20px;
+	font-size: 18px;
+	padding: 2px;
 `;
 export const GameText = styled.p`
 	font-size: 10px;

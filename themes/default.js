@@ -13,7 +13,7 @@ export default {
 		highlight: '#7FBD9B',
 	},
 	fonts: {
-		main: 'roboto, sans-serif',
+		main: 'Montserrat, sans-serif',
 		title: 'Roboto Slab, serif',
 	},
 };

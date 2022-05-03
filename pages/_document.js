@@ -32,8 +32,8 @@ export default class MyDocument extends Document {
 			<Html lang='en-GB'>
 				<Head>
 					<link
-						rel='stylesheet'
-						href='https://use.typekit.net/imo8nta.css'></link>
+						href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap'
+						rel='stylesheet'></link>
 					<link
 						href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'
 						rel='stylesheet'></link>

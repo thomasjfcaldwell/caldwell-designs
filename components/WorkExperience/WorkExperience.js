@@ -89,10 +89,13 @@ export default function WorkExperience() {
 					/>
 					<WowJobBoxHeader>Responsibilities And Achievements</WowJobBoxHeader>
 					<WowJobText>
-						Set up Shopify store with React. Designed all products for sale.
-						Poduced all UI including components using CSS/SCSS. Set up payment
-						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS.
+						Plan, design and develop stand alone site for the purposes of
+						showing information on services offered and to receive booking leads
+						for those service. Also produce print marketing assets. Within a few
+						months add all services and content to existing website. Tools used
+						include React, Bootstrap for styling, 3rd party forms integrated
+						into site to collect potential customer details. Photoshop for image
+						editing and resizing, InDesign for flyer and brochure production.
 					</WowJobText>
 				</WowJobBox>
 			</WowContainer>
@@ -107,10 +110,15 @@ export default function WorkExperience() {
 				<ECigJobBox>
 					<ECigJobBoxHeader>Responsibilities And Achievements</ECigJobBoxHeader>
 					<ECigJobText>
-						Set up Shopify store with React. Designed all products for sale.
-						Poduced all UI including components using CSS/SCSS. Set up payment
-						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS.
+						Assisted in brand new website built on Big Commerce platform
+						including SEO. Management of website from start up. Within first
+						year moved site from basic template to more interactive site for
+						E-commerce store to improve user experience. Updated non-ecommce
+						site using Wordpress plug-in Elementor. Responsible all marketing
+						materials online and print - including HTML emails sent using
+						Constant Contact, web banners and print mailers sent to 15,000 shops
+						within the USA. Rebranded company to a more professional and forward
+						thinking business.
 					</ECigJobText>
 				</ECigJobBox>
 			</ECigContainer>
@@ -127,10 +135,10 @@ export default function WorkExperience() {
 						Responsibilities And Achievements
 					</BurgerJobBoxHeader>
 					<BurgerJobText>
-						Set up Shopify store with React. Designed all products for sale.
-						Poduced all UI including components using CSS/SCSS. Set up payment
-						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS.
+						In charge of booking all events including private and public using
+						Salesforce as a CRM and organizing of schedule.. Answer phone,
+						design invoices and surchure business. Follow up on sent invoices,
+						management of social media and design of menus.
 					</BurgerJobText>
 				</BurgerJobBox>
 			</BurgerContainer>

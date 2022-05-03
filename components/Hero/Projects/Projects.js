@@ -79,7 +79,7 @@ const Projects = () => {
 					alt='Mock Up of Store'
 					className=''
 				/>
-				<ShopTitle>E-COMMENCE</ShopTitle>
+				<ShopTitle>STORE</ShopTitle>
 				<ShopText>
 					Store built using Shopify and React. I wanted to build an Unquote site
 					that allowed me To use Shopify for the backend and routes but use All

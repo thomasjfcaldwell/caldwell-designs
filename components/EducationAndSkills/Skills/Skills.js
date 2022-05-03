@@ -43,9 +43,8 @@ export default function Skills() {
 				/>
 			</SkillsImages>
 			<SkillsText>
-				I am experienced in using Adobe Creative Cloud to produce print and web
-				graphics. Along with Photo editing using Photoshop, Logo and icon design
-				with Illustrator, layouts with Indesign plus Web Mock ups with Adobe XD
+				I have experience all the skills necessary for Web Development including
+				development languages, git control and bug fixing knowledge.
 			</SkillsText>
 			<SkillsImages>
 				<SkillsImage
@@ -74,9 +73,9 @@ export default function Skills() {
 				/>
 			</SkillsImages>
 			<SkillsText>
-				I am experienced in using Adobe Creative Cloud to produce print and web
-				graphics. Along with Photo editing using Photoshop, Logo and icon design
-				with Illustrator, layouts with Indesign plus Web Mock ups with Adobe XD
+				On top of Web Development languages I have experience in Web Design and
+				Development frameworks, libraries and code editors. Including Wordpress,
+				React and Bootstrap.
 			</SkillsText>
 			<SkillsImages>
 				<SkillsImage

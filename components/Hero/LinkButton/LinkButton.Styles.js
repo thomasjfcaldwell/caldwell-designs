@@ -18,9 +18,10 @@ export const WorkButton = styled(LinkButton)`
 
 export const AboutLink = styled(LinkButton)`
 	padding: 2px 0;
-	width: 150px;
+	width: 155px;
 	text-align: center;
 	grid-row-start: 3;
+	grid-row-end: 4;
 	grid-column-start: 2;
 	margin: auto;
 `;

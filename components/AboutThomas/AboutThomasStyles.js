@@ -18,7 +18,8 @@ export const AboutThomasImage = styled.img`
 export const AboutThomasText = styled.p`
 	color: ${(props) => props.theme.colors.primary};
 	padding: 0.5rem 2rem 2rem;
-	font-size: 9px;
-	font-weight: 900;
+	font-size: 12px;
+	font-weight: 400;
 	line-height: 1.4;
+	text-align: justify;
 `;
