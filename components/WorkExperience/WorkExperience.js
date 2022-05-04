@@ -104,7 +104,7 @@ export default function WorkExperience() {
 					<YearText>2016-20</YearText>
 					<CompanyAndPositionContainer>
 						<CompanyText>E-CIG GALLERY</CompanyText>
-						<PositionText>MARKETING MANAGER/DESIGNER</PositionText>
+						<PositionText>MARKETING MANAGER</PositionText>
 					</CompanyAndPositionContainer>
 				</JobTitleContainer>
 				<ECigJobBox>

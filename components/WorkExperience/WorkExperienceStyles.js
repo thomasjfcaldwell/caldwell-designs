@@ -5,7 +5,16 @@ export const WorkExperienceContainer = styled.section`
 	grid-template-columns: 1fr;
 	margin: auto;
 	grid-gap: 20px;
-	/* justify-content: center; */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: min-content 300px 200px;
+		grid-gap: 1px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: max-content 1fr;
+		grid-gap: 1px;
+	}
 `;
 
 export const JobTitleContainer = styled.div`
@@ -44,11 +53,27 @@ export const EasyAndQuickImage = styled.img`
 	grid-row-start: span 2;
 `;
 
-export const WowContainer = styled(EasyAndQuickContainer)``;
+export const WowContainer = styled(EasyAndQuickContainer)`
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+`;
 
 export const ECigContainer = styled(EasyAndQuickContainer)``;
 
-export const BurgerContainer = styled(EasyAndQuickContainer)``;
+export const BurgerContainer = styled(EasyAndQuickContainer)`
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-column-start: 2;
+		grid-row-start: 4;
+		margin-top: -60px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-column-start: 4;
+		grid-row-start: 1;
+	}
+`;
 
 export const JobBox = styled.div`
 	background-color: ${(props) => props.theme.colors.secondary};
@@ -96,13 +121,13 @@ export const WowJobText = styled(JobText)`
 `;
 
 export const WowTabletImage = styled.img`
-	width: 100px;
+	width: 140px;
 	margin: auto;
 `;
 
 export const WowDesktopImage = styled.img`
 	grid-column-start: 2;
-	width: 100px;
+	width: 140px;
 	margin: auto;
 `;
 

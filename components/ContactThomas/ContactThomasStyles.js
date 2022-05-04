@@ -12,7 +12,9 @@ export const ContactThomasContainer = styled.section`
 export const ContactThomasTitleContainer = styled.div`
 	padding-block: 0.5rem;
 `;
-export const ContactThomasTitle = styled.h2``;
+export const ContactThomasTitle = styled.h2`
+	font-size: 2rem;
+`;
 export const ContactThomasSocialMediaContainer = styled.div`
 	display: flex;
 	flex-direction: column;

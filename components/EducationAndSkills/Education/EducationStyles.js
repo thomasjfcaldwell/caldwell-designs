@@ -2,6 +2,15 @@ import styled from 'styled-components';
 
 export const EducationContainer = styled.section`
 	padding-block: 1rem;
+	display:grid:
+	grid-template-columns:1fr;
+	grid-template-rows:2fr 2fr 1fr;;
+	/* grid-gap-rows:1rem; */
+
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-column-start: 6;
+		grid-column-end: 9;
+	}
 `;
 
 export const BootContainer = styled.div`
@@ -9,27 +18,38 @@ export const BootContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 15px;
+	background-color: ${(props) => props.theme.colors.secondary};
+	border-radius: 10px;
+	/* grid-row-start: 1;
+	grid-row-end: 3; */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		padding: 1rem 1.2rem;
+	}
 `;
 
-export const CertificateContainer = styled(BootContainer)``;
+export const CertificateContainer = styled(BootContainer)`
+	/* grid-row-start: 4;
+	grid-row-end: 5; */
+`;
 export const CollegeContainer = styled(BootContainer)``;
 export const SchoolContainer = styled(BootContainer)``;
 
 export const EducationTitle = styled.h4`
-	margin: 0.5rem auto;
-	font-size: 0.9rem;
+	margin: 0.2rem auto;
+	font-size: 0.8rem;
 	font-weight: 900;
-	color: ${(props) => props.theme.colors.highlight};
+	color: ${(props) => props.theme.colors.primary};
 `;
 export const EducationSubTitle = styled.h5`
 	font-size: 0.7rem;
+	color: ${(props) => props.theme.colors.primary};
 `;
 export const EducationIntro = styled.p`
 	font-size: 9px;
 	text-align: center;
 	margin-block: 20px;
 	line-height: 1.4;
-	background-color: ${(props) => props.theme.colors.highlight};
+	color: ${(props) => props.theme.colors.primary};
 	padding: 1rem 0.5rem;
 	border-radius: 10px;
 `;

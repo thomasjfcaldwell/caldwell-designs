@@ -5,6 +5,12 @@ export const SkillsContainer = styled.section`
 	background-color: ${(props) => props.theme.colors.secondary};
 	border-radius: 10px;
 	padding-block: 0.5rem;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		/* grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
+		grid-column-start: 1;
+		grid-column-end: 6;
+	}
 `;
 
 export const SkillsText = styled.p`
@@ -13,6 +19,12 @@ export const SkillsText = styled.p`
 	text-align: justify;
 	font-size: 9.5px;
 	line-height: 1.4;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		/* grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
+		font-size: 12px;
+		padding: 2rem 1rem;
+	}
 `;
 
 export const SkillsImages = styled.div`
@@ -23,4 +35,14 @@ export const SkillsImages = styled.div`
 
 export const SkillsImage = styled.img`
 	width: 30px;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		/* grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
+		width: 60px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1484px) and (-webkit-min-device-pixel-ratio: 1) {
+		/* grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
+		width: 60px;
+	}
 `;

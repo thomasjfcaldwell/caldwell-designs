@@ -9,11 +9,27 @@ export const LinkButton = styled.a`
 	line-height: 1.4;
 	margin-top: 1px;
 	letter-spacing: 0.08rem;
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 12px;
+	}
 `;
 
 export const WorkButton = styled(LinkButton)`
 	text-align: center;
 	font-size: 11px;
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 90%;
+		position: relative;
+		top: 270px;
+		left: 150px;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 90%;
+		position: relative;
+		left: 174px;
+		top: -50px;
+		font-size: 12px;
+	}
 `;
 
 export const AboutLink = styled(LinkButton)`
@@ -23,5 +39,5 @@ export const AboutLink = styled(LinkButton)`
 	grid-row-start: 3;
 	grid-row-end: 4;
 	grid-column-start: 2;
-	margin: auto;
+	margin: 2rem auto;
 `;

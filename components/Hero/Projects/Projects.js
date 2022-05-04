@@ -63,7 +63,7 @@ const Projects = () => {
 						</LinkTextContainer>
 					</GameLink>
 					<GameLink>
-						<GameIcon>
+						<GameIcon style={{ color: '#7FBD9B' }}>
 							<AiFillGithub />
 						</GameIcon>
 						<LinkTextContainer>
@@ -96,7 +96,7 @@ const Projects = () => {
 						</LinkTextContainer>
 					</ShopLink>
 					<ShopLink href='#' target='_blank' rel='noreferrer'>
-						<ShopIcon>
+						<ShopIcon style={{ color: '#7FBD9B' }}>
 							<AiFillGithub />
 						</ShopIcon>
 						<LinkTextContainer>

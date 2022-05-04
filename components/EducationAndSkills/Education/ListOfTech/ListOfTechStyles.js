@@ -14,6 +14,7 @@ export const ListOfTechHTML = styled.p`
 	font-size: 8px;
 	padding-inline: 2px;
 	display: inline;
+	color: ${(props) => props.theme.colors.primary};
 `;
 export const ListOfTechCSS = styled(ListOfTechHTML)``;
 export const ListOfTechJavascript = styled(ListOfTechHTML)`
