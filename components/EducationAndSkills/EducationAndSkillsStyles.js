@@ -12,4 +12,8 @@ export const EducationAndSkillsContainer = styled.section`
 		grid-template-rows: 1fr;
 		grid-gap: 30px;
 	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		grid-gap: 80px;
+		align-items: center;
+	}
 `;

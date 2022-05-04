@@ -11,6 +11,9 @@ export const SkillsContainer = styled.section`
 		grid-column-start: 1;
 		grid-column-end: 6;
 	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		padding-inline: 3rem;
+	}
 `;
 
 export const SkillsText = styled.p`
@@ -24,6 +27,9 @@ export const SkillsText = styled.p`
 		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
 		font-size: 12px;
 		padding: 2rem 1rem;
+	}
+	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 13px;
 	}
 `;
 
