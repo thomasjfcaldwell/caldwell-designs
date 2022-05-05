@@ -25,7 +25,7 @@ function ContactThomas() {
 			<ContactThomasTitleContainer>
 				<ContactThomasTitle>Contact Thomas</ContactThomasTitle>
 			</ContactThomasTitleContainer>
-			<ContactThomasSocialMediaContainer>
+			<ContactThomasSocialMediaContainer id='contact'>
 				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
 					<SocialMediaIcon>
 						<AiOutlineMail />

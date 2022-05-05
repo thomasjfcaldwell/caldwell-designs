@@ -5,12 +5,12 @@ export const WorkExperienceContainer = styled.section`
 	grid-template-columns: 1fr;
 	margin: auto;
 	grid-gap: 20px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: min-content 300px 200px;
 		grid-gap: 1px;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: 1fr 1fr;
 	}
@@ -45,7 +45,7 @@ export const PositionText = styled.h5`
 `;
 
 export const EasyAndQuickContainer = styled.div`
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 1;
 		grid-column-end: 6;
 		grid-row-start: 1;
@@ -59,12 +59,12 @@ export const EasyAndQuickImage = styled.img`
 `;
 
 export const WowContainer = styled(EasyAndQuickContainer)`
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: 2;
 		grid-row-start: 2;
 		grid-row-end: 4;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 8;
 		grid-row-start: 1;
 		/* grid-row-end: 3; */
@@ -72,19 +72,19 @@ export const WowContainer = styled(EasyAndQuickContainer)`
 `;
 
 export const ECigContainer = styled(EasyAndQuickContainer)`
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-row-start: 2;
 		grid-column-start: 1;
 	}
 `;
 
 export const BurgerContainer = styled(EasyAndQuickContainer)`
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: 2;
 		grid-row-start: 4;
 		margin-top: -60px;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-row-start: 2;
 		grid-column-start: 8;
 	}
@@ -98,7 +98,7 @@ export const JobBox = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 4fr;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		width: 400px;
 	}
 `;
@@ -122,7 +122,7 @@ export const WowJobBox = styled(JobBox)`
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 30px max-content;
 	padding-block: 2rem;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		width: 550px;
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: 20px 1fr 1fr;
@@ -133,7 +133,7 @@ export const WowJobBoxHeader = styled(JobBoxHeader)`
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 2;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 2;
 		grid-row-start: 1;
 		grid-row-end: 2;
@@ -146,7 +146,7 @@ export const WowJobText = styled(JobText)`
 	grid-row-start: 3;
 	grid-row-end: 4;
 	padding-inline: 2rem;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 2;
 		grid-row-start: 2;
 		grid-row-end: 4;
@@ -163,7 +163,7 @@ export const WowDesktopImage = styled.img`
 	grid-column-start: 2;
 	width: 140px;
 	margin: auto;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		grid-row-start: 3;

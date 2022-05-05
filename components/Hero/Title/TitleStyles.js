@@ -6,14 +6,15 @@ export const TitleContainer = styled.div`
 	justify-content: space-around;
 	align-items: center;
 	height: 50px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	margin-top: 2rem;
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: span 2;
 		grid-row-start: 1;
 		/* background-color: green; */
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-row-start: 1;
 		grid-column-start: 4;
 		grid-column-end: 8;
@@ -30,7 +31,7 @@ export const MoreProjectsLinkContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: 2;
 		width: 100%;
 		/* background-color: pink;

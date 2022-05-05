@@ -4,6 +4,7 @@ import {
 	AboutThomasContainer,
 	AboutThomasImage,
 	AboutThomasText,
+	AboutThomasTitle,
 } from './AboutThomasStyles';
 
 const imageOfThomas =
@@ -11,7 +12,7 @@ const imageOfThomas =
 
 export default function AboutThomas() {
 	return (
-		<AboutThomasContainer>
+		<AboutThomasContainer id='about'>
 			<AboutThomasImage
 				loading='lazy'
 				src={imageOfThomas}

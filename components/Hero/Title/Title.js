@@ -12,7 +12,7 @@ import { LinkButton } from '../LinkButton/LinkButton.Styles';
 function Title() {
 	return (
 		<TitleContainer>
-			<ProjectTitle>Projects</ProjectTitle>
+			<ProjectTitle id='projects'>Projects</ProjectTitle>
 			<MoreProjectsLinkContainer>
 				<LinkButton>See More Projects</LinkButton>
 			</MoreProjectsLinkContainer>

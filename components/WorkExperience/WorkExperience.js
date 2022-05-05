@@ -38,7 +38,7 @@ const wowDesktopImage = 'https://i.ibb.co/1Xs799T/picnic-destop-mock-Up.png';
 
 export default function WorkExperience() {
 	return (
-		<WorkExperienceContainer>
+		<WorkExperienceContainer id='work-history'>
 			<WorkExperienceTitleContainer>
 				<WorkExperienceTitle>Work Experience</WorkExperienceTitle>
 			</WorkExperienceTitleContainer>

@@ -7,17 +7,20 @@ export const Container = styled.div`
 	grid-template-columns: 1fr;
 	justify-items: center;
 	grid-gap: 15px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: span 1;
 		grid-row-start: 2;
+		background-color: red;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 1;
 		grid-column-end: 8;
 		grid-row-start: 1;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 25px;
 		margin-top: 8rem;
+		background-color: yellow;
 	}
 `;
 
@@ -30,11 +33,11 @@ export const GameContainer = styled.div`
 	display: grid;
 	grid-template-columns: 100px 1fr;
 	grid-template-rows: 30px 1fr 30px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		width: 380px;
 		height: 200px;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		/* grid-column-start: 1;
 		grid-column-end: 4;
 		grid-row-start: 2;
@@ -62,12 +65,12 @@ export const GameText = styled.p`
 	grid-row-start: 2;
 	line-height: 1.4;
 	padding: 0.1rem;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		font-size: 12px;
 		padding-inline: 0.5rem;
 		margin-top: 5px;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		font-size: 14px;
 		padding-inline: 0.5rem;
 		margin-top: 10px;
@@ -104,7 +107,7 @@ export const LinkTitle = styled.h5`
 export const ShopContainer = styled(GameContainer)`
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 30px 1fr 30px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: span 1;
 		grid-row-start: 3;
 	}

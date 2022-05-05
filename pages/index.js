@@ -17,18 +17,13 @@ class Home extends Component {
 	render() {
 		return (
 			<Layout>
-				<Link
-					href='../components/ContactAndThisSite/ContactAndThisSite#contact'
-					scroll={false}>
-					<a>The Team</a>
-				</Link>
-				<Nav />
+				{/* <Nav /> */}
 				<Header />
 				<Hero />
 				<WorkExperience />
 				<EducationAndSkills />
 				<AboutThomas />
-				<ContactAndThisSite id='contact' />
+				<ContactAndThisSite />
 			</Layout>
 		);
 	}

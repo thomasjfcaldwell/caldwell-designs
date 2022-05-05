@@ -9,7 +9,7 @@ export const LinkButton = styled.a`
 	line-height: 1.4;
 	margin-top: 1px;
 	letter-spacing: 0.08rem;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		font-size: 12px;
 	}
 `;
@@ -17,13 +17,13 @@ export const LinkButton = styled.a`
 export const WorkButton = styled(LinkButton)`
 	text-align: center;
 	font-size: 11px;
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		width: 90%;
 		position: relative;
 		top: 270px;
 		left: 150px;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		width: 90%;
 		position: relative;
 		left: 174px;
