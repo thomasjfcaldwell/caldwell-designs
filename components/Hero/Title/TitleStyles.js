@@ -15,9 +15,14 @@ export const TitleContainer = styled.div`
 		grid-template-columns: 2fr 1fr;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
+		grid-column-start: 1;
+		grid-column-end: 5;
+
 		grid-row-start: 1;
-		grid-column-start: 4;
-		grid-column-end: 8;
+		margin: 0;
+		/* background-color: green; */
+		width: 100%;
+		margin-left: 209px;
 	}
 `;
 
@@ -25,6 +30,12 @@ export const ProjectTitle = styled.h2`
 	/* font-size: 20px; */
 	text-align: center;
 	font-size: 3rem;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		font-size: 4rem;
+		padding: 1rem;
+		grid-column-start: 3;
+		grid-row-start: 1;
+	}
 `;
 
 export const MoreProjectsLinkContainer = styled.div`
@@ -43,6 +54,11 @@ export const WorkExperienceTitle = styled(ProjectTitle)``;
 
 export const WorkExperienceTitleContainer = styled(TitleContainer)`
 	justify-content: center;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		grid-row-start: 1;
+		grid-column-start: 1;
+		margin-top: -50px;
+	}
 `;
 
 export const ContactThomasTitle = styled(ProjectTitle)`

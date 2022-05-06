@@ -24,11 +24,12 @@ export const WorkButton = styled(LinkButton)`
 		left: 150px;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		width: 90%;
-		position: relative;
-		left: 174px;
-		top: -50px;
-		font-size: 12px;
+		grid-row-start: 3;
+		grid-column-start: span 4;
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 `;
 

@@ -10,17 +10,17 @@ export const Container = styled.div`
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: span 1;
 		grid-row-start: 2;
-		background-color: red;
+		/* background-color: red; */
 	}
 
 	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 1;
 		grid-column-end: 8;
 		grid-row-start: 1;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 25px;
-		margin-top: 8rem;
-		background-color: yellow;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 50px 250px 30px;
+		margin-top: 0rem;
+		/* background-color: yellow; */
 	}
 `;
 
@@ -45,6 +45,9 @@ export const GameContainer = styled.div`
 		width: 400px;
 		height: 250px;
 		grid-template-columns: 120px 1fr;
+		grid-column-start: span 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
 	}
 `;
 

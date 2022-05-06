@@ -15,5 +15,6 @@ export const Container = styled.div`
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: 1fr;
 		padding: 3rem;
+		margin-top: 2.5rem;
 	}
 `;

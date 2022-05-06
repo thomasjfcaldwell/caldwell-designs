@@ -6,11 +6,9 @@ export const ThisSiteContainer = styled.section`
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
-		position: relative;
-		top: -500px;
-		width: 80%;
-		left: 70px;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		width: 70%;
+		margin-block: 5rem;
 	}
 `;
 
@@ -19,7 +17,7 @@ export const ThisSiteHeader = styled.h5`
 	color: ${(props) => props.theme.colors.primary};
 	font-size: 15px;
 	text-transform: uppercase;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		font-size: 20px;
 	}
 `;
@@ -27,7 +25,7 @@ export const ThisSiteImage = styled.img`
 	width: 100%;
 	padding-inline: 1rem;
 	border-radius: 10px;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		width: 80%;
 		margin: 0 auto;
 	}
@@ -43,7 +41,7 @@ export const ThisSiteText = styled.p`
 		display: inline-block;
 		width: 100%;
 	}
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		width: 90%;
 		margin-inline: auto;
 		font-size: 11px;
@@ -54,7 +52,7 @@ export const ThisSiteLink = styled.a`
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	@media only screen and (min-device-width: 1025px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+	@media ${(props) => props.theme.breakpoints.xl} {
 		padding: 2rem;
 	}
 `;

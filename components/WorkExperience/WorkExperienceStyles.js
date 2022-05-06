@@ -11,8 +11,11 @@ export const WorkExperienceContainer = styled.section`
 		grid-gap: 1px;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 1fr 1fr;
+		grid-template-columns: repeat(1fr);
+		grid-template-rows: min-content 1fr;
+		height: 100vh;
+		padding: 1rem;
+		margin-top: 2rem;
 	}
 `;
 
@@ -26,6 +29,9 @@ export const JobTitleContainer = styled.div`
 export const YearText = styled.h3`
 	font-size: 35px;
 	grid-row-start: 1;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		font-size: 40px;
+	}
 `;
 
 export const CompanyAndPositionContainer = styled.div`
@@ -37,17 +43,23 @@ export const CompanyAndPositionContainer = styled.div`
 export const CompanyText = styled.h4`
 	font-size: 13px;
 	font-weight: 500;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		font-size: 16px;
+	}
 `;
 export const PositionText = styled.h5`
 	font-size: 11px;
 	font-weight: 300;
 	letter-spacing: 0.7px;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		font-size: 13px;
+	}
 `;
 
 export const EasyAndQuickContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-column-start: 1;
-		grid-column-end: 6;
+		grid-column-end: 7;
 		grid-row-start: 1;
 	}
 `;
@@ -60,7 +72,7 @@ export const EasyAndQuickImage = styled.img`
 
 export const WowContainer = styled(EasyAndQuickContainer)`
 	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: 2;
+		grid-column-start: ;
 		grid-row-start: 2;
 		grid-row-end: 4;
 	}
@@ -73,6 +85,10 @@ export const WowContainer = styled(EasyAndQuickContainer)`
 
 export const ECigContainer = styled(EasyAndQuickContainer)`
 	@media ${(props) => props.theme.breakpoints.lg} {
+		grid-row-start: 3;
+		grid-column-start: 1;
+	}
+	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-row-start: 2;
 		grid-column-start: 1;
 	}

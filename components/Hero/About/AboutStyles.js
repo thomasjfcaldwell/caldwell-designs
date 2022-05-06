@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
 	display: grid;
 	grid-template-columns: 130px 1fr;
 	grid-template-rows: 20px 130px 20px 20px;
-	margin: 2rem auto;
+	/* margin: 2rem auto; */
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: 2;
 		grid-row-start: 2;

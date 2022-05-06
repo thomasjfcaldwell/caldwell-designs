@@ -2,11 +2,16 @@ import styled from 'styled-components';
 
 export const ContactThomasContainer = styled.section`
 	display: flex;
-	width: 100%;
+	/* width: 100%; */
 	/* background-color: pink; */
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media ${(props) => props.theme.breakpoints.xl};
+	 {
+		/* flex-direction: row;
+		/* background-color: pink; */
+	}
 `;
 
 export const ContactThomasTitleContainer = styled.div`
@@ -14,12 +19,20 @@ export const ContactThomasTitleContainer = styled.div`
 `;
 export const ContactThomasTitle = styled.h2`
 	font-size: 2rem;
+	@media ${(props) => props.theme.breakpoints.xl} {
+		font-size: 4rem;
+	}
 `;
 export const ContactThomasSocialMediaContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	@media ${(props) => props.theme.breakpoints.xl};
+	 {
+		flex-direction: row;
+		/* background-color: green; */
+	}
 `;
 export const ContactThomasSocialMediaLink = styled.a`
 	padding-block: 1rem;
@@ -27,6 +40,10 @@ export const ContactThomasSocialMediaLink = styled.a`
 	text-decoration: none;
 	:hover {
 		text-decoration: underline;
+	}
+	@media ${(props) => props.theme.breakpoints.xl};
+	 {
+		padding: 2rem;
 	}
 `;
 
