@@ -23,6 +23,8 @@ import {
 	ShopLinkTitle,
 } from './ProjectsStyles';
 
+import Link from 'next/link';
+
 const shopImage = 'https://i.ibb.co/N2LTVg6/store-Mock-Up1-phonetablet.png';
 
 const gameImage = 'https://i.ibb.co/rHv6ZqK/capital-Mock-Up.png';
@@ -59,7 +61,11 @@ const Projects = () => {
 							<AiFillPlayCircle />
 						</GameIcon>
 						<LinkTextContainer>
-							<LinkTitle>Play Game</LinkTitle>
+							<Link
+								href='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
+								scroll={false}>
+								<LinkTitle>Play Game</LinkTitle>
+							</Link>
 						</LinkTextContainer>
 					</GameLink>
 					<GameLink>
@@ -67,7 +73,11 @@ const Projects = () => {
 							<AiFillGithub />
 						</GameIcon>
 						<LinkTextContainer>
-							<LinkTitle>See Code</LinkTitle>
+							<Link
+								href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
+								scroll={false}>
+								<LinkTitle>See Code</LinkTitle>
+							</Link>
 						</LinkTextContainer>
 					</GameLink>
 				</GameLinkContainer>
@@ -87,25 +97,31 @@ const Projects = () => {
 					personality on to it.
 				</ShopText>
 				<ShopLinkContainer>
-					<ShopLink href='#' target='_blank' rel='noreferrer'>
+					<ShopLink>
 						<ShopIcon style={{ color: '#7FBD9B' }}>
 							<AiOutlineShoppingCart />
 						</ShopIcon>
 						<LinkTextContainer>
-							<LinkTitle>Visit Shop</LinkTitle>
+							<Link href='https://easyandquickgifts.com/' scroll={false}>
+								<LinkTitle>Visit Shop</LinkTitle>
+							</Link>
 						</LinkTextContainer>
 					</ShopLink>
-					<ShopLink href='#' target='_blank' rel='noreferrer'>
+					<ShopLink>
 						<ShopIcon style={{ color: '#7FBD9B' }}>
 							<AiFillGithub />
 						</ShopIcon>
 						<LinkTextContainer>
-							<LinkTitle>See Code</LinkTitle>
+							<Link href='https://github.com/thomasjfcaldwell' scroll={false}>
+								<LinkTitle>See Code</LinkTitle>
+							</Link>
 						</LinkTextContainer>
 					</ShopLink>
 				</ShopLinkContainer>
 			</ShopContainer>
-			<WorkButton>Go to Work Experince</WorkButton>
+			<Link href='#work-history' scroll={false}>
+				<WorkButton>Go to Work Experince</WorkButton>
+			</Link>
 		</Container>
 	);
 };

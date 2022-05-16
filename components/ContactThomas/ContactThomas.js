@@ -26,7 +26,10 @@ function ContactThomas() {
 				<ContactThomasTitle>Contact Thomas</ContactThomasTitle>
 			</ContactThomasTitleContainer>
 			<ContactThomasSocialMediaContainer id='contact'>
-				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+				<ContactThomasSocialMediaLink
+					href='mailto:thomasjfcaldwell@gmail.com'
+					target='_blank'
+					rel='noreferrer'>
 					<SocialMediaIcon>
 						<AiOutlineMail />
 					</SocialMediaIcon>
@@ -34,7 +37,10 @@ function ContactThomas() {
 						<SocialMediaTitle>Email</SocialMediaTitle>
 					</SocialTextContainer>
 				</ContactThomasSocialMediaLink>
-				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+				<ContactThomasSocialMediaLink
+					href='https://www.linkedin.com/in/thomas-caldwell-huntingtonbeach/'
+					target='_blank'
+					rel='noreferrer'>
 					<SocialMediaIcon>
 						<AiFillLinkedin />
 					</SocialMediaIcon>
@@ -42,7 +48,10 @@ function ContactThomas() {
 						<SocialMediaTitle>Linkedin</SocialMediaTitle>
 					</SocialTextContainer>
 				</ContactThomasSocialMediaLink>
-				<ContactThomasSocialMediaLink href='#' target='_blank' rel='noreferrer'>
+				<ContactThomasSocialMediaLink
+					href='https://github.com/thomasjfcaldwell'
+					target='_blank'
+					rel='noreferrer'>
 					<SocialMediaIcon>
 						<AiFillGithub />
 					</SocialMediaIcon>
