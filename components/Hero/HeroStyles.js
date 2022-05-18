@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	width: 85%;
 	margin-inline: auto;
+	background-color: yellow;
 	@media ${(props) => props.theme.breakpoints.lg} {
 		display: grid;
 		grid-template-columns: 2fr 1fr;

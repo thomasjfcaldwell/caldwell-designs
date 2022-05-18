@@ -57,7 +57,6 @@ export const WorkExperienceTitleContainer = styled(TitleContainer)`
 	@media ${(props) => props.theme.breakpoints.xl} {
 		grid-row-start: 1;
 		grid-column-start: 1;
-		margin-top: -50px;
 	}
 `;
 

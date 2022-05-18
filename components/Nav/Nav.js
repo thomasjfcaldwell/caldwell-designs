@@ -6,7 +6,7 @@ import { Container, LinkText } from './NavStyles';
 export default function Nav() {
 	return (
 		<Container>
-			<Link href='#contact' scroll={false}>
+			<Link href='#contact'>
 				<LinkText>contact</LinkText>
 			</Link>
 			<Link href='#projects' scroll={false}>

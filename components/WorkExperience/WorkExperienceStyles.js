@@ -5,17 +5,14 @@ export const WorkExperienceContainer = styled.section`
 	grid-template-columns: 1fr;
 	margin: auto;
 	grid-gap: 20px;
+	background-color: pink;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: min-content 300px 200px;
-		grid-gap: 1px;
+		/* grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto 1fr 1fr; */
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-template-columns: repeat(1fr);
-		grid-template-rows: min-content 1fr;
-		height: 100vh;
-		padding: 1rem;
-		margin-top: 2rem;
+		/* grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto 1fr 1fr; */
 	}
 `;
 
@@ -57,10 +54,14 @@ export const PositionText = styled.h5`
 `;
 
 export const EasyAndQuickContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
 	@media ${(props) => props.theme.breakpoints.xl} {
+		grid-row-start: 2;
 		grid-column-start: 1;
-		grid-column-end: 7;
-		grid-row-start: 1;
+		grid-column-end: 2;
 	}
 `;
 
@@ -72,37 +73,30 @@ export const EasyAndQuickImage = styled.img`
 
 export const WowContainer = styled(EasyAndQuickContainer)`
 	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: ;
-		grid-row-start: 2;
-		grid-row-end: 4;
+		grid-column-start: 2;
+		grid-column-end: 3;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 8;
-		grid-row-start: 1;
-		/* grid-row-end: 3; */
+		grid-column-start: 2;
+		grid-column-end: 3;
 	}
 `;
 
 export const ECigContainer = styled(EasyAndQuickContainer)`
 	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-row-start: 3;
-		grid-column-start: 1;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-row-start: 2;
-		grid-column-start: 1;
+		grid-row-start: 3;
 	}
 `;
 
 export const BurgerContainer = styled(EasyAndQuickContainer)`
 	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: 2;
-		grid-row-start: 4;
-		margin-top: -60px;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-row-start: 2;
-		grid-column-start: 8;
+		grid-row-start: 3;
+		grid-column-start: 2;
+		grid-column-end: 3;
 	}
 `;
 

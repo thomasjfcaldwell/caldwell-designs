@@ -99,7 +99,7 @@ export default function WorkExperience() {
 					</WowJobText>
 				</WowJobBox>
 			</WowContainer>
-			<ECigContainer className='e-cig'>
+			<ECigContainer>
 				<JobTitleContainer>
 					<YearText>2016-20</YearText>
 					<CompanyAndPositionContainer>

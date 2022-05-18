@@ -6,7 +6,7 @@ export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-items: center;
-	grid-gap: 15px;
+	grid-gap: 40px;
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-column-start: span 1;
 		grid-row-start: 2;
