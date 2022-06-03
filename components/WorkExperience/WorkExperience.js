@@ -1,36 +1,43 @@
 import React from 'react';
-
+import {
+	SiAdobephotoshop,
+	SiAdobeillustrator,
+	SiShopify,
+	SiReact,
+	SiBootstrap,
+	SiGoogledrive,
+	SiAdobeindesign,
+	SiAdobedreamweaver,
+	SiBigcommerce,
+	SiWordpress,
+	SiSalesforce,
+	SiFacebook,
+	SiYelp,
+} from 'react-icons/si';
 import {
 	WorkExperienceContainer,
-	EasyAndQuickContainer,
-	WowContainer,
-	ECigContainer,
-	BurgerContainer,
+	WorkExperienceRow,
+	JobContainer,
 	JobTitleContainer,
 	YearText,
 	CompanyAndPositionContainer,
 	CompanyText,
 	PositionText,
 	JobBox,
+	JobBoxBottom,
 	JobBoxHeader,
-	JobText,
-	WowJobBox,
-	WowJobBoxHeader,
-	WowJobText,
-	ECigJobBox,
-	ECigJobBoxHeader,
-	ECigJobText,
-	BurgerJobBox,
-	BurgerJobBoxHeader,
-	BurgerJobText,
-	WowTabletImage,
-	WowDesktopImage,
 	EasyAndQuickImage,
+	JobList,
+	JobListItem,
+	JobSoftWareContainer,
+	JobSoftWareHeader,
+	JobSoftWareTextContainer,
+	JobSoftWareIconText,
+	JobSoftWareIconContainer,
 } from './WorkExperienceStyles';
-import {
-	WorkExperienceTitleContainer,
-	WorkExperienceTitle,
-} from '../Hero/Title/TitleStyles';
+
+import { TitleContainer, Title } from '../Hero/Title/TitleStyles';
+import process from '../../constants/constants';
 
 const quickAndEasyImage = 'https://i.ibb.co/F37wjJB/store-Mock-Up1-phone.png';
 const wowTabletImage = 'https://i.ibb.co/0rxLhkV/picnics-Mockup-Tablet.png';
@@ -39,109 +46,227 @@ const wowDesktopImage = 'https://i.ibb.co/1Xs799T/picnic-destop-mock-Up.png';
 export default function WorkExperience() {
 	return (
 		<WorkExperienceContainer id='work-history'>
-			<WorkExperienceTitleContainer>
-				<WorkExperienceTitle>Work Experience</WorkExperienceTitle>
-			</WorkExperienceTitleContainer>
-			<EasyAndQuickContainer>
-				<JobTitleContainer>
-					<YearText>2022</YearText>
-					<CompanyAndPositionContainer>
-						<CompanyText>EASY AND QUICK GIFTS</CompanyText>
-						<PositionText>WEB DESIGNER/OWNER</PositionText>
-					</CompanyAndPositionContainer>
-				</JobTitleContainer>
-				<JobBox>
-					<EasyAndQuickImage
-						loading='lazy'
-						src={quickAndEasyImage}
-						alt='Mock up of Easy and Quick gifts'
-						className=''
-					/>
-					<JobBoxHeader>Responsibilities And Achievements</JobBoxHeader>
-					<JobText>
-						Set up Shopify store with React. Designed all products for sale.
-						Poduced all UI including components using CSS/SCSS. Set up payment
-						channels and shipping. Photoshop Illustrator Shopify React library
-						CSS.
-					</JobText>
-				</JobBox>
-			</EasyAndQuickContainer>
-			<WowContainer>
-				<JobTitleContainer>
-					<YearText>2021</YearText>
-					<CompanyAndPositionContainer>
-						<CompanyText>WOW EVENTS</CompanyText>
-						<PositionText>WEB DESIGN</PositionText>
-					</CompanyAndPositionContainer>
-				</JobTitleContainer>
-				<WowJobBox>
-					<WowTabletImage
-						loading='lazy'
-						src={wowTabletImage}
-						alt='Mock up of Wow Picnics Tablet'
-						className=''
-					/>
-					<WowDesktopImage
-						loading='lazy'
-						src={wowDesktopImage}
-						alt='Mock up of Wow Picnics desktop'
-						className=''
-					/>
-					<WowJobBoxHeader>Responsibilities And Achievements</WowJobBoxHeader>
-					<WowJobText>
-						Plan, design and develop stand alone site for the purposes of
-						showing information on services offered and to receive booking leads
-						for those service. Also produce print marketing assets. Within a few
-						months add all services and content to existing website. Tools used
-						include React, Bootstrap for styling, 3rd party forms integrated
-						into site to collect potential customer details. Photoshop for image
-						editing and resizing, InDesign for flyer and brochure production.
-					</WowJobText>
-				</WowJobBox>
-			</WowContainer>
-			<ECigContainer>
-				<JobTitleContainer>
-					<YearText>2016-20</YearText>
-					<CompanyAndPositionContainer>
-						<CompanyText>E-CIG GALLERY</CompanyText>
-						<PositionText>MARKETING MANAGER</PositionText>
-					</CompanyAndPositionContainer>
-				</JobTitleContainer>
-				<ECigJobBox>
-					<ECigJobBoxHeader>Responsibilities And Achievements</ECigJobBoxHeader>
-					<ECigJobText>
-						Assisted in brand new website built on Big Commerce platform
-						including SEO. Management of website from start up. Within first
-						year moved site from basic template to more interactive site for
-						E-commerce store to improve user experience. Updated non-ecommce
-						site using Wordpress plug-in Elementor. Responsible all marketing
-						materials online and print - including HTML emails sent using
-						Constant Contact, web banners and print mailers sent to 15,000 shops
-						within the USA. Rebranded company to a more professional and forward
-						thinking business.
-					</ECigJobText>
-				</ECigJobBox>
-			</ECigContainer>
-			<BurgerContainer>
-				<JobTitleContainer>
-					<YearText>2013-16</YearText>
-					<CompanyAndPositionContainer>
-						<CompanyText>BURGER MONSTER</CompanyText>
-						<PositionText>SALES/OFFICE MANAGER</PositionText>
-					</CompanyAndPositionContainer>
-				</JobTitleContainer>
-				<BurgerJobBox>
-					<BurgerJobBoxHeader>
-						Responsibilities And Achievements
-					</BurgerJobBoxHeader>
-					<BurgerJobText>
-						In charge of booking all events including private and public using
-						Salesforce as a CRM and organizing of schedule.. Answer phone,
-						design invoices and surchure business. Follow up on sent invoices,
-						management of social media and design of menus.
-					</BurgerJobText>
-				</BurgerJobBox>
-			</BurgerContainer>
+			{/* CONTAINER FOR HEADER JOBS AND EDUCATION */}
+
+			{/* first row with title */}
+			<WorkExperienceRow>
+				<TitleContainer>
+					<Title>Work Experience</Title>
+				</TitleContainer>
+			</WorkExperienceRow>
+			{/* 2nd row with 2 columns */}
+			<WorkExperienceRow>
+				<JobContainer>
+					<JobTitleContainer>
+						<YearText>2022</YearText>
+						<CompanyAndPositionContainer>
+							<CompanyText>EASY AND QUICK GIFTS</CompanyText>
+							<PositionText>WEB DESIGNER/OWNER</PositionText>
+						</CompanyAndPositionContainer>
+					</JobTitleContainer>
+					<JobBox>
+						<EasyAndQuickImage
+							loading='lazy'
+							src={quickAndEasyImage}
+							alt='Mock up of Easy and Quick gifts'
+							className=''
+						/>
+						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
+						<JobList>
+							<JobListItem>Integrated Shopify store with React</JobListItem>
+							<JobListItem>Designed original merchandise for sale</JobListItem>
+							<JobListItem>
+								Used React and Bootstrap for shop templates
+							</JobListItem>
+							<JobListItem>Set up payment channels and shipping</JobListItem>
+						</JobList>
+						<JobSoftWareContainer>
+							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
+							<JobSoftWareIconContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Photoshop</JobSoftWareIconText>
+									<SiAdobephotoshop />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Illustrator</JobSoftWareIconText>
+									<SiAdobeillustrator />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Shopify</JobSoftWareIconText>
+									<SiShopify />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>React</JobSoftWareIconText>
+									<SiReact />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Bootstrap</JobSoftWareIconText>
+									<SiBootstrap />
+								</JobSoftWareTextContainer>
+							</JobSoftWareIconContainer>
+						</JobSoftWareContainer>
+					</JobBox>
+				</JobContainer>
+				<JobContainer>
+					<JobTitleContainer>
+						<YearText>2021</YearText>
+						<CompanyAndPositionContainer>
+							<CompanyText>WOW EVENTS</CompanyText>
+							<PositionText>WEB DESIGN</PositionText>
+						</CompanyAndPositionContainer>
+					</JobTitleContainer>
+					<JobBox>
+						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
+						<EasyAndQuickImage
+							loading='lazy'
+							src={quickAndEasyImage}
+							alt='Mock up of Easy and Quick gifts'
+							className=''
+						/>
+						<JobList>
+							<JobListItem>
+								Planned, designed and developed booking site using React and
+								Bootstrap
+							</JobListItem>
+							<JobListItem>
+								Integrated 3rd party software to handle leads
+							</JobListItem>
+							<JobListItem>
+								All product photography including editing
+							</JobListItem>
+							<JobListItem>
+								flyer and brochure design and production.
+							</JobListItem>
+						</JobList>
+						<JobSoftWareContainer>
+							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
+							<JobSoftWareIconContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Photoshop</JobSoftWareIconText>
+									<SiAdobephotoshop />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>indesign</JobSoftWareIconText>
+									<SiAdobeindesign />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Google Forms</JobSoftWareIconText>
+									<SiGoogledrive />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>React</JobSoftWareIconText>
+									<SiReact />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Bootstrap</JobSoftWareIconText>
+									<SiBootstrap />
+								</JobSoftWareTextContainer>
+							</JobSoftWareIconContainer>
+						</JobSoftWareContainer>
+					</JobBox>
+				</JobContainer>
+			</WorkExperienceRow>
+			{/* 2nd row with 3 columns */}
+			<WorkExperienceRow primary>
+				<JobContainer>
+					<JobTitleContainer>
+						<YearText>2016-20</YearText>
+						<CompanyAndPositionContainer>
+							<CompanyText>E-CIG GALLERY</CompanyText>
+							<PositionText>MARKETING MANAGER</PositionText>
+						</CompanyAndPositionContainer>
+					</JobTitleContainer>
+					<JobBoxBottom>
+						<JobBoxHeader>Main Responsibilities</JobBoxHeader>
+						<JobList primary>
+							<JobListItem primary>
+								Management of marketing content and team.
+							</JobListItem>
+							<JobListItem primary>
+								Set up E-Commence site using BigCommence and maintained
+							</JobListItem>
+							<JobListItem primary>
+								Produced marketing email blasts using HTML
+							</JobListItem>
+							<JobListItem primary>
+								Product photography, all print marketing materials
+							</JobListItem>
+						</JobList>
+						<JobSoftWareContainer>
+							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
+							<JobSoftWareIconContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Photoshop</JobSoftWareIconText>
+									<SiAdobephotoshop />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>BigCommerce</JobSoftWareIconText>
+									<SiBigcommerce />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Wordpress</JobSoftWareIconText>
+									<SiWordpress />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Dreamweaver</JobSoftWareIconText>
+									<SiAdobedreamweaver />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Indesign</JobSoftWareIconText>
+									<SiAdobeindesign />
+								</JobSoftWareTextContainer>
+							</JobSoftWareIconContainer>
+						</JobSoftWareContainer>
+					</JobBoxBottom>
+				</JobContainer>
+				<JobContainer>
+					<JobTitleContainer>
+						<YearText>2013-16</YearText>
+						<CompanyAndPositionContainer>
+							<CompanyText>BURGER MONSTER</CompanyText>
+							<PositionText>SALES/OFFICE MANAGER</PositionText>
+						</CompanyAndPositionContainer>
+					</JobTitleContainer>
+					<JobBoxBottom>
+						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
+						<JobList primary>
+							<JobListItem primary>
+								Answer phone, respond to leads and secure business by follow up.
+							</JobListItem>
+							<JobListItem primary>
+								Collect payments and schedule service
+							</JobListItem>
+							<JobListItem primary>Management of social media</JobListItem>
+							<JobListItem primary>Follow up on service</JobListItem>
+						</JobList>
+						<JobSoftWareContainer>
+							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
+							<JobSoftWareIconContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Google forms</JobSoftWareIconText>
+									<SiGoogledrive />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Salesforce</JobSoftWareIconText>
+									<SiSalesforce />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Facebook</JobSoftWareIconText>
+									<SiFacebook />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Yelp</JobSoftWareIconText>
+									<SiYelp />
+								</JobSoftWareTextContainer>
+								<JobSoftWareTextContainer>
+									<JobSoftWareIconText>Indesign</JobSoftWareIconText>
+									<SiAdobeindesign />
+								</JobSoftWareTextContainer>
+							</JobSoftWareIconContainer>
+						</JobSoftWareContainer>
+					</JobBoxBottom>
+				</JobContainer>
+			</WorkExperienceRow>
 		</WorkExperienceContainer>
 	);
 }

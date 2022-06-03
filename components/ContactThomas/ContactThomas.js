@@ -4,12 +4,12 @@ import {
 	ContactThomasContainer,
 	ContactThomasSocialMediaContainer,
 	ContactThomasSocialMediaLink,
-	ContactThomasTitleContainer,
-	ContactThomasTitle,
 	SocialMediaIcon,
 	SocialTextContainer,
 	SocialMediaTitle,
 } from './ContactThomasStyles';
+
+import { Title, TitleContainer } from '../Hero/Title/TitleStyles';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
@@ -22,9 +22,9 @@ const socialMediaData = [
 function ContactThomas() {
 	return (
 		<ContactThomasContainer>
-			<ContactThomasTitleContainer>
-				<ContactThomasTitle>Contact Thomas</ContactThomasTitle>
-			</ContactThomasTitleContainer>
+			<TitleContainer>
+				<Title>Contact Thomas</Title>
+			</TitleContainer>
 			<ContactThomasSocialMediaContainer id='contact'>
 				<ContactThomasSocialMediaLink
 					href='mailto:thomasjfcaldwell@gmail.com'

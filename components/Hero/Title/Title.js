@@ -1,23 +1,13 @@
 import React from 'react';
 
-import {
-	TitleContainer,
-	ProjectTitle,
-	MoreProjectsLink,
-	MoreProjectsLinkContainer,
-} from './TitleStyles';
+import { TitleContainer, Title } from './TitleStyles';
 
-import { LinkButton } from '../LinkButton/LinkButton.Styles';
-
-function Title() {
+function TitleComponent() {
 	return (
 		<TitleContainer>
-			<ProjectTitle id='projects'>Projects</ProjectTitle>
-			<MoreProjectsLinkContainer>
-				<LinkButton>See More Projects</LinkButton>
-			</MoreProjectsLinkContainer>
+			<Title>Projects</Title>
 		</TitleContainer>
 	);
 }
 
-export default Title;
+export default TitleComponent;

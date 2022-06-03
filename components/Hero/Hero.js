@@ -1,13 +1,13 @@
 import React from 'react';
 import Projects from './Projects/Projects';
 import About from './About/About';
-import Title from './Title/Title';
+import TitleComponent from './Title/Title';
 import { Container } from './HeroStyles';
 
 const Hero = () => {
 	return (
 		<Container>
-			<Title />
+			<TitleComponent />
 			<Projects />
 			<About />
 		</Container>

@@ -11,13 +11,11 @@ import EducationAndSkills from '../components/EducationAndSkills/EducationAndSki
 import AboutThomas from '../components/AboutThomas/AboutThomas';
 import ContactAndThisSite from '../components/ContactAndThisSite/ContactAndThisSite';
 // import GlobalStyles from '../styles/globels';
-import Nav from '../components/Nav/Nav';
 
 class Home extends Component {
 	render() {
 		return (
 			<Layout>
-				{/* <Nav /> */}
 				<Header />
 				<Hero />
 				<WorkExperience />

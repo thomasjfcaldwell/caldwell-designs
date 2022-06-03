@@ -18,30 +18,34 @@ export default function Education() {
 		<EducationContainer>
 			<BootContainer>
 				<EducationTitle>SOFTWARE BOOTCAMP</EducationTitle>
-				<EducationSubTitle>GENERAL ASSEMBLY</EducationSubTitle>
+				<EducationSubTitle>GENERAL ASSEMBLY - ONLINE</EducationSubTitle>
 				<EducationIntro>
-					13 weeks and 400 hours of online in class learning and tuition.
-					<br />
-					Completed 4 projects using the following technologies
+					13 weeks of full time tuition. Learning Front-end and Back-end Web
+					Technologies
 				</EducationIntro>
-				<ListOfTech />
 			</BootContainer>
 			<CertificateContainer>
 				<EducationTitle>DIGITAL ART CERTIFICATE</EducationTitle>
-				<EducationSubTitle>GOLDENWEST COLLEGE</EducationSubTitle>
+				<EducationSubTitle>GOLDENWEST COLLEGE - CA</EducationSubTitle>
 				<EducationIntro>
-					30 unit certificate program - Provided an introduction to graphic
-					Design and illustration with a focus on Typography, applied design,
-					digital Imaging and digital reproduction processes
+					Completed over the space of two years. Units included Photoshop,
+					Illustrator and design fundamentals.
 				</EducationIntro>
 			</CertificateContainer>
 			<CollegeContainer>
-				<EducationTitle>GNVQ MEDIA & COMMUNICATION</EducationTitle>
-				<EducationSubTitle>PLYMOUTH COLLEGE - PLYMOUTH UK</EducationSubTitle>
+				<EducationTitle>GNVQ MEDIA</EducationTitle>
+				<EducationSubTitle>PLYMOUTH COLLEGE - UK</EducationSubTitle>
+				<EducationIntro>
+					After leaving School I completed this certificate
+				</EducationIntro>
 			</CollegeContainer>
 			<SchoolContainer>
 				<EducationTitle>9 GCSE(HIGH SCHOOL)</EducationTitle>
-				<EducationSubTitle>SALTASH SCHOOL - SALTASH UK</EducationSubTitle>
+				<EducationSubTitle>SALTASH SCHOOL - UK</EducationSubTitle>
+				<EducationIntro>
+					British Secondary School - Core Subjects Passed including Maths,
+					English and Science
+				</EducationIntro>
 			</SchoolContainer>
 		</EducationContainer>
 	);

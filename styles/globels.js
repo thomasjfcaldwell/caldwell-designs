@@ -9,11 +9,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
   html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
   }
   body {
-    font-size: 1.2rem;
+    font-size: 15px;
     background: ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.secondary};
     font-family: ${(props) => props.theme.fonts.main};
@@ -22,9 +21,6 @@ const GlobalStyles = createGlobalStyle`
   h2 {
     color: ${(props) => props.theme.colors.header};
     font-family:${(props) => props.theme.fonts.title};
-  }
-  li{
-    list-style: none;
   }
 `;
 

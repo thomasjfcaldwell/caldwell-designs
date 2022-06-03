@@ -7,6 +7,7 @@ export const Container = styled.div`
 	padding-top: 1rem;
 	margin-inline: auto;
 	width: 100%;
+	/* background-color: yellow; */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-around;

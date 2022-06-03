@@ -4,7 +4,6 @@ import {
 	AboutThomasContainer,
 	AboutThomasImage,
 	AboutThomasText,
-	AboutThomasTitle,
 } from './AboutThomasStyles';
 
 const imageOfThomas =

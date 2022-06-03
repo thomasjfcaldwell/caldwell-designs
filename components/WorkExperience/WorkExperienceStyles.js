@@ -1,168 +1,135 @@
 import styled from 'styled-components';
 
+// Work Experience Container
 export const WorkExperienceContainer = styled.section`
-	display: grid;
-	grid-template-columns: 1fr;
-	margin: auto;
-	grid-gap: 20px;
-	background-color: pink;
-	@media ${(props) => props.theme.breakpoints.lg} {
-		/* grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: auto 1fr 1fr; */
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		/* grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: auto 1fr 1fr; */
-	}
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	/* background-color: pink; */
 `;
+
+export const WorkExperienceRow = styled.div`
+	display: grid;
+	grid-template-columns: ${(props) =>
+		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
+	grid-gap: 1rem;
+`;
+
+//////
+// Each Job Container
+
+export const JobContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+`;
+
+/////////////
+
+//Job Title Container
 
 export const JobTitleContainer = styled.div`
-	display: grid;
-	grid-template-columns: max-content max-content;
-	grid-template-rows: min-height;
-	margin-left: 15px;
+	display: flex;
+	/* background-color: green; */
+	margin: 1rem 0;
 `;
+
+////////
 
 export const YearText = styled.h3`
-	font-size: 35px;
-	grid-row-start: 1;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		font-size: 40px;
-	}
+	font-size: 32px;
 `;
 
+// company and position Container
 export const CompanyAndPositionContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: 5px;
 	margin-left: 2px;
+	padding-inline: 0.5rem;
 `;
-export const CompanyText = styled.h4`
-	font-size: 13px;
-	font-weight: 500;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		font-size: 16px;
-	}
-`;
+export const CompanyText = styled.h4``;
 export const PositionText = styled.h5`
 	font-size: 11px;
 	font-weight: 300;
 	letter-spacing: 0.7px;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		font-size: 13px;
-	}
 `;
 
-export const EasyAndQuickContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+////////
 
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-row-start: 2;
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-`;
-
-export const EasyAndQuickImage = styled.img`
-	width: 110px;
-	grid-column-start: 1;
-	grid-row-start: span 2;
-`;
-
-export const WowContainer = styled(EasyAndQuickContainer)`
-	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-`;
-
-export const ECigContainer = styled(EasyAndQuickContainer)`
-	@media ${(props) => props.theme.breakpoints.lg} {
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-row-start: 3;
-	}
-`;
-
-export const BurgerContainer = styled(EasyAndQuickContainer)`
-	@media ${(props) => props.theme.breakpoints.lg} {
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-row-start: 3;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-`;
+/// Job Box Styles
 
 export const JobBox = styled.div`
 	background-color: ${(props) => props.theme.colors.secondary};
-	margin: 1rem auto;
-	border-radius: 10px;
-	width: 300px;
+	height: 100%;
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 1fr 4fr;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		width: 400px;
-	}
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 50px 2fr 1fr;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
 `;
+export const JobBoxBottom = styled(JobBox)`
+	display: flex;
+	flex-direction: column;
+`;
+
 export const JobBoxHeader = styled.h5`
-	color: ${(props) => props.theme.colors.header};
+	color: ${(props) => props.theme.colors.primary};
 	text-transform: uppercase;
 	text-align: center;
-	margin: 1rem;
-	font-size: 0.9rem;
+	font-size: 1.1rem;
+	margin: 1rem 0;
 `;
-export const JobText = styled.p`
-	color: ${(props) => props.theme.colors.primary};
+export const JobList = styled.ul`
 	grid-column-start: 2;
 	grid-row-start: 2;
-	padding: 0.1rem;
-	line-height: 1.4;
-	font-family: ${(props) => props.theme.fonts.main};
+	width: 100%;
+	margin: ${(props) => (props.primary ? '1rem 0 0.5rem 0' : '0')};
+	display: flex;
+	flex-direction: column;
 `;
-
-export const WowJobBox = styled(JobBox)`
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 30px max-content;
-	padding-block: 2rem;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		width: 550px;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 20px 1fr 1fr;
-	}
+export const JobListItem = styled.li`
+	color: ${(props) => props.theme.colors.primary};
+	font-size: 0.8rem;
+	font-weight: 500;
+	margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '1rem 1rem')};
 `;
-
-export const WowJobBoxHeader = styled(JobBoxHeader)`
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-`;
-
-export const WowJobText = styled(JobText)`
-	grid-column-start: 1;
-	grid-column-end: 3;
+export const JobSoftWareContainer = styled.div`
 	grid-row-start: 3;
-	grid-row-end: 4;
-	padding-inline: 2rem;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 2;
-		grid-row-start: 2;
-		grid-row-end: 4;
-		margin-block: 2rem;
-	}
+	grid-column-start: 2;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
+export const JobSoftWareHeader = styled.h5`
+	color: ${(props) => props.theme.colors.primary};
+	font-size: 0.9rem;
+	font-family: ${(props) => props.theme.fonts.main};
+	font-weight: 550;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+`;
+export const JobSoftWareIconContainer = styled.div`
+	display: flex;
+	color: black;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5rem 0;
+`;
+export const JobSoftWareTextContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+export const JobSoftWareIconText = styled.p`
+	font-size: 0.7rem;
+	display: inline;
+	margin: 0.7rem auto;
+`;
+
+// Images Styles
 
 export const WowTabletImage = styled.img`
 	width: 140px;
@@ -170,29 +137,15 @@ export const WowTabletImage = styled.img`
 `;
 
 export const WowDesktopImage = styled.img`
-	grid-column-start: 2;
 	width: 140px;
 	margin: auto;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 3;
-		padding-inline: 1rem;
-		width: 180px;
-	}
 `;
 
-export const ECigJobBox = styled(JobBox)`
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
+export const EasyAndQuickImage = styled.img`
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	width: 220px;
+	margin: 0 auto;
 `;
-export const ECigJobBoxHeader = styled(JobBoxHeader)``;
-export const ECigJobText = styled(JobText)``;
-export const BurgerJobBox = styled(JobBox)`
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
-`;
-export const BurgerJobBoxHeader = styled(JobBoxHeader)``;
-export const BurgerJobText = styled(JobText)``;
