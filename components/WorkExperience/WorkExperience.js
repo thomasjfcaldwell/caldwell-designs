@@ -40,7 +40,8 @@ import { TitleContainer, Title } from '../Hero/Title/TitleStyles';
 import Education from '../EducationAndSkills/Education/Education';
 
 const quickAndEasyImage = 'https://i.ibb.co/F37wjJB/store-Mock-Up1-phone.png';
-const wowTabletImage = 'https://i.ibb.co/0rxLhkV/picnics-Mockup-Tablet.png';
+const picnicMockUp =
+	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654555298/picnicMockUp1.phone_t0kak2.png';
 const wowDesktopImage = 'https://i.ibb.co/1Xs799T/picnic-destop-mock-Up.png';
 
 export default function WorkExperience() {
@@ -119,8 +120,8 @@ export default function WorkExperience() {
 						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
 						<EasyAndQuickImage
 							loading='lazy'
-							src={quickAndEasyImage}
-							alt='Mock up of Easy and Quick gifts'
+							src={picnicMockUp}
+							alt='Picnic Mock Up on iPhone'
 							className=''
 						/>
 						<JobList>

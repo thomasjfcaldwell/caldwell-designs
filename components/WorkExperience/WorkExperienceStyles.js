@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const WorkExperienceContainer = styled.section`
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	/* margin: 2rem 0; */
 	/* background-color: pink; */
 `;
 
@@ -13,6 +13,7 @@ export const WorkExperienceRow = styled.div`
 	grid-template-columns: ${(props) =>
 		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
 	grid-gap: 1rem;
+	margin: 3rem auto;
 `;
 
 //////
