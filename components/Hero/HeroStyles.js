@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
 	width: 100%;
 	margin: 2rem auto;
-	background-color: blue;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 2fr 1fr;
