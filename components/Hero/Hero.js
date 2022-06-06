@@ -1,16 +1,16 @@
 import React from 'react';
 import Projects from './Projects/Projects';
 import About from './About/About';
-import TitleComponent from './Title/Title';
-import { Container } from './HeroStyles';
+import Contact from '../ContactThomas/ContactThomas';
+import { HeroContainer } from './HeroStyles';
 
 const Hero = () => {
 	return (
-		<Container>
-			<TitleComponent />
+		<HeroContainer>
 			<Projects />
 			<About />
-		</Container>
+			<Contact />
+		</HeroContainer>
 	);
 };
 

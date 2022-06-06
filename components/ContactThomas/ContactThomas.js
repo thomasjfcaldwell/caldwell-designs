@@ -13,12 +13,6 @@ import { Title, TitleContainer } from '../Hero/Title/TitleStyles';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
-const socialMediaData = [
-	{ number: 1, text: 'bummmy bum' },
-	{ number: 2, text: 'Number 2' },
-	{ number: 3, text: 'number 3' },
-];
-
 function ContactThomas() {
 	return (
 		<ContactThomasContainer>

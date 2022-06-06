@@ -5,7 +5,7 @@ import { Container, LinkText } from './NavStyles';
 
 export default function Nav() {
 	return (
-		<Container>
+		<Container className='nav'>
 			<Link href='#contact'>
 				<LinkText>contact</LinkText>
 			</Link>

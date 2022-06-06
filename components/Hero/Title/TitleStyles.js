@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const TitleContainer = styled.div`
+	/* margin: 1rem 0; */
+	display: flex;
+	justify-content: center;
 	@media ${(props) => props.theme.breakpoints.lg} {
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
@@ -14,7 +17,9 @@ export const MoreProjectsLinkContainer = styled.div`
 	}
 `;
 
-export const Title = styled(ProjectTitle)``;
+export const Title = styled(ProjectTitle)`
+	font-size: 3rem;
+`;
 
 export const ContactThomasTitle = styled(ProjectTitle)`
 	font-size: 3rem;

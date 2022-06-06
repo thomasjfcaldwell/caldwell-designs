@@ -37,7 +37,7 @@ import {
 } from './WorkExperienceStyles';
 
 import { TitleContainer, Title } from '../Hero/Title/TitleStyles';
-import process from '../../constants/constants';
+import Education from '../EducationAndSkills/Education/Education';
 
 const quickAndEasyImage = 'https://i.ibb.co/F37wjJB/store-Mock-Up1-phone.png';
 const wowTabletImage = 'https://i.ibb.co/0rxLhkV/picnics-Mockup-Tablet.png';
@@ -266,6 +266,7 @@ export default function WorkExperience() {
 						</JobSoftWareContainer>
 					</JobBoxBottom>
 				</JobContainer>
+				<Education />
 			</WorkExperienceRow>
 		</WorkExperienceContainer>
 	);

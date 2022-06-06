@@ -7,7 +7,7 @@ import {
 } from './AboutThomasStyles';
 
 const imageOfThomas =
-	'https://i.ibb.co/Dz1Kxf5/austin-distel-Tlu-Mvvr-Z57g-unsplash.jpg';
+	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654536832/possibleportfolio_poqr0s.jpg';
 
 export default function AboutThomas() {
 	return (

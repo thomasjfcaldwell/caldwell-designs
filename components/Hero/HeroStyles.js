@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const HeroContainer = styled.div`
 	width: 100%;
 	margin-inline: auto;
-	background-color: blue;
+	/* background-color: blue; */
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	grid-gap: 2rem;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: 50px 1fr;
-		margin: 1rem auto 5rem auto;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		display: grid;
+		/* display: grid;
 		width: 100%;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: 1fr;
-		padding: 3rem;
-		margin-top: 2.5rem;
+		grid-template-rows: 1fr; */
+		/* padding: 3rem; */
+		/* margin-top: 2.5rem; */
 	}
 `;

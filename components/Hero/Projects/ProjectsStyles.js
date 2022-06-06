@@ -1,99 +1,71 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ProjectsWrapper = styled.div`
 	width: 100%;
 	margin-inline: auto;
 	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	grid-gap: 40px;
-	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: span 1;
-		grid-row-start: 2;
-		/* background-color: red; */
-	}
-
-	@media ${(props) => props.theme.breakpoints.xl} {
-		grid-column-start: 1;
-		grid-column-end: 8;
-		grid-row-start: 1;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 50px 250px 30px;
-		margin-top: 0rem;
-		/* background-color: yellow; */
-	}
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content max-content;
+	grid-gap: 2rem 1rem;
+	grid-area: 1/1/2/2;
 `;
 
-export const GameContainer = styled.div`
+export const ProjectsContainer = styled.div`
 	background-color: ${(props) => props.theme.colors.secondary};
 	color: ${(props) => props.theme.colors.primary};
-	width: 300px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	border-radius: 10px;
 	display: grid;
-	grid-template-columns: 100px 1fr;
-	grid-template-rows: 30px 1fr 30px;
+	grid-template-columns:${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')}; 
+	grid-template-rows:repeat(4, 1fr)
+	margin-top: 5rem;
+	grid-row-start: 2;
+	grid-column-start: ${(props) => (props.primary ? '2' : '1')}; 
 	@media ${(props) => props.theme.breakpoints.lg} {
-		width: 380px;
-		height: 200px;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		/* grid-column-start: 1;
-		grid-column-end: 4;
-		grid-row-start: 2;
-		grid-row-end: 10; */
-		width: 400px;
-		height: 250px;
-		grid-template-columns: 120px 1fr;
-		grid-column-start: span 2;
-		grid-row-start: 2;
-		grid-row-end: 3;
 	}
 `;
 
-export const GameImage = styled.img`
-	width: 100px;
+export const ProjectsNavLink = styled.p``;
+
+export const ProjectsImage = styled.img`
+	width: 100%;
 	margin-inline: auto;
-	margin-top: 5px;
+	margin-top: 1rem;
+	grid-area: ${(props) => (props.primary ? '1/2/4/3' : '1/1/4/2')};
 `;
-export const GameTitle = styled.h5`
+export const ProjectsTitle = styled.h5`
 	text-align: center;
-	margin-top: 5px;
-	font-size: 18px;
-	padding: 2px;
+	grid-area: ${(props) => (props.primary ? '1/1/2/2' : '1/2/2/3')};
+	margin: 1.2rem auto;
+	font-size: 1.1rem;
 `;
-export const GameText = styled.p`
-	font-size: 10px;
+export const ProjectsText = styled.p`
+	font-size: 0.7rem;
 	grid-column-start: 2;
-	grid-row-start: 2;
-	line-height: 1.4;
-	padding: 0.1rem;
-	@media ${(props) => props.theme.breakpoints.lg} {
-		font-size: 12px;
-		padding-inline: 0.5rem;
-		margin-top: 5px;
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		font-size: 14px;
-		padding-inline: 0.5rem;
-		margin-top: 10px;
-	}
+	padding-inline: 1rem;
+	line-height: 1.6;
+	letter-spacing: 0.05rem;
+	font-weight: 400;
+	grid-area: ${(props) => (props.primary ? '2/1/3/2' : '2/2/3/3')};
 `;
-export const GameLinkContainer = styled.div`
-	grid-row-start: 3;
+export const ProjectsLinkContainer = styled.div`
 	display: flex;
-	grid-column-start: span 2;
+	grid-column-start: 2;
 	justify-content: space-around;
 	padding-block: 1rem;
+	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
 `;
-export const GameLink = styled.a`
+export const ProjectsLink = styled.a`
 	display: flex;
 	justify-content: space-around;
 	text-decoration: none;
 	align-items: center;
 `;
 
-export const GameIcon = styled.div`
+export const ProjectsIcon = styled.div`
 	${(props) => props.theme.colors.highlight};
 `;
 export const LinkTextContainer = styled.div``;
@@ -104,41 +76,4 @@ export const LinkTitle = styled.h5`
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: ${(props) => props.theme.colors.primary};
-	/* margin-top: 2px; */
-`;
-
-export const ShopContainer = styled(GameContainer)`
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 30px 1fr 30px;
-	@media ${(props) => props.theme.breakpoints.lg} {
-		grid-column-start: span 1;
-		grid-row-start: 3;
-	}
-`;
-
-export const ShopImage = styled.img`
-	width: 155px;
-	grid-column-start: 2;
-	grid-row-start: span 2;
-	margin: auto;
-`;
-export const ShopTitle = styled(GameTitle)`
-	text-transform: uppercase;
-	grid-row-start: 1;
-`;
-export const ShopText = styled(GameText)`
-	grid-column-start: 1;
-	padding-inline-start: 0.9rem;
-`;
-
-export const ShopLinkContainer = styled(GameLinkContainer)``;
-export const ShopLink = styled.a`
-	display: flex;
-	justify-content: space-around;
-	text-decoration: none;
-	align-items: center;
-`;
-export const ShopCodeLink = styled.a``;
-export const ShopIcon = styled.div`
-	color: ${(props) => props.theme.colors.highlight};
 `;
