@@ -7,8 +7,9 @@ import { Layout } from '../Layout/Layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import WorkExperience from '../components/WorkExperience/WorkExperience';
-import AboutThomas from '../components/AboutThomas/AboutThomas';
+import AboutAndSkill from '../components/AboutThomasAndSkills/AboutAndSkill';
 import ContactAndThisSite from '../components/ContactAndThisSite/ContactAndThisSite';
+
 // import GlobalStyles from '../styles/globels';
 
 class Home extends Component {
@@ -18,8 +19,8 @@ class Home extends Component {
 				<Header />
 				<Hero />
 				<WorkExperience />
-				<AboutThomas />
-				{/* <ContactAndThisSite /> */}
+				<AboutAndSkill />
+				<ContactAndThisSite />
 			</Layout>
 		);
 	}

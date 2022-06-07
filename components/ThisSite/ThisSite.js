@@ -14,7 +14,7 @@ import {
 import { AiFillGithub } from 'react-icons/ai';
 
 const mockUp =
-	'https://i.ibb.co/JkP6p3t/jens-kreuter-GAPfhkgm-Zl-Q-unsplash.jpg';
+	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654558082/firefox-browser-mockup-in-a-macos-desktop-21297_ses4tq.png';
 
 function ThisSite() {
 	return (

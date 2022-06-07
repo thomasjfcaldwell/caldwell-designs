@@ -13,7 +13,7 @@ export const WorkExperienceRow = styled.div`
 	grid-template-columns: ${(props) =>
 		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
 	grid-gap: 1rem;
-	margin: 3rem auto;
+	margin: ${(props) => (props.primary ? '3rem auto' : '0 auto')};
 `;
 
 //////
