@@ -1,11 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { AboutContainer, AboutImage, AboutText } from './AboutStyles';
+import {
+	AboutContainer,
+	AboutImage,
+	AboutText,
+	AboutLink,
+} from './AboutStyles';
 
 import { Title, TitleContainer } from '../Title/TitleStyles';
 
-import { AboutLink } from '../LinkButton/LinkButton.Styles';
 import Link from 'next/link';
 
 const imageThomas = 'https://i.ibb.co/4jnGfqT/New-Portfolio-Image4-27.png';

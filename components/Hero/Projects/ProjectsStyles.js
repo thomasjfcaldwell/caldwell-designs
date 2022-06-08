@@ -7,7 +7,24 @@ export const ProjectsWrapper = styled.div`
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content max-content;
 	grid-gap: 2rem 1rem;
-	grid-area: 1/1/2/2;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem;
+		grid-area: 1/1/3/2;
+	}
+
+	@media ${(props) => props.theme.breakpoints.lg} {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		grid-area: 1/1/3/2;
+	}
 `;
 
 export const ProjectsContainer = styled.div`
@@ -22,10 +39,6 @@ export const ProjectsContainer = styled.div`
 	margin-top: 5rem;
 	grid-row-start: 2;
 	grid-column-start: ${(props) => (props.primary ? '2' : '1')}; 
-	@media ${(props) => props.theme.breakpoints.lg} {
-	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-	}
 `;
 
 export const ProjectsNavLink = styled.p``;
@@ -35,6 +48,12 @@ export const ProjectsImage = styled.img`
 	margin-inline: auto;
 	margin-top: 1rem;
 	grid-area: ${(props) => (props.primary ? '1/2/4/3' : '1/1/4/2')};
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin-top: 1rem;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		margin-top: 2.5rem;
+	}
 `;
 export const ProjectsTitle = styled.h5`
 	text-align: center;

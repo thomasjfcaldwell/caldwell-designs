@@ -4,8 +4,6 @@ import styled from 'styled-components';
 export const WorkExperienceContainer = styled.section`
 	display: flex;
 	flex-direction: column;
-	/* margin: 2rem 0; */
-	/* background-color: pink; */
 `;
 
 export const WorkExperienceRow = styled.div`
@@ -14,6 +12,18 @@ export const WorkExperienceRow = styled.div`
 		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
 	grid-gap: 1rem;
 	margin: ${(props) => (props.primary ? '3rem auto' : '0 auto')};
+	@media ${(props) => props.theme.breakpoints.lg} {
+		padding: 0.5rem;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		padding: 0.5rem;
+		grid-template-columns: ${(props) => (props.primary ? '1fr 1fr' : '1fr')};
+		grid-template-rows: ${(props) => (props.primary ? '1fr auto' : '1fr')};
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		padding: 0.5rem;
+		grid-template-columns: 1fr;
+	}
 `;
 
 //////
@@ -31,7 +41,6 @@ export const JobContainer = styled.div`
 
 export const JobTitleContainer = styled.div`
 	display: flex;
-	/* background-color: green; */
 	margin: 1rem 0;
 `;
 
@@ -69,6 +78,15 @@ export const JobBox = styled.div`
 	grid-template-rows: 50px 2fr 1fr;
 	padding: 0.5rem 1rem;
 	border-radius: 1rem;
+	@media ${(props) => props.theme.breakpoints.lg} {
+		padding: 0.1rem;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		background-color: red;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 4fr 1fr;
+		padding: 0.25rem 0.5rem;
+	}
 `;
 export const JobBoxBottom = styled(JobBox)`
 	display: flex;
@@ -81,6 +99,15 @@ export const JobBoxHeader = styled.h5`
 	text-align: center;
 	font-size: 1.1rem;
 	margin: 1rem 0;
+	@media ${(props) => props.theme.breakpoints.lg} {
+		font-size: 0.9rem;
+		margin: 2rem 0;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		font-size: 0.9rem;
+	}
 `;
 export const JobList = styled.ul`
 	grid-column-start: 2;
@@ -89,12 +116,28 @@ export const JobList = styled.ul`
 	margin: ${(props) => (props.primary ? '1rem 0 0.5rem 0' : '0')};
 	display: flex;
 	flex-direction: column;
+	@media ${(props) => props.theme.breakpoints.lg} {
+		list-style-type: ${(props) => (props.primary ? 'none' : '')};
+		margin: ${(props) => (props.primary ? '0.2rem 0 0.5rem 0' : '0.2rem 0')};
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 5;
+		list-style-type: ${(props) => (props.primary ? 'none' : '')};
+	}
 `;
 export const JobListItem = styled.li`
 	color: ${(props) => props.theme.colors.primary};
 	font-size: 0.8rem;
 	font-weight: 500;
 	margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '1rem 1rem')};
+	@media ${(props) => props.theme.breakpoints.lg} {
+		margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '0.75rem 0.75rem')};
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0.5rem 0.1rem')};
+	}
 `;
 export const JobSoftWareContainer = styled.div`
 	grid-row-start: 3;
@@ -103,6 +146,11 @@ export const JobSoftWareContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+	}
 `;
 export const JobSoftWareHeader = styled.h5`
 	color: ${(props) => props.theme.colors.primary};
@@ -128,25 +176,26 @@ export const JobSoftWareIconText = styled.p`
 	font-size: 0.7rem;
 	display: inline;
 	margin: 0.7rem auto;
+	@media ${(props) => props.theme.breakpoints.lg} {
+		font-size: 0.6rem;
+	}
 `;
 
 // Images Styles
 
-export const WowTabletImage = styled.img`
-	width: 140px;
-	margin: auto;
-`;
-
-export const WowDesktopImage = styled.img`
-	width: 140px;
-	margin: auto;
-`;
-
-export const EasyAndQuickImage = styled.img`
+export const JobImage = styled.img`
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
 	grid-row-end: 4;
 	width: 220px;
 	margin: 0 auto;
+	@media ${(props) => props.theme.breakpoints.lg} {
+		width: 250px;
+		margin-top: 1rem;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 180px;
+		margin-top: 0.5rem;
+	}
 `;

@@ -1,40 +1,17 @@
 import styled from 'styled-components';
 
 export const TitleContainer = styled.div`
-	/* margin: 1rem 0; */
 	display: flex;
 	justify-content: center;
-	@media ${(props) => props.theme.breakpoints.lg} {
+	margin: 2rem auto;
+`;
+
+export const Title = styled.h2`
+	font-size: 2.2rem;
+	@media ${(props) => props.theme.breakpoints.md} {
+		font-size: 1.8rem;
 	}
-	@media ${(props) => props.theme.breakpoints.xl} {
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 1.5rem;
 	}
 `;
-
-export const ProjectTitle = styled.h2``;
-
-export const MoreProjectsLinkContainer = styled.div`
-	@media ${(props) => props.theme.breakpoints.lg} {
-	}
-`;
-
-export const Title = styled(ProjectTitle)`
-	font-size: 3rem;
-`;
-
-export const ContactThomasTitle = styled(ProjectTitle)`
-	font-size: 3rem;
-`;
-export const ContactThomasContainer = styled(TitleContainer)`
-	justify-content: center;
-`;
-
-// export const MoreProjectsLink = styled.a`
-// 	font-size: 9px;
-// 	border: 2px ${(props) => props.theme.colors.secondary} solid;
-// 	border-radius: 1px;
-// 	padding: 2px 40px;
-// 	display: inline;
-// 	line-height: 1.4;
-// 	margin-top: 1px;
-// 	letter-spacing: 0.08rem;
-// `;

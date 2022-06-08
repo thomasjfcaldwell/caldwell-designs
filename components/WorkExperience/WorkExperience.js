@@ -26,7 +26,7 @@ import {
 	JobBox,
 	JobBoxBottom,
 	JobBoxHeader,
-	EasyAndQuickImage,
+	JobImage,
 	JobList,
 	JobListItem,
 	JobSoftWareContainer,
@@ -66,7 +66,7 @@ export default function WorkExperience() {
 						</CompanyAndPositionContainer>
 					</JobTitleContainer>
 					<JobBox>
-						<EasyAndQuickImage
+						<JobImage
 							loading='lazy'
 							src={quickAndEasyImage}
 							alt='Mock up of Easy and Quick gifts'
@@ -118,7 +118,7 @@ export default function WorkExperience() {
 					</JobTitleContainer>
 					<JobBox>
 						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
-						<EasyAndQuickImage
+						<JobImage
 							loading='lazy'
 							src={picnicMockUp}
 							alt='Picnic Mock Up on iPhone'

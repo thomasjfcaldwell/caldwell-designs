@@ -7,7 +7,6 @@ export const Container = styled.div`
 	padding-top: 1rem;
 	margin-inline: auto;
 	width: 100%;
-	/* background-color: yellow; */
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-around;
@@ -29,10 +28,13 @@ export const Container = styled.div`
 export const LinkText = styled.a`
 	color: ${(props) => props.theme.colors.secondary};
 	font-family: ${(props) => props.theme.fonts.main};
-	padding: 0;
+	padding: 0.5rem 0;
 	border: 0;
 	font-size: 16px;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 13px;
+	transition: all 0.3s ease-out;
+	:hover {
+		color: ${(props) => props.theme.colors.highlight};
+		cursor: pointer;
+		font-weight: 600;
 	}
 `;

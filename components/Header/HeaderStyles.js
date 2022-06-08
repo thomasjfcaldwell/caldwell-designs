@@ -5,6 +5,12 @@ export const Container = styled.div`
 	flex-direction: column;
 	align-items: center;
 	padding: 1.5rem;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		padding: 0;
+	}
+	@media ${(props) => props.theme.breakpoints.lg} {
+		padding: 0.5rem;
+	}
 `;
 export const Title = styled.h1`
 	margin: 0;

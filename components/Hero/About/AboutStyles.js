@@ -1,40 +1,43 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
 	grid-area: 1/2/3/3;
+	@media ${(props) => props.theme.breakpoints.md} {
+		grid-area: 1/2/2/3;
+	}
 	@media ${(props) => props.theme.breakpoints.lg} {
+		grid-area: 1/2/2/3;
 	}
-	@media ${(props) => props.theme.breakpoints.xl} {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-	}
-`;
-
-export const AboutTitle = styled.h2`
-	font-size: 3rem;
-	text-align: center;
 `;
 
 export const AboutImage = styled.img`
-	margin-top: 10px;
-	width: 120px;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		width: 160px;
-		margin: 20px auto;
+	width: 40%;
+	margin: 0.3rem auto;
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 50%;
 	}
 `;
 
 export const AboutText = styled.p`
-	font-size: 1rem;
-	font-weight: 300;
-	padding-inline: 1.5rem;
-	grid-column-start: 2;
-	line-height: 1.5;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	@media ${(props) => props.theme.breakpoints.xl} {
-		font-size: 14px;
-	}
+	font-size: 0.65rem;
+	font-weight: 500;
+	line-height: 1.7;
+	letter-spacing: 1px;
+	margin: 0.6rem auto;
+	width: 75%;
+`;
+
+export const AboutLink = styled.a`
+	font-size: 0.6rem;
+	border: 2px ${(props) => props.theme.colors.secondary} solid;
+	border-radius: 0.3rem;
+	padding-block: 0.4rem;
+	letter-spacing: 0.08rem;
+	width: 30%;
+	text-align: center;
+	margin: 0.5rem auto;
 `;

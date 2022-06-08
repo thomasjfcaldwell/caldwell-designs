@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ContactThomasContainer = styled.section`
 	display: flex;
 	width: 100%;
-	/* background-color: pink; */
 	flex-direction: column;
 	align-items: center;
 	grid-row-start: 2;
