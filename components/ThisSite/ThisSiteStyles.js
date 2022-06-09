@@ -25,6 +25,10 @@ export const ThisSiteContainer = styled.div`
 		width: 80%;
 		margin: 2rem auto;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 90%;
+		margin: 1rem auto;
+	}
 `;
 
 export const ThisSiteImage = styled.img`

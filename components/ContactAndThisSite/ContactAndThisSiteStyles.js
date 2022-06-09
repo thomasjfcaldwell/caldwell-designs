@@ -10,4 +10,7 @@ export const ContactAndThisSiteContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		flex-direction: column;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		flex-direction: column;
+	}
 `;

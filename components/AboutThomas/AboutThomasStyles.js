@@ -16,6 +16,10 @@ export const AboutThomasContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 2/1/3/2;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-area: 2/1/3/2;
+		width: 90%;
+	}
 `;
 
 export const AboutThomasImage = styled.img`
@@ -30,6 +34,10 @@ export const AboutThomasImage = styled.img`
 		width: 90%;
 		margin: 1rem auto;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 90%;
+		margin: 1rem auto;
+	}
 `;
 
 export const AboutThomasText = styled.p`
@@ -41,4 +49,9 @@ export const AboutThomasText = styled.p`
 	width: 100%;
 	padding-inline: 2rem;
 	margin-bottom: 20px;
+	@media ${(props) => props.theme.breakpoints.xs} {
+		padding: 0.5rem;
+		font-size: 0.8rem;
+		margin-bottom: 10px;
+	}
 `;

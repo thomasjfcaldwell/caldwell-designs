@@ -24,6 +24,10 @@ export const WorkExperienceRow = styled.div`
 		padding: 0.5rem;
 		grid-template-columns: 1fr;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		padding: 0.5rem;
+		grid-template-columns: 1fr;
+	}
 `;
 
 //////
@@ -86,6 +90,11 @@ export const JobBox = styled.div`
 		grid-template-rows: auto 4fr 1fr;
 		padding: 0.25rem 0.5rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-template-columns: 45% 55%;
+		grid-template-rows: auto 4fr 1fr;
+		padding: 0.25rem 0.5rem;
+	}
 `;
 export const JobBoxBottom = styled(JobBox)`
 	display: flex;
@@ -108,6 +117,12 @@ export const JobBoxHeader = styled.h5`
 		font-size: 0.9rem;
 		margin: 0.5rem 0;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		font-size: 0.8rem;
+		margin: 0.5rem 0;
+	}
 `;
 export const JobList = styled.ul`
 	grid-column-start: 2;
@@ -121,6 +136,12 @@ export const JobList = styled.ul`
 		margin: ${(props) => (props.primary ? '0.2rem 0 0.5rem 0' : '0.2rem 0')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+		justify-content: space-evenly;
+	}
+	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-column-start: 2;
 		grid-row-start: 2;
 		grid-row-end: 4;
@@ -140,6 +161,10 @@ export const JobListItem = styled.li`
 		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0.2rem 0.1rem')};
 		font-size: 0.75rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0')};
+		font-size: 0.6rem;
+	}
 `;
 export const JobSoftWareContainer = styled.div`
 	grid-row-start: 3;
@@ -149,6 +174,11 @@ export const JobSoftWareContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+	}
+	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row-start: 4;
@@ -171,6 +201,9 @@ export const JobSoftWareIconContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0.2rem 0;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		padding: 0.1rem 0;
+	}
 `;
 export const JobSoftWareTextContainer = styled.div`
 	display: flex;
@@ -185,6 +218,9 @@ export const JobSoftWareIconText = styled.p`
 		font-size: 0.6rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 0.6rem;
+	}
+	@media ${(props) => props.theme.breakpoints.xs} {
 		font-size: 0.6rem;
 	}
 `;
@@ -203,6 +239,9 @@ export const JobImage = styled.img`
 		margin-top: 1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 100%;
+	}
+	@media ${(props) => props.theme.breakpoints.xs} {
 		width: 100%;
 	}
 `;

@@ -7,6 +7,11 @@ export const ProjectsWrapper = styled.div`
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content max-content;
 	grid-gap: 2rem 1rem;
+	@media ${(props) => props.theme.breakpoints.xs} {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
@@ -51,6 +56,9 @@ export const ProjectsImage = styled.img`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-top: 1rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		margin-top: 1rem;
+	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		margin-top: 2.5rem;
 	}
@@ -60,6 +68,9 @@ export const ProjectsTitle = styled.h5`
 	grid-area: ${(props) => (props.primary ? '1/1/2/2' : '1/2/2/3')};
 	margin: 1.2rem auto;
 	font-size: 1.1rem;
+	@media ${(props) => props.theme.breakpoints.xs} {
+		margin: 0.5rem auto;
+	}
 `;
 export const ProjectsText = styled.p`
 	font-size: 0.7rem;
@@ -69,6 +80,11 @@ export const ProjectsText = styled.p`
 	letter-spacing: 0.05rem;
 	font-weight: 400;
 	grid-area: ${(props) => (props.primary ? '2/1/3/2' : '2/2/3/3')};
+	@media ${(props) => props.theme.breakpoints.xs} {
+		font-size: 0.65;
+		line-height: 1.5;
+		padding-inline: 0.2rem;
+	}
 `;
 export const ProjectsLinkContainer = styled.div`
 	display: flex;
@@ -76,6 +92,9 @@ export const ProjectsLinkContainer = styled.div`
 	justify-content: space-around;
 	padding-block: 1rem;
 	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
+	}
 `;
 export const ProjectsLink = styled.a`
 	display: flex;

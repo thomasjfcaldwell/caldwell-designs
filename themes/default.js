@@ -1,7 +1,8 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	breakpoints: {
-		sm: '(min-width: 320px) and (max-width: 640px)',
+		xs: '(min-width: 320px) and (max-width: 376px)',
+		sm: '(min-width: 376px) and (max-width: 640px)',
 		md: '(min-width: 641px)	and (max-width: 768px)',
 		lg: '(min-width: 769px) and (max-width: 1024px)',
 		xl: '(min-width:1025px)',

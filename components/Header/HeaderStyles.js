@@ -18,6 +18,9 @@ export const Title = styled.h1`
 	@media ${(props) => props.theme.breakpoints.xl} {
 		font-size: 50px;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		font-size: 30px;
+	}
 `;
 export const SubTitle = styled.h3`
 	font-weight: 200;

@@ -37,4 +37,7 @@ export const LinkText = styled.a`
 		cursor: pointer;
 		font-weight: 600;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		font-size: 12px;
+	}
 `;

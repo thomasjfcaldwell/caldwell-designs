@@ -78,6 +78,9 @@ export const EducationTitle = styled.h4`
 	font-weight: 900;
 	padding-block: 0.5rem;
 	color: ${(props) => props.theme.colors.primary};
+	@media ${(props) => props.theme.breakpoints.xs} {
+		font-size: 0.6rem;
+	}
 `;
 export const EducationSubTitle = styled.h5`
 	font-size: 0.5rem;

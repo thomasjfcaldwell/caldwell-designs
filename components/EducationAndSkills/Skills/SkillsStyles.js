@@ -13,6 +13,9 @@ export const SkillsWrapper = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-area: 1/1/2/2;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-area: 1/1/2/2;
+	}
 `;
 export const SkillsContainer = styled.section`
 	width: 100%;
@@ -44,18 +47,20 @@ export const SkillsImages = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-block: 0.1rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		margin: 0;
+	}
 `;
 
 export const SkillsImage = styled.img`
 	width: 30px;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		/* grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
 		width: 60px;
 	}
 	@media ${(props) => props.theme.breakpoints.xl} {
-		/* grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: 2fr 2fr 2fr 1fr 1fr; */
 		width: 60px;
+	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 25px;
 	}
 `;

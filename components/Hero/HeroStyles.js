@@ -7,6 +7,12 @@ export const HeroContainer = styled.div`
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 2fr 1fr;
 	grid-gap: 2rem;
+	@media ${(props) => props.theme.breakpoints.xs} {
+		display: flex;
+		flex-direction: column;
+		margin: 0.5rem auto;
+		grid-gap: 0.5rem;
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
