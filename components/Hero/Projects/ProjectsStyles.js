@@ -82,10 +82,8 @@ export const ProjectsText = styled.p`
 	font-weight: 400;
 	grid-area: ${(props) => (props.primary ? '2/1/3/2' : '2/2/3/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
-		font-size: 8rem;
 		line-height: 1.5;
 		padding-inline: 0.2rem;
-		background-color: red;
 	}
 `;
 export const ProjectsLinkContainer = styled.div`
