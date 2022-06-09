@@ -74,7 +74,6 @@ export const ProjectsTitle = styled.h5`
 `;
 export const ProjectsText = styled.p`
 	font-size: 0.7rem;
-	grid-column-start: 2;
 	padding-inline: 1rem;
 	line-height: 1.6;
 	letter-spacing: 0.05rem;
@@ -84,6 +83,7 @@ export const ProjectsText = styled.p`
 		font-size: 0.65;
 		line-height: 1.5;
 		padding-inline: 0.2rem;
+		background-color: red;
 	}
 `;
 export const ProjectsLinkContainer = styled.div`
@@ -94,6 +94,7 @@ export const ProjectsLinkContainer = styled.div`
 	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
+		background-color: blue;
 	}
 `;
 export const ProjectsLink = styled.a`
