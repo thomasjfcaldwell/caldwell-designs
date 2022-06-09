@@ -44,12 +44,12 @@ const Projects = () => {
 					className=''
 				/>
 				<ProjectsTitle>GAME</ProjectsTitle>
-				{/* <ProjectsText>
+				<ProjectsText>
 					This is a trivia game build with JavaScript, CSS and HTML. Testing
 					users knowledge of the worlds capital cities. Using JSON data from a
 					3rd party API and JavaScript logic the game keeps track of the correct
 					answers allowing the user to either win or lose.
-				</ProjectsText> */}
+				</ProjectsText>
 				<ProjectsLinkContainer>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
@@ -79,12 +79,12 @@ const Projects = () => {
 			</ProjectsContainer>
 			<ProjectsContainer primary>
 				<ProjectsTitle primary>STORE</ProjectsTitle>
-				{/* <ProjectsText primary>
+				<ProjectsText primary>
 					Store built using Shopify and React. Purpose of site is to sell
 					original designed gifts to the public. Solo project from the start I
 					am responsible for all aspects of the site. Including merchandise
 					design, site design and development plus promotional marketing assets.
-				</ProjectsText> */}
+				</ProjectsText>
 				<ProjectsImage
 					primary
 					loading='lazy'

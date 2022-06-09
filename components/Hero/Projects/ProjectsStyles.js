@@ -30,6 +30,7 @@ export const ProjectsWrapper = styled.div`
 		flex-direction: column;
 		padding: 1rem;
 		grid-area: 1/1/3/2;
+		/* grid-template-rows: min-content max-content; */
 	}
 `;
 
