@@ -5,8 +5,9 @@ export const ProjectsWrapper = styled.div`
 	margin-inline: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: min-content max-content;
+	/* grid-template-rows: min-content max-content; */
 	grid-gap: 2rem 1rem;
+	background-color: pink;
 	@media ${(props) => props.theme.breakpoints.xs} {
 		display: flex;
 		flex-direction: column;
@@ -39,11 +40,11 @@ export const ProjectsContainer = styled.div`
 	height: 100%;
 	border-radius: 10px;
 	display: grid;
-	grid-template-columns:${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')}; 
-	grid-template-rows:repeat(4, 1fr)
+	grid-template-columns: ${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')};
+	/* grid-template-rows:repeat(4, 1fr) */
 	/* margin-top: 5rem; */
 	grid-row-start: span 2;
-	grid-column-start: ${(props) => (props.primary ? '2' : '1')}; 
+	grid-column-start: ${(props) => (props.primary ? '2' : '1')};
 `;
 
 export const ProjectsNavLink = styled.p``;
