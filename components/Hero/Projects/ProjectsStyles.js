@@ -42,7 +42,7 @@ export const ProjectsContainer = styled.div`
 	grid-template-columns:${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')}; 
 	grid-template-rows:repeat(4, 1fr)
 	/* margin-top: 5rem; */
-	grid-row-start: 2;
+	grid-row-start: span 2;
 	grid-column-start: ${(props) => (props.primary ? '2' : '1')}; 
 `;
 
