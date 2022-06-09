@@ -56,11 +56,11 @@ const Projects = () => {
 							<AiFillPlayCircle />
 						</ProjectsIcon>
 						<LinkTextContainer>
-							<Link
-								passHref='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
+							<LinkTitle
+								href='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
 								scroll={false}>
-								<LinkTitle>Play Game</LinkTitle>
-							</Link>
+								Play Game
+							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
 					<ProjectsLink>
@@ -68,11 +68,11 @@ const Projects = () => {
 							<AiFillGithub />
 						</ProjectsIcon>
 						<LinkTextContainer>
-							<Link
-								passHref='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
+							<LinkTitle
+								href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
 								scroll={false}>
-								<LinkTitle>See Code</LinkTitle>
-							</Link>
+								See Code
+							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
 				</ProjectsLinkContainer>
@@ -98,9 +98,9 @@ const Projects = () => {
 							<AiOutlineShoppingCart />
 						</ProjectsIcon>
 						<LinkTextContainer>
-							<Link href='https://easyandquickgifts.com/' scroll={false}>
-								<LinkTitle>Visit Shop</LinkTitle>
-							</Link>
+							<LinkTitle href='https://easyandquickgifts.com/' scroll={false}>
+								Visit Shop
+							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
 					<ProjectsLink>
@@ -108,9 +108,11 @@ const Projects = () => {
 							<AiFillGithub />
 						</ProjectsIcon>
 						<LinkTextContainer>
-							<Link href='https://github.com/thomasjfcaldwell' scroll={false}>
-								<LinkTitle>See Code</LinkTitle>
-							</Link>
+							<LinkTitle
+								href='https://github.com/thomasjfcaldwell'
+								scroll={false}>
+								See Code
+							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
 				</ProjectsLinkContainer>

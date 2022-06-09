@@ -109,7 +109,7 @@ export const ProjectsIcon = styled.div`
 	${(props) => props.theme.colors.highlight};
 `;
 export const LinkTextContainer = styled.div``;
-export const LinkTitle = styled.h5`
+export const LinkTitle = styled.a`
 	font-size: 7px;
 	padding-inline: 5px;
 	font-weight: 600;
