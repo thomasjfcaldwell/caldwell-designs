@@ -5,9 +5,7 @@ export const ProjectsWrapper = styled.div`
 	margin-inline: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/* grid-template-rows: min-content max-content; */
 	grid-gap: 2rem 1rem;
-	background-color: blue;
 	@media ${(props) => props.theme.breakpoints.xs} {
 		display: flex;
 		flex-direction: column;
@@ -30,7 +28,6 @@ export const ProjectsWrapper = styled.div`
 		flex-direction: column;
 		padding: 1rem;
 		grid-area: 1/1/3/2;
-		/* grid-template-rows: min-content max-content; */
 	}
 `;
 
@@ -46,8 +43,7 @@ export const ProjectsContainer = styled.div`
 	gap: 0.9rem 0;
 	grid-row-start: span 2;
 	grid-column-start: ${(props) => (props.primary ? '2' : '1')};
-	background-color: grey;
-	padding: 1rem;
+	padding-block: 1rem;
 `;
 
 export const ProjectsNavLink = styled.p``;
@@ -56,7 +52,7 @@ export const ProjectsImage = styled.img`
 	width: 10rem;
 	margin-inline: auto;
 	margin-top: 1rem;
-	grid-area: ${(props) => (props.primary ? '1/2/4/3' : '1/1/4/2')};
+	grid-area: ${(props) => (props.primary ? '1/2/3/3' : '1/1/3/2')};
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-top: 1rem;
 	}
@@ -84,37 +80,38 @@ export const ProjectsText = styled.p`
 	font-weight: 400;
 	grid-area: ${(props) => (props.primary ? '2/1/3/2' : '2/2/3/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
-		line-height: 1.5;
-		padding-inline: 0.2rem;
+		margin: 0.5rem auto;
+		padding-inline: 0.5rem;
 	}
 `;
 export const ProjectsLinkContainer = styled.div`
 	display: flex;
 	justify-content: space-around;
-	background-color: green;
-	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
+	grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
-		background-color: blue;
 		margin-top: 1rem;
 	}
-`;
-export const ProjectsLink = styled.a`
-	display: flex;
-	justify-content: space-around;
-	text-decoration: none;
-	align-items: center;
 `;
 
 export const ProjectsIcon = styled.div`
 	${(props) => props.theme.colors.highlight};
 `;
+export const ProjectsLink = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
 export const LinkTextContainer = styled.div``;
 export const LinkTitle = styled.a`
-	font-size: 7px;
+	font-size: 0.5rem;
 	padding-inline: 5px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: ${(props) => props.theme.colors.primary};
+	:hover {
+		color: blue;
+		cursor: pointer;
+	}
 `;
