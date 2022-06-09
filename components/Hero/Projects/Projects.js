@@ -37,7 +37,7 @@ const Projects = () => {
 				<Title>Projects</Title>
 			</TitleContainer>
 			<ProjectsContainer>
-				<ProjectsImage
+				{/* <ProjectsImage
 					loading='lazy'
 					src={gameImage}
 					alt='Mock up of Trivia'
@@ -50,7 +50,7 @@ const Projects = () => {
 					3rd party API and JavaScript logic the game keeps track of the correct
 					answers allowing the user to either win or lose.
 				</ProjectsText>
-				{/* <ProjectsLinkContainer>
+				<ProjectsLinkContainer>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiFillPlayCircle />
@@ -78,7 +78,7 @@ const Projects = () => {
 				</ProjectsLinkContainer> */}
 			</ProjectsContainer>
 			<ProjectsContainer primary>
-				<ProjectsTitle primary>STORE</ProjectsTitle>
+				{/* <ProjectsTitle primary>STORE</ProjectsTitle>
 				<ProjectsText primary>
 					Store built using Shopify and React. Purpose of site is to sell
 					original designed gifts to the public. Solo project from the start I
@@ -92,7 +92,7 @@ const Projects = () => {
 					alt='Mock Up of Store'
 					className=''
 				/>
-				{/* <ProjectsLinkContainer primary>
+				<ProjectsLinkContainer primary>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiOutlineShoppingCart />
