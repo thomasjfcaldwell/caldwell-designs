@@ -82,8 +82,7 @@ export const JobBox = styled.div`
 		padding: 0.1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		background-color: red;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 45% 55%;
 		grid-template-rows: auto 4fr 1fr;
 		padding: 0.25rem 0.5rem;
 	}
@@ -107,6 +106,7 @@ export const JobBoxHeader = styled.h5`
 		grid-column-start: 2;
 		grid-row-start: 1;
 		font-size: 0.9rem;
+		margin: 0.5rem 0;
 	}
 `;
 export const JobList = styled.ul`
@@ -116,27 +116,29 @@ export const JobList = styled.ul`
 	margin: ${(props) => (props.primary ? '1rem 0 0.5rem 0' : '0')};
 	display: flex;
 	flex-direction: column;
+	list-style-type: none;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		list-style-type: ${(props) => (props.primary ? 'none' : '')};
 		margin: ${(props) => (props.primary ? '0.2rem 0 0.5rem 0' : '0.2rem 0')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-column-start: 2;
 		grid-row-start: 2;
-		grid-row-end: 5;
-		list-style-type: ${(props) => (props.primary ? 'none' : '')};
+		grid-row-end: 4;
+		justify-content: space-evenly;
 	}
 `;
 export const JobListItem = styled.li`
 	color: ${(props) => props.theme.colors.primary};
 	font-size: 0.8rem;
 	font-weight: 500;
+	letter-spacing: 0.07rem;
 	margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '1rem 1rem')};
 	@media ${(props) => props.theme.breakpoints.lg} {
 		margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '0.75rem 0.75rem')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0.5rem 0.1rem')};
+		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0.2rem 0.1rem')};
+		font-size: 0.75rem;
 	}
 `;
 export const JobSoftWareContainer = styled.div`
@@ -166,6 +168,9 @@ export const JobSoftWareIconContainer = styled.div`
 	justify-content: space-between;
 	width: 100%;
 	padding: 0.5rem 0;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		padding: 0.2rem 0;
+	}
 `;
 export const JobSoftWareTextContainer = styled.div`
 	display: flex;
@@ -177,6 +182,9 @@ export const JobSoftWareIconText = styled.p`
 	display: inline;
 	margin: 0.7rem auto;
 	@media ${(props) => props.theme.breakpoints.lg} {
+		font-size: 0.6rem;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: 0.6rem;
 	}
 `;
@@ -195,7 +203,6 @@ export const JobImage = styled.img`
 		margin-top: 1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		width: 180px;
-		margin-top: 0.5rem;
+		width: 100%;
 	}
 `;

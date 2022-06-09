@@ -16,8 +16,9 @@ export const AboutAndSkillWrapper = styled.div`
 		grid-template-rows: auto 1fr;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-gap: 2.5rem;
+		grid-column-gap: 2.5rem;
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr;
+		margin: 1rem auto;
 	}
 `;

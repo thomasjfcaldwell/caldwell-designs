@@ -24,7 +24,6 @@ export const EducationContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.md} {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
-		background-color: yellow;
 	}
 `;
 

@@ -4,6 +4,9 @@ export const TitleContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	margin: 2rem auto;
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: 0.5rem auto;
+	}
 `;
 
 export const Title = styled.h2`

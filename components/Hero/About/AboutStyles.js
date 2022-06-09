@@ -4,10 +4,11 @@ export const AboutContainer = styled.div`
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	justify-content: center;
 	grid-area: 1/2/3/3;
+
 	@media ${(props) => props.theme.breakpoints.md} {
 		grid-area: 1/2/2/3;
+		justify-content: center;
 	}
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-area: 1/2/2/3;
@@ -16,7 +17,7 @@ export const AboutContainer = styled.div`
 
 export const AboutImage = styled.img`
 	width: 40%;
-	margin: 0.3rem auto;
+	margin: 0 auto;
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 50%;
 	}

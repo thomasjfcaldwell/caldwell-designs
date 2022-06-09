@@ -41,6 +41,9 @@ export const SkillsImages = styled.div`
 	@media ${(props) => props.theme.breakpoints.md} {
 		margin-block: 0.3rem;
 	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin-block: 0.1rem;
+	}
 `;
 
 export const SkillsImage = styled.img`
