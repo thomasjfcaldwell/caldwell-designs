@@ -46,7 +46,7 @@ const Projects = () => {
 					users knowledge of the worlds capital cities. Using JSON data from a
 					3rd party API and JavaScript logic the game keeps track of the correct
 					answers allowing the user to either win or lose.
-				</ProjectsText>
+				</ProjectsText> */}
 				<ProjectsLinkContainer>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
@@ -72,7 +72,7 @@ const Projects = () => {
 							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
-				</ProjectsLinkContainer>  */}
+				</ProjectsLinkContainer>
 			</ProjectsContainer>
 			<ProjectsContainer primary>
 				<ProjectsTitle primary>STORE</ProjectsTitle>
@@ -89,7 +89,7 @@ const Projects = () => {
 					alt='Mock Up of Store'
 					className=''
 				/>
-				{/* <ProjectsLinkContainer primary>
+				<ProjectsLinkContainer primary>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiOutlineShoppingCart />
@@ -112,7 +112,7 @@ const Projects = () => {
 							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
-				</ProjectsLinkContainer>  */}
+				</ProjectsLinkContainer>
 			</ProjectsContainer>
 		</ProjectsWrapper>
 	);
