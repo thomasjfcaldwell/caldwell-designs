@@ -41,7 +41,7 @@ export const ProjectsContainer = styled.div`
 	display: grid;
 	grid-template-columns:${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')}; 
 	grid-template-rows:repeat(4, 1fr)
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	grid-row-start: 2;
 	grid-column-start: ${(props) => (props.primary ? '2' : '1')}; 
 `;
@@ -91,10 +91,11 @@ export const ProjectsLinkContainer = styled.div`
 	grid-column-start: 2;
 	justify-content: space-around;
 	padding-block: 1rem;
+	background-color: blue;
 	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
-		background-color: blue;
+		/* background-color: blue; */
 	}
 `;
 export const ProjectsLink = styled.a`
