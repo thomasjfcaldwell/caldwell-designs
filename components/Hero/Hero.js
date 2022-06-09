@@ -7,7 +7,7 @@ import { HeroContainer } from './HeroStyles';
 const Hero = () => {
 	return (
 		<HeroContainer>
-			<Projects />
+			{/* <Projects /> */}
 			<About />
 			<Contact />
 		</HeroContainer>

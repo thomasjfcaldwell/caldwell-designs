@@ -8,7 +8,7 @@ export const ProjectsWrapper = styled.div`
 	/* grid-template-rows: min-content max-content; */
 	grid-gap: 2rem 1rem;
 	background-color: pink;
-	@media ${(props) => props.theme.breakpoints.xs} {
+	/* @media ${(props) => props.theme.breakpoints.xs} {
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
@@ -17,7 +17,7 @@ export const ProjectsWrapper = styled.div`
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
-	}
+	} */
 	@media ${(props) => props.theme.breakpoints.md} {
 		display: flex;
 		flex-direction: column;
