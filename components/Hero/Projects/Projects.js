@@ -15,8 +15,6 @@ import {
 
 import { Title, TitleContainer } from '../Title/TitleStyles';
 
-import Link from 'next/link';
-
 const shopImage =
 	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654551125/storeMockUp1.phone_zaaryb.png';
 
@@ -28,8 +26,6 @@ import {
 	AiOutlineShoppingCart,
 } from 'react-icons/ai';
 
-// import { WorkButton } from '../LinkButton/LinkButton.Styles';
-
 const Projects = () => {
 	return (
 		<ProjectsWrapper>
@@ -37,13 +33,14 @@ const Projects = () => {
 				<Title>Projects</Title>
 			</TitleContainer>
 			<ProjectsContainer>
-				{/* <ProjectsImage
+				<ProjectsImage
 					loading='lazy'
 					src={gameImage}
 					alt='Mock up of Trivia'
 					className=''
 				/>
-				<ProjectsTitle>GAME</ProjectsTitle>
+
+				{/* <ProjectsTitle>GAME</ProjectsTitle>
 				<ProjectsText>
 					This is a trivia game build with JavaScript, CSS and HTML. Testing
 					users knowledge of the worlds capital cities. Using JSON data from a
@@ -75,11 +72,11 @@ const Projects = () => {
 							</LinkTitle>
 						</LinkTextContainer>
 					</ProjectsLink>
-				</ProjectsLinkContainer> */}
+				</ProjectsLinkContainer>  */}
 			</ProjectsContainer>
 			<ProjectsContainer primary>
-				{/* <ProjectsTitle primary>STORE</ProjectsTitle>
-				<ProjectsText primary>
+				<ProjectsTitle primary>STORE</ProjectsTitle>
+				{/* <ProjectsText primary>
 					Store built using Shopify and React. Purpose of site is to sell
 					original designed gifts to the public. Solo project from the start I
 					am responsible for all aspects of the site. Including merchandise

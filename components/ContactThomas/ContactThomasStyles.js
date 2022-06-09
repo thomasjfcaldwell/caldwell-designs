@@ -6,6 +6,16 @@ export const ContactThomasContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	grid-row-start: 2;
+	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		background-color: green;
+		width: 100%;
+	}
 `;
 export const ContactThomasSocialMediaContainer = styled.div`
 	display: flex;
