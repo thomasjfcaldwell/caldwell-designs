@@ -76,20 +76,20 @@ const Projects = () => {
 			</ProjectsContainer>
 			<ProjectsContainer primary>
 				<ProjectsTitle primary>STORE</ProjectsTitle>
-				<ProjectsText primary>
+				{/* <ProjectsText primary>
 					Store built using Shopify and React. Purpose of site is to sell
 					original designed gifts to the public. Solo project from the start I
 					am responsible for all aspects of the site. Including merchandise
 					design, site design and development plus promotional marketing assets.
-				</ProjectsText>
-				{/* <ProjectsImage
+				</ProjectsText> */}
+				<ProjectsImage
 					primary
 					loading='lazy'
 					src={shopImage}
 					alt='Mock Up of Store'
 					className=''
 				/>
-				<ProjectsLinkContainer primary>
+				{/* <ProjectsLinkContainer primary>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiOutlineShoppingCart />
