@@ -57,7 +57,7 @@ const Projects = () => {
 						</ProjectsIcon>
 						<LinkTextContainer>
 							<Link
-								href='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
+								passHref='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
 								scroll={false}>
 								<LinkTitle>Play Game</LinkTitle>
 							</Link>
@@ -69,7 +69,7 @@ const Projects = () => {
 						</ProjectsIcon>
 						<LinkTextContainer>
 							<Link
-								href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
+								passHref='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
 								scroll={false}>
 								<LinkTitle>See Code</LinkTitle>
 							</Link>
