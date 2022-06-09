@@ -7,7 +7,7 @@ export const ProjectsWrapper = styled.div`
 	grid-template-columns: 1fr 1fr;
 	/* grid-template-rows: min-content max-content; */
 	grid-gap: 2rem 1rem;
-	background-color: pink;
+	background-color: blue;
 	@media ${(props) => props.theme.breakpoints.xs} {
 		display: flex;
 		flex-direction: column;
@@ -42,16 +42,18 @@ export const ProjectsContainer = styled.div`
 	border-radius: 10px;
 	display: grid;
 	grid-template-columns: ${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')};
-	/* grid-template-rows:repeat(4, 1fr) */
-	/* margin-top: 5rem; */
+	grid-template-rows: min-content 1fr auto;
+	gap: 0.9rem 0;
 	grid-row-start: span 2;
 	grid-column-start: ${(props) => (props.primary ? '2' : '1')};
+	background-color: grey;
+	padding: 1rem;
 `;
 
 export const ProjectsNavLink = styled.p``;
 
 export const ProjectsImage = styled.img`
-	width: 100%;
+	width: 10rem;
 	margin-inline: auto;
 	margin-top: 1rem;
 	grid-area: ${(props) => (props.primary ? '1/2/4/3' : '1/1/4/2')};
@@ -88,14 +90,13 @@ export const ProjectsText = styled.p`
 `;
 export const ProjectsLinkContainer = styled.div`
 	display: flex;
-	grid-column-start: 2;
 	justify-content: space-around;
-	padding-block: 1rem;
-	background-color: blue;
+	background-color: green;
 	grid-area: ${(props) => (props.primary ? '3/1/4/2' : '3/2/4/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
-		/* background-color: blue; */
+		background-color: blue;
+		margin-top: 1rem;
 	}
 `;
 export const ProjectsLink = styled.a`
