@@ -178,7 +178,7 @@ export default function WorkExperience() {
 						</CompanyAndPositionContainer>
 					</JobTitleContainer>
 					<JobBoxBottom>
-						<JobBoxHeader>Main Responsibilities</JobBoxHeader>
+						<JobBoxHeader primary>Main Responsibilities</JobBoxHeader>
 						<JobList primary>
 							<JobListItem primary>
 								Management of marketing content and team.
@@ -229,7 +229,7 @@ export default function WorkExperience() {
 						</CompanyAndPositionContainer>
 					</JobTitleContainer>
 					<JobBoxBottom>
-						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
+						<JobBoxHeader primary>MAIN RESPONSIBILITIES</JobBoxHeader>
 						<JobList primary>
 							<JobListItem primary>
 								Answer phone, respond to leads and secure business by follow up.

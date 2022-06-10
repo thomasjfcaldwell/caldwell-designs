@@ -13,7 +13,6 @@ export const ContactThomasContainer = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-row-start: 3;
 		grid-row-end: 4;
-		background-color: green;
 		width: 100%;
 	}
 `;

@@ -7,13 +7,13 @@ export const Container = styled.div`
 	padding-top: 1rem;
 	margin-inline: auto;
 	width: 100%;
+	position: sticky;
+	top: 0.01px;
+	background-color: ${(props) => props.theme.colors.primary};
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
-		position: sticky;
-		top: 0.01px;
-		background-color: ${(props) => props.theme.colors.primary};
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		display: flex;

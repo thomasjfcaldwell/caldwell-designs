@@ -8,9 +8,10 @@ export const WorkExperienceContainer = styled.section`
 
 export const WorkExperienceRow = styled.div`
 	display: grid;
+	width: 100%;
 	grid-template-columns: ${(props) =>
 		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
-	grid-gap: 1rem;
+	grid-gap: 0.2rem;
 	margin: ${(props) => (props.primary ? '3rem auto' : '0 auto')};
 	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0.5rem;
@@ -37,6 +38,10 @@ export const JobContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 95%;
+		margin: 0 auto;
+	}
 `;
 
 /////////////
@@ -115,24 +120,27 @@ export const JobBoxHeader = styled.h5`
 		grid-column-start: 2;
 		grid-row-start: 1;
 		font-size: 0.9rem;
-		margin: 0.5rem 0;
+		margin: 0.2rem 0;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-column-start: 2;
 		grid-row-start: 1;
 		font-size: 0.8rem;
-		margin: 0.5rem 0;
+		padding-top: ${(props) => (props.primary ? '0' : '1rem')};
 	}
 `;
 export const JobList = styled.ul`
 	grid-column-start: 2;
 	grid-row-start: 2;
 	width: 100%;
-	margin: ${(props) => (props.primary ? '1rem 0 0.5rem 0' : '0')};
+	margin: ${(props) => (props.primary ? '0rem 0 0.5rem 0' : '0')};
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
 	@media ${(props) => props.theme.breakpoints.lg} {
+		margin: ${(props) => (props.primary ? '0.2rem 0 0.5rem 0' : '0.2rem 0')};
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
 		margin: ${(props) => (props.primary ? '0.2rem 0 0.5rem 0' : '0.2rem 0')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -157,12 +165,17 @@ export const JobListItem = styled.li`
 	@media ${(props) => props.theme.breakpoints.lg} {
 		margin: ${(props) => (props.primary ? '0.5rem 0.5rem' : '0.75rem 0.75rem')};
 	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		margin: ${(props) =>
+			props.primary ? '0 0.5rem 0.3rem 0.5rem' : '0.75rem 0.75rem'};
+		font-size: ${(props) => (props.primary ? '0.6rem' : '0.9rem')};
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0.2rem 0.1rem')};
 		font-size: 0.75rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
-		margin: ${(props) => (props.primary ? '0.5rem 0.1rem' : '0')};
+		margin: ${(props) => (props.primary ? '0.2rem 0.1rem' : '0')};
 		font-size: 0.6rem;
 	}
 `;
@@ -215,6 +228,9 @@ export const JobSoftWareIconText = styled.p`
 	display: inline;
 	margin: 0.7rem auto;
 	@media ${(props) => props.theme.breakpoints.lg} {
+		font-size: 0.6rem;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 0.6rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
