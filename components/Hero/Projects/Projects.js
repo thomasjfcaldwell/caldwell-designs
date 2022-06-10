@@ -5,7 +5,6 @@ import {
 	ProjectsImage,
 	ProjectsTitle,
 	ProjectsText,
-	LinkTextContainer,
 	LinkTitle,
 	ProjectsLinkContainer,
 	ProjectsLink,
@@ -52,25 +51,21 @@ const Projects = () => {
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiFillPlayCircle />
 						</ProjectsIcon>
-						<LinkTextContainer>
-							<LinkTitle
-								href='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
-								scroll={false}>
-								Play Game
-							</LinkTitle>
-						</LinkTextContainer>
+						<LinkTitle
+							href='https://thomasjfcaldwell.github.io/project1-capitalsoftheworld-trivia-game/'
+							scroll={false}>
+							Play Game
+						</LinkTitle>
 					</ProjectsLink>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiFillGithub />
 						</ProjectsIcon>
-						<LinkTextContainer>
-							<LinkTitle
-								href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
-								scroll={false}>
-								See Code
-							</LinkTitle>
-						</LinkTextContainer>
+						<LinkTitle
+							href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'
+							scroll={false}>
+							See Code
+						</LinkTitle>
 					</ProjectsLink>
 				</ProjectsLinkContainer>
 			</ProjectsContainer>
@@ -94,23 +89,19 @@ const Projects = () => {
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiOutlineShoppingCart />
 						</ProjectsIcon>
-						<LinkTextContainer>
-							<LinkTitle href='https://easyandquickgifts.com/' scroll={false}>
-								Visit Shop
-							</LinkTitle>
-						</LinkTextContainer>
+						<LinkTitle href='https://easyandquickgifts.com/' scroll={false}>
+							Visit Shop
+						</LinkTitle>
 					</ProjectsLink>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
 							<AiFillGithub />
 						</ProjectsIcon>
-						<LinkTextContainer>
-							<LinkTitle
-								href='https://github.com/thomasjfcaldwell'
-								scroll={false}>
-								See Code
-							</LinkTitle>
-						</LinkTextContainer>
+						<LinkTitle
+							href='https://github.com/thomasjfcaldwell'
+							scroll={false}>
+							See Code
+						</LinkTitle>
 					</ProjectsLink>
 				</ProjectsLinkContainer>
 			</ProjectsContainer>

@@ -40,4 +40,7 @@ export const LinkText = styled.a`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		font-size: 12px;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 11px;
+	}
 `;

@@ -6,6 +6,11 @@ export const ProjectsWrapper = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2rem 1rem;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		display: flex;
+		flex-direction: column;
+		padding: 0.7rem;
+	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		display: flex;
 		flex-direction: column;
@@ -14,7 +19,7 @@ export const ProjectsWrapper = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 2rem;
 	}
 	@media ${(props) => props.theme.breakpoints.md} {
 		display: flex;
@@ -36,7 +41,7 @@ export const ProjectsContainer = styled.div`
 	color: ${(props) => props.theme.colors.primary};
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	border-radius: 0.8rem;
 	display: grid;
 	grid-template-columns: ${(props) => (props.primary ? '2fr 1fr' : '1fr 2fr')};
 	grid-template-rows: min-content 1fr auto;
@@ -53,6 +58,10 @@ export const ProjectsImage = styled.img`
 	margin-inline: auto;
 	margin-top: 1rem;
 	grid-area: ${(props) => (props.primary ? '1/2/3/3' : '1/1/3/2')};
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		width: 9rem;
+		margin-top: 2rem;
+	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin-top: 1rem;
 	}
@@ -68,8 +77,14 @@ export const ProjectsTitle = styled.h5`
 	grid-area: ${(props) => (props.primary ? '1/1/2/2' : '1/2/2/3')};
 	margin: 1.2rem auto;
 	font-size: 1.1rem;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		margin: 0rem auto;
+	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		margin: 0.5rem auto;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: 0;
 	}
 `;
 export const ProjectsText = styled.p`
@@ -79,9 +94,18 @@ export const ProjectsText = styled.p`
 	letter-spacing: 0.05rem;
 	font-weight: 400;
 	grid-area: ${(props) => (props.primary ? '2/1/3/2' : '2/2/3/3')};
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		margin: 0.2rem auto;
+		padding-inline: ${(props) => (props.primary ? '0.3rem' : '0.1rem')};
+	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		margin: 0.5rem auto;
 		padding-inline: 0.5rem;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		margin: 0;
+		padding-inline: ${(props) => (props.primary ? '0.5rem' : '0.2rem')};
+		font-size: 0.75rem;
 	}
 `;
 export const ProjectsLinkContainer = styled.div`
@@ -90,22 +114,21 @@ export const ProjectsLinkContainer = styled.div`
 	grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-area: ${(props) => (props.primary ? '3/1/4/3' : '3/1/4/3')};
-		margin-top: 1rem;
+		margin-top: 0.5rem;
 	}
 `;
 
-export const ProjectsIcon = styled.div`
-	${(props) => props.theme.colors.highlight};
-`;
 export const ProjectsLink = styled.div`
 	display: flex;
 	align-items: center;
 `;
+export const ProjectsIcon = styled.div`
+	display: inline;
+`;
 
-export const LinkTextContainer = styled.div``;
 export const LinkTitle = styled.a`
 	font-size: 0.5rem;
-	padding-inline: 5px;
+	padding-inline: 0.6rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;

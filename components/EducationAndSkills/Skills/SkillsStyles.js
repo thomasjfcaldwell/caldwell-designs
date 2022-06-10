@@ -4,7 +4,7 @@ export const SkillsWrapper = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0rem 1rem;
+	margin: 1rem 1rem;
 	@media ${(props) => props.theme.breakpoints.md} {
 		display: grid;
 		grid-template-columns: 35% 65%;

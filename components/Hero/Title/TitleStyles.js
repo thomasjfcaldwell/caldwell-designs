@@ -10,6 +10,9 @@ export const TitleContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		margin: 0.2rem auto;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		margin: 0.2rem auto;
+	}
 `;
 
 export const Title = styled.h2`
@@ -21,6 +24,9 @@ export const Title = styled.h2`
 		font-size: 1.5rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
+		font-size: 1.4rem;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
 		font-size: 1.4rem;
 	}
 `;

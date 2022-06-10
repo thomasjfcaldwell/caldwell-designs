@@ -11,7 +11,8 @@ export const WorkExperienceRow = styled.div`
 	width: 100%;
 	grid-template-columns: ${(props) =>
 		props.primary ? '1fr 1fr 1fr' : '1fr 1fr'};
-	grid-gap: 0.2rem;
+	grid-gap: 1.2rem;
+	padding: 0.5rem;
 	margin: ${(props) => (props.primary ? '3rem auto' : '0 auto')};
 	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0.5rem;
@@ -22,11 +23,15 @@ export const WorkExperienceRow = styled.div`
 		grid-template-rows: ${(props) => (props.primary ? '1fr auto' : '1fr')};
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: 0.5rem;
+		padding: 1.5rem;
 		grid-template-columns: 1fr;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
-		padding: 0.5rem;
+		padding-inline: 1.5rem;
+		grid-template-columns: 1fr;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		padding-inline: 1rem;
 		grid-template-columns: 1fr;
 	}
 `;
@@ -57,6 +62,9 @@ export const JobTitleContainer = styled.div`
 
 export const YearText = styled.h3`
 	font-size: 32px;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 30px;
+	}
 `;
 
 // company and position Container
@@ -66,12 +74,22 @@ export const CompanyAndPositionContainer = styled.div`
 	margin-top: 5px;
 	margin-left: 2px;
 	padding-inline: 0.5rem;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		margin-top: 1px;
+	}
 `;
-export const CompanyText = styled.h4``;
+export const CompanyText = styled.h4`
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 0.9rem;
+	}
+`;
 export const PositionText = styled.h5`
 	font-size: 11px;
 	font-weight: 300;
 	letter-spacing: 0.7px;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 9px;
+	}
 `;
 
 ////////
@@ -96,6 +114,11 @@ export const JobBox = styled.div`
 		padding: 0.25rem 0.5rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-template-columns: 45% 55%;
+		grid-template-rows: auto 4fr 1fr;
+		padding: 0.25rem 0.5rem;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
 		grid-template-columns: 45% 55%;
 		grid-template-rows: auto 4fr 1fr;
 		padding: 0.25rem 0.5rem;
@@ -125,8 +148,12 @@ export const JobBoxHeader = styled.h5`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-column-start: 2;
 		grid-row-start: 1;
-		font-size: 0.8rem;
-		padding-top: ${(props) => (props.primary ? '0' : '1rem')};
+		font-size: 0.7rem;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		font-size: 0.7rem;
 	}
 `;
 export const JobList = styled.ul`
@@ -153,7 +180,13 @@ export const JobList = styled.ul`
 		grid-column-start: 2;
 		grid-row-start: 2;
 		grid-row-end: 4;
-		justify-content: space-evenly;
+		justify-content: space-around;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+		justify-content: space-around;
 	}
 `;
 export const JobListItem = styled.li`
@@ -175,7 +208,11 @@ export const JobListItem = styled.li`
 		font-size: 0.75rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
-		margin: ${(props) => (props.primary ? '0.2rem 0.1rem' : '0')};
+		margin: ${(props) => (props.primary ? '0.1rem' : '0')};
+		font-size: 0.65rem;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		margin: ${(props) => (props.primary ? '0.1rem' : '0')};
 		font-size: 0.6rem;
 	}
 `;
@@ -192,6 +229,11 @@ export const JobSoftWareContainer = styled.div`
 		grid-row-start: 4;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row-start: 4;
@@ -217,6 +259,9 @@ export const JobSoftWareIconContainer = styled.div`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		padding: 0.1rem 0;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		padding: 0.1rem 0;
+	}
 `;
 export const JobSoftWareTextContainer = styled.div`
 	display: flex;
@@ -239,6 +284,9 @@ export const JobSoftWareIconText = styled.p`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		font-size: 0.6rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 0.5rem;
+	}
 `;
 
 // Images Styles
@@ -258,6 +306,9 @@ export const JobImage = styled.img`
 		width: 100%;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 100%;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
 		width: 100%;
 	}
 `;

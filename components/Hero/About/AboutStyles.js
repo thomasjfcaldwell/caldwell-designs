@@ -4,7 +4,8 @@ export const AboutContainer = styled.div`
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	grid-area: 1/2/3/3;
+	align-items: center;
+	grid-area: 1/2/4/3;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		grid-area: 1/2/2/3;
@@ -12,24 +13,39 @@ export const AboutContainer = styled.div`
 	}
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-area: 1/2/2/3;
+		background-color: pink;
 	}
 `;
 
 export const AboutImage = styled.img`
-	width: 40%;
+	width: 50%;
 	margin: 0 auto;
 	@media ${(props) => props.theme.breakpoints.md} {
-		width: 50%;
+		width: 40%;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		width: 40%;
 	}
 `;
 
 export const AboutText = styled.p`
-	font-size: 0.65rem;
+	font-size: 1.1rem;
 	font-weight: 500;
-	line-height: 1.7;
+	line-height: 1.65;
 	letter-spacing: 1px;
-	margin: 0.6rem auto;
-	width: 75%;
+	margin: 3rem auto;
+	width: 90%;
+	text-align: justify;
+	/* background-color: purple; */
+	@media ${(props) => props.theme.breakpoints.md} {
+		font-size: 0.8rem;
+		margin: 3rem auto;
+	}
+	@media ${(props) => props.theme.breakpoints.sm} {
+		font-size: 0.8rem;
+		padding: 2.5rem;
+		text-align: justify;
+	}
 `;
 
 export const AboutLink = styled.a`

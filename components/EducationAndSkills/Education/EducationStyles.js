@@ -25,6 +25,10 @@ export const EducationContainer = styled.section`
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		grid-gap: 0.5rem;
+		margin-top: 0.9rem;
+	}
 `;
 
 export const BootContainer = styled.div`
@@ -81,6 +85,9 @@ export const EducationTitle = styled.h4`
 	@media ${(props) => props.theme.breakpoints.xs} {
 		font-size: 0.6rem;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 0.55rem;
+	}
 `;
 export const EducationSubTitle = styled.h5`
 	font-size: 0.5rem;
@@ -88,6 +95,9 @@ export const EducationSubTitle = styled.h5`
 	color: ${(props) => props.theme.colors.primary};
 	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		font-size: 0.45rem;
 	}
 `;
 
@@ -100,5 +110,8 @@ export const EducationIntro = styled.p`
 	padding-inline: 1rem;
 	@media ${(props) => props.theme.breakpoints.lg} {
 		margin: 0.2rem 0;
+	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		padding-inline: 0.4rem;
 	}
 `;

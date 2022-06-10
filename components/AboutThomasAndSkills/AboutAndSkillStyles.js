@@ -27,4 +27,10 @@ export const AboutAndSkillWrapper = styled.div`
 		grid-template-rows: auto 1fr;
 		margin: 0.5rem auto;
 	}
+	@media ${(props) => props.theme.breakpoints.xxs} {
+		grid-column-gap: 1.5rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		margin: 0.5rem auto;
+	}
 `;
