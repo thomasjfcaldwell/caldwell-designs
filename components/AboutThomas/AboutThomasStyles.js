@@ -56,7 +56,7 @@ export const AboutThomasText = styled.p`
 	font-weight: 400;
 	line-height: 1.65;
 	text-align: justify;
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	@media ${(props) => props.theme.breakpoints.xs} {
 		padding: 0.5rem;

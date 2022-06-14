@@ -6,7 +6,7 @@ import { AboutAndSkillWrapper } from './AboutAndSkillStyles';
 
 export default function AboutAndSkill() {
 	return (
-		<AboutAndSkillWrapper>
+		<AboutAndSkillWrapper id='about'>
 			<Skills />
 			<AboutThomas />
 		</AboutAndSkillWrapper>

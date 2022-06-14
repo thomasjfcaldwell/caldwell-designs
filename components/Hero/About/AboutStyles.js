@@ -13,7 +13,6 @@ export const AboutContainer = styled.div`
 	}
 	@media ${(props) => props.theme.breakpoints.lg} {
 		grid-area: 1/2/2/3;
-		background-color: pink;
 	}
 `;
 
@@ -29,12 +28,12 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutText = styled.p`
-	font-size: 1.1rem;
-	font-weight: 500;
-	line-height: 1.65;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
 	letter-spacing: 1px;
-	margin: 3rem auto;
-	width: 90%;
+	margin: 1.5rem auto;
+	width: 80%;
 	text-align: justify;
 	/* background-color: purple; */
 	@media ${(props) => props.theme.breakpoints.md} {

@@ -39,7 +39,10 @@ function ThisSite() {
 					This portfolio site was planned and designed using Adobe XD.
 				</ThisSiteText>
 				<GitHubLinkTitle>Take a looks at my designs</GitHubLinkTitle>
-				<ThisSiteLink href='#' target='_blank' rel='noreferrer'>
+				<ThisSiteLink
+					href='https://drive.google.com/drive/folders/1yahhkY1-wFRzzvPzsiG6MR1RrU0APCTQ?usp=sharing'
+					target='_blank'
+					rel='noreferrer'>
 					<ThisSiteLinkIcon>
 						<SiAdobexd size={20} />
 					</ThisSiteLinkIcon>
@@ -69,7 +72,10 @@ function ThisSite() {
 				<GitHubLinkTitle>
 					Take a looks at the GitHub Repro to see my approach
 				</GitHubLinkTitle>
-				<ThisSiteLink href='#' target='_blank' rel='noreferrer'>
+				<ThisSiteLink
+					href='https://github.com/thomasjfcaldwell/caldwell-designs'
+					target='_blank'
+					rel='noreferrer'>
 					<ThisSiteLinkIcon>
 						<AiFillGithub size={20} />
 					</ThisSiteLinkIcon>

@@ -19,7 +19,7 @@ function ContactThomas() {
 			<TitleContainer>
 				<Title>Contact Thomas</Title>
 			</TitleContainer>
-			<ContactThomasSocialMediaContainer id='contact'>
+			<ContactThomasSocialMediaContainer>
 				<ContactThomasSocialMediaLink
 					href='mailto:thomasjfcaldwell@gmail.com'
 					target='_blank'

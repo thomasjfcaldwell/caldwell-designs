@@ -27,7 +27,7 @@ import {
 
 const Projects = () => {
 	return (
-		<ProjectsWrapper>
+		<ProjectsWrapper id='projects'>
 			<TitleContainer>
 				<Title>Projects</Title>
 			</TitleContainer>

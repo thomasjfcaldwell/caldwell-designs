@@ -11,7 +11,7 @@ const imageOfThomas =
 
 export default function AboutThomas() {
 	return (
-		<AboutThomasContainer id='about'>
+		<AboutThomasContainer>
 			<AboutThomasImage
 				loading='lazy'
 				src={imageOfThomas}
