@@ -15,15 +15,11 @@ import {
 import { Title, TitleContainer } from '../Title/TitleStyles';
 
 const shopImage =
-	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654551125/storeMockUp1.phone_zaaryb.png';
+	'https://res.cloudinary.com/djjqsmlei/image/upload/v1655244423/billcaldwellmockup_wplprc.png';
 
 const gameImage = 'https://i.ibb.co/rHv6ZqK/capital-Mock-Up.png';
 
-import {
-	AiFillGithub,
-	AiFillPlayCircle,
-	AiOutlineShoppingCart,
-} from 'react-icons/ai';
+import { AiFillGithub, AiFillPlayCircle, AiOutlineUser } from 'react-icons/ai';
 
 const Projects = () => {
 	return (
@@ -70,27 +66,29 @@ const Projects = () => {
 				</ProjectsLinkContainer>
 			</ProjectsContainer>
 			<ProjectsContainer primary>
-				<ProjectsTitle primary>STORE</ProjectsTitle>
+				<ProjectsTitle primary>Artist Portfolio</ProjectsTitle>
 				<ProjectsText primary>
-					Store built using Shopify and React. Purpose of site is to sell
-					original designed gifts to the public. Solo project from the start I
-					am responsible for all aspects of the site. Including merchandise
-					design, site design and development plus promotional marketing assets.
+					Personal portfolio designed and developed for a close family member.
+					Site was built using vanilla html,css and JavaStript. The site uses
+					semantic markup and is responsive over all devices and screen size.
+					Currently working on an update to the site.
 				</ProjectsText>
 				<ProjectsImage
 					primary
 					loading='lazy'
 					src={shopImage}
-					alt='Mock Up of Store'
+					alt='Mock up of billcaldwell.com'
 					className=''
 				/>
 				<ProjectsLinkContainer primary>
 					<ProjectsLink>
 						<ProjectsIcon style={{ color: '#7FBD9B' }}>
-							<AiOutlineShoppingCart />
+							<AiOutlineUser />
 						</ProjectsIcon>
-						<LinkTitle href='https://easyandquickgifts.com/' scroll={false}>
-							Visit Shop
+						<LinkTitle
+							href='https://thomasjfcaldwell.github.io/billcaldwell.com/'
+							scroll={false}>
+							Visit Site
 						</LinkTitle>
 					</ProjectsLink>
 					<ProjectsLink>
@@ -98,7 +96,7 @@ const Projects = () => {
 							<AiFillGithub />
 						</ProjectsIcon>
 						<LinkTitle
-							href='https://github.com/thomasjfcaldwell'
+							href='https://github.com/thomasjfcaldwell/billcaldwell.com'
 							scroll={false}>
 							See Code
 						</LinkTitle>

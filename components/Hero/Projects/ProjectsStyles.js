@@ -77,6 +77,7 @@ export const ProjectsTitle = styled.h5`
 	grid-area: ${(props) => (props.primary ? '1/1/2/2' : '1/2/2/3')};
 	margin: 1.2rem auto;
 	font-size: 1.1rem;
+	text-transform: uppercase;
 	@media ${(props) => props.theme.breakpoints.xxs} {
 		margin: 0rem auto;
 	}
