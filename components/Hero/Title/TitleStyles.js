@@ -5,7 +5,7 @@ export const TitleContainer = styled.div`
 	justify-content: center;
 	margin: 2rem auto;
 	@media ${(props) => props.theme.breakpoints.sm} {
-		margin: 0.5rem auto;
+		margin: 0.2rem auto;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		margin: 0.2rem auto;

@@ -31,11 +31,11 @@ export const LinkText = styled.a`
 	padding: 0.5rem 0;
 	border: 0;
 	font-size: 16px;
-	transition: all 0.3s ease-out;
+	transition: all 0.1s ease-out;
 	:hover {
-		color: ${(props) => props.theme.colors.highlight};
+		color: ${(props) => props.theme.colors.header};
 		cursor: pointer;
-		font-weight: 600;
+		font-weight: 400;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		font-size: 12px;

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
-	display: flex;
+	display: grid;
 	width: 100%;
-	flex-direction: column;
-	align-items: center;
+	grid-template: 7fr 1fr / 1fr 1fr;
 	grid-area: 1/2/4/3;
+	padding: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.md} {
 		grid-area: 1/2/2/3;
@@ -17,8 +17,8 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutImage = styled.img`
-	width: 50%;
-	margin: 0 auto;
+	grid-area: 1/1/2/2;
+	width: 100%;
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 40%;
 	}
@@ -28,22 +28,17 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutText = styled.p`
-	font-size: 1rem;
+	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 1.4;
-	letter-spacing: 1px;
-	margin: 1.5rem auto;
-	width: 80%;
-	text-align: justify;
-	/* background-color: purple; */
+	line-height: 1.5;
+	margin: 1.5rem;
+	width: 100%;
+	grid-area: 1/2/2/3;
 	@media ${(props) => props.theme.breakpoints.md} {
 		font-size: 0.8rem;
-		margin: 3rem auto;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
 		font-size: 0.8rem;
-		padding: 2.5rem;
-		text-align: justify;
 	}
 `;
 
@@ -51,9 +46,11 @@ export const AboutLink = styled.a`
 	font-size: 0.6rem;
 	border: 2px ${(props) => props.theme.colors.secondary} solid;
 	border-radius: 0.3rem;
-	padding-block: 0.4rem;
+	padding-block: 0.3rem;
 	letter-spacing: 0.08rem;
-	width: 30%;
+	width: 50%;
 	text-align: center;
-	margin: 0.5rem auto;
+	margin-inline: auto;
+	margin-top: 0.3rem;
+	grid-area: 2/1/3/3;
 `;

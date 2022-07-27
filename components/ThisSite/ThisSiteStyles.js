@@ -17,6 +17,7 @@ export const ThisSiteContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+
 	@media ${(props) => props.theme.breakpoints.md} {
 		width: 80%;
 		margin: 2rem auto;

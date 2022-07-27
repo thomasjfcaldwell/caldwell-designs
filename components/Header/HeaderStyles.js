@@ -11,6 +11,9 @@ export const Container = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: 0;
 	}
+	@media ${(props) => props.theme.breakpoints.xs} {
+		padding: 0;
+	}
 	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0.5rem;
 	}
@@ -22,19 +25,19 @@ export const Title = styled.h1`
 		font-size: 50px;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	@media ${(props) => props.theme.breakpoints.xxs} {
-		font-size: 27px;
+		font-size: 15px;
 	}
 `;
 export const SubTitle = styled.h3`
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 17px;
 	@media ${(props) => props.theme.breakpoints.xl} {
 		font-size: 30px;
 	}
 	@media ${(props) => props.theme.breakpoints.xxs} {
-		font-size: 18px;
+		font-size: 15px;
 	}
 `;
