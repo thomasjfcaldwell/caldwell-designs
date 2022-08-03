@@ -6,6 +6,10 @@ export const ContactThomasContainer = styled.section`
 	flex-direction: column;
 	align-items: center;
 	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	@media ${(props) => props.theme.breakpoints.xxs} {
+	}
 	@media ${(props) => props.theme.breakpoints.xs} {
 		grid-row-start: 3;
 		grid-row-end: 4;
@@ -14,6 +18,14 @@ export const ContactThomasContainer = styled.section`
 		grid-row-start: 3;
 		grid-row-end: 4;
 		width: 100%;
+	}
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: 100%;
+		grid-column-start: 2;
+	}
+	@media ${(props) => props.theme.breakpoints.lg} {
+		width: 100%;
+		grid-column-start: 2;
 	}
 `;
 export const ContactThomasSocialMediaContainer = styled.div`

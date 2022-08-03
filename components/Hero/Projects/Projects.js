@@ -43,8 +43,7 @@ const Projects = () => {
 					<ProjectsText>
 						This is a trivia game build with JavaScript, CSS and HTML. Testing
 						users knowledge of the worlds capital cities. Using JSON data from a
-						3rd party API and JavaScript logic the game keeps track of the
-						{/* correct answers allowing the user to either win or lose. */}
+						3rd party API and JavaScript logic.
 					</ProjectsText>
 					<ProjectsLinkContainer>
 						<ProjectsLink>
@@ -75,10 +74,9 @@ const Projects = () => {
 				<ProjectContentContainer>
 					<ProjectsTitle primary>Artist Portfolio</ProjectsTitle>
 					<ProjectsText primary>
-						Personal portfolio designed and developed for a close family member.
-						Site was built using vanilla html,css and JavaStript. The site uses
-						semantic markup and is responsive over all devices and screen size.
-						Currently working on an update to the site.
+						Personal portfolio designed and developed for family member.Built
+						using vanilla html,css & JavaStript.Semantic markup and is
+						responsive over all devices and screen size.
 					</ProjectsText>
 					<ProjectsLinkContainer primary>
 						<ProjectsLink>
