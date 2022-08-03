@@ -17,7 +17,7 @@ class Home extends Component {
 		return (
 			<Layout>
 				<Header />
-				{/* <Hero /> */}
+				<Hero />
 				<WorkExperience />
 				<AboutAndSkill />
 				<ContactAndThisSite />
