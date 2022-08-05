@@ -98,30 +98,23 @@ export const PositionText = styled.h5`
 
 export const JobBox = styled.div`
 	background-color: ${(props) => props.theme.colors.secondary};
-	height: 100%;
-	width: 100%;
+	width: 90%;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 50px 2fr 1fr;
-	padding: 0.5rem 1rem;
+	grid-template-rows: 30px 2fr 1fr;
 	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 1rem;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		padding: 0.1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-template-columns: 45% 55%;
-		grid-template-rows: auto 4fr 1fr;
-		padding: 0.25rem 0.5rem;
+		grid-template-columns: 1fr 2fr;
 	}
 	@media ${(props) => props.theme.breakpoints.xs} {
-		grid-template-columns: 45% 55%;
-		grid-template-rows: auto 4fr 1fr;
-		padding: 0.25rem 0.5rem;
+		grid-template-columns: 1fr 2fr;
 	}
 	@media ${(props) => props.theme.breakpoints.xxs} {
-		grid-template-columns: 45% 55%;
-		grid-template-rows: auto 4fr 1fr;
-		padding: 0.25rem 0.5rem;
+		grid-template-columns: 1fr 2fr;
 	}
 `;
 export const JobBoxBottom = styled(JobBox)`
@@ -134,7 +127,6 @@ export const JobBoxHeader = styled.h5`
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.1rem;
-	margin: 1rem 0;
 	@media ${(props) => props.theme.breakpoints.lg} {
 		font-size: 0.9rem;
 		margin: 2rem 0;
@@ -212,8 +204,8 @@ export const JobListItem = styled.li`
 		font-size: 0.65rem;
 	}
 	@media ${(props) => props.theme.breakpoints.xxs} {
-		margin: ${(props) => (props.primary ? '0.1rem' : '0')};
-		font-size: 0.6rem;
+		margin: 0.5rem auto;
+		font-size: 0.5rem;
 	}
 `;
 export const JobSoftWareContainer = styled.div`
@@ -223,6 +215,7 @@ export const JobSoftWareContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 1rem 0;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		grid-column-start: 1;
 		grid-column-end: 3;
@@ -299,7 +292,7 @@ export const JobImage = styled.img`
 	width: 220px;
 	margin: 0 auto;
 	@media ${(props) => props.theme.breakpoints.lg} {
-		width: 250px;
+		width: 150px;
 		margin-top: 1rem;
 	}
 	@media ${(props) => props.theme.breakpoints.sm} {
@@ -309,6 +302,6 @@ export const JobImage = styled.img`
 		width: 100%;
 	}
 	@media ${(props) => props.theme.breakpoints.xxs} {
-		width: 100%;
+		width: 100px;
 	}
 `;
