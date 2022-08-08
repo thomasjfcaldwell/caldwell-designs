@@ -16,11 +16,11 @@ class Home extends Component {
 	render() {
 		return (
 			<Layout>
-				{/* <Header />
-				<Hero /> */}
+				<Header />
+				<Hero />
 				<WorkExperience />
-				{/* <AboutAndSkill />
-				<ContactAndThisSite /> */}
+				<AboutAndSkill />
+				<ContactAndThisSite />
 			</Layout>
 		);
 	}
