@@ -44,6 +44,10 @@ const picnicMockUp =
 	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654555298/picnicMockUp1.phone_t0kak2.png';
 const wowDesktopImage = 'https://i.ibb.co/1Xs799T/picnic-destop-mock-Up.png';
 
+{
+	/* make  */
+}
+
 export default function WorkExperience() {
 	return (
 		<WorkExperienceContainer id='work-history'>
@@ -74,6 +78,7 @@ export default function WorkExperience() {
 						/>
 						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
 						<JobList>
+							{/* make  job list a click to see more */}
 							<JobListItem>Integrated Shopify store with React</JobListItem>
 							<JobListItem>Designed original merchandise for sale</JobListItem>
 							<JobListItem>
@@ -119,6 +124,7 @@ export default function WorkExperience() {
 					<JobBox>
 						<JobBoxHeader>MAIN RESPONSIBILITIES</JobBoxHeader>
 						<JobImage
+							primary
 							loading='lazy'
 							src={picnicMockUp}
 							alt='Picnic Mock Up on iPhone'
@@ -193,7 +199,7 @@ export default function WorkExperience() {
 								Product photography, all print marketing materials
 							</JobListItem>
 						</JobList>
-						<JobSoftWareContainer>
+						<JobSoftWareContainer primary>
 							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
 							<JobSoftWareIconContainer>
 								<JobSoftWareTextContainer>
@@ -201,7 +207,7 @@ export default function WorkExperience() {
 									<SiAdobephotoshop />
 								</JobSoftWareTextContainer>
 								<JobSoftWareTextContainer>
-									<JobSoftWareIconText>BigCommerce</JobSoftWareIconText>
+									<JobSoftWareIconText>ECommerce</JobSoftWareIconText>
 									<SiBigcommerce />
 								</JobSoftWareTextContainer>
 								<JobSoftWareTextContainer>
@@ -240,7 +246,7 @@ export default function WorkExperience() {
 							<JobListItem primary>Management of social media</JobListItem>
 							<JobListItem primary>Follow up on service</JobListItem>
 						</JobList>
-						<JobSoftWareContainer>
+						<JobSoftWareContainer primary>
 							<JobSoftWareHeader>Software Used</JobSoftWareHeader>
 							<JobSoftWareIconContainer>
 								<JobSoftWareTextContainer>

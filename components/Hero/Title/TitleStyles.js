@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TitleContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		margin: 0.2rem auto;
 	}

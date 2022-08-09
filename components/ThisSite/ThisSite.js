@@ -69,7 +69,7 @@ function ThisSite() {
 						Responsive design tested on all devices and viewpoints.
 					</ThisSiteListItem>
 				</ThisSiteList>
-				<GitHubLinkTitle>
+				<GitHubLinkTitle primary>
 					Take a looks at the GitHub Repro to see my approach
 				</GitHubLinkTitle>
 				<ThisSiteLink
