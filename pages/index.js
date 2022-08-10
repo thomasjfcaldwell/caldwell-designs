@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import React, { Component } from 'react';
 import Link from 'next/link';
-
-import { useRef } from 'react';
 import { Layout } from '../Layout/Layout';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';

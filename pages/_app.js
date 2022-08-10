@@ -7,10 +7,10 @@ export default function App({ Component, pageProps }) {
 	return (
 		<>
 			<Theme>
-				<Head>
+				{/* <Head>
 					<meta name='viewport' content='viewport-fit=cover' />
 					<meta name='viewport' content='width=device-width, initial-scale=1' />
-				</Head>
+				</Head> */}
 				<Component {...pageProps} key={router.route} />
 			</Theme>
 		</>

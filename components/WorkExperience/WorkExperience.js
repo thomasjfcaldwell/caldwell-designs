@@ -38,7 +38,6 @@ import {
 
 import { TitleContainer, Title } from '../Hero/Title/TitleStyles';
 import Education from '../EducationAndSkills/Education/Education';
-
 const quickAndEasyImage = 'https://i.ibb.co/F37wjJB/store-Mock-Up1-phone.png';
 const picnicMockUp =
 	'https://res.cloudinary.com/djjqsmlei/image/upload/v1654555298/picnicMockUp1.phone_t0kak2.png';
@@ -52,7 +51,6 @@ export default function WorkExperience() {
 	return (
 		<WorkExperienceContainer id='work-history'>
 			{/* CONTAINER FOR HEADER JOBS AND EDUCATION */}
-
 			{/* first row with title */}
 			<WorkExperienceRow>
 				<TitleContainer>
