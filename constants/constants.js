@@ -1,4 +1,4 @@
-export const process = [
+export const Process = [
 	{
 		id: 0,
 		step: 'Step 1',
